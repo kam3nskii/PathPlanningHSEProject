@@ -1,15 +1,12 @@
 #include "search.h"
 
-Search::Search()
-{
-//set defaults here
+Search::Search() {
+    //set defaults here
 }
 
 Search::~Search() {}
 
-
-SearchResult Search::startSearch(ILogger *Logger, const Map &map, const EnvironmentOptions &options)
-{
+SearchResult Search::startSearch(ILogger* Logger, const Map& map, const EnvironmentOptions& options) {
     //need to implement
 
     /*sresult.pathfound = ;
