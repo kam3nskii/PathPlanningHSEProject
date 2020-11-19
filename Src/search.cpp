@@ -56,7 +56,11 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
         }
         for (Node& next : map.getNeighbors(*curr)) {
             if (map.getValue(next.i, next.j) == CN_GC_NOOBS) {
-                std::list<Node>::iterator it = std::find(std::begin(Open), std::end(Open), next);
+                std::list<Node>::iterator it = std::find(std::begin(Close), std::end(Close), next);
+                if (it != Close.end()) {
+                    continue;
+                }
+                it = std::find(std::begin(Open), std::end(Open), next);
                 if (it == Open.end()) {
                     next.g = curr->g + 1;
                     next.parent = curr;
