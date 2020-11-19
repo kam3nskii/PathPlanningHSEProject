@@ -274,7 +274,7 @@ bool Config::getConfig(const char* FileName) {
         } else if (!element->GetText()) {
             std::cout << "Warning! Value of '" << CNS_TAG_LOGFN << "' tag is missing." << std::endl;
             std::cout << "Value of '" << CNS_TAG_LOGFN
-                      << "' tag was defined to default (original filename +'_log' + original file extension."
+                      << "' tag was defined to default (original filename +'_log' + original file extension)."
                       << std::endl;
         } else
             LogParams[CN_LP_NAME] = element->GetText();
