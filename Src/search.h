@@ -9,6 +9,7 @@
 
 #include "environmentoptions.h"
 #include "ilogger.h"
+#include "node.h"
 #include "searchresult.h"
 
 class Search {
@@ -19,6 +20,8 @@ public:
 
 protected:
     //CODE HERE
+
+    std::list<Node> Open, Close;
 
     //Hint 1. You definetely need class variables for OPEN and CLOSE
 
@@ -33,8 +36,8 @@ protected:
     //Start with very simple (and ineffective) structures like list or vector and make it work first
     //and only then begin enhancement!
 
-    SearchResult sresult;            //This will store the search result
-    std::list<Node> lppath, hppath;  //
+    SearchResult sresult;  //This will store the search result
+    std::list<Node> lppath, hppath;
 
     //CODE HERE to define other members of the class
 };

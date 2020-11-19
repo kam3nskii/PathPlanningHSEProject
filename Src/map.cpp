@@ -32,7 +32,8 @@ bool Map::CellOnGrid(int i, int j) const {
 }
 
 bool Map::getMap(const char* FileName) {
-    int rowiter = 0, grid_i = 0, grid_j = 0;
+    // int rowiter = 0, grid_i = 0, grid_j = 0;
+    int grid_i = 0, grid_j = 0;
 
     tinyxml2::XMLElement *root = 0, *map = 0, *element = 0, *mapnode;
 
@@ -234,11 +235,12 @@ bool Map::getMap(const char* FileName) {
                 std::string item;
                 while (std::getline(ss, item, ' '))
                     elems.push_back(item);
-                rowiter = grid_j = 0;
+                // rowiter = grid_j = 0;
+                grid_j = 0;
                 int val;
                 if (elems.size() > 0)
                     for (grid_j = 0; grid_j < width; ++grid_j) {
-                        if (grid_j == elems.size())
+                        if (static_cast<unsigned int>(grid_j) == elems.size())
                             break;
                         stream.str("");
                         stream.clear();
@@ -301,4 +303,36 @@ int Map::getMapWidth() const {
 
 double Map::getCellSize() const {
     return cellSize;
+}
+
+int Map::getStart_i() const {
+    return start_i;
+}
+
+int Map::getStart_j() const {
+    return start_j;
+}
+
+int Map::getGoal_i() const {
+    return goal_i;
+}
+
+int Map::getGoal_j() const {
+    return goal_j;
+}
+
+std::vector<Node> Map::getNeighbors(Node node) const {
+    std::vector<Node> neighbors;
+
+    // hardcoded only 4 neighbors
+
+    for (int i = -1; i <= 1; i += 2) {
+        neighbors.emplace_back(node.i + i, node.j, node.g + 1);
+    }
+
+    for (int i = -1; i <= 1; i += 2) {
+        neighbors.emplace_back(node.i, node.j + i, node.g + 1);
+    }
+
+    return neighbors;
 }

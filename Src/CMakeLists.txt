@@ -17,7 +17,8 @@ set(SOURCES         config.cpp
                     mission.cpp
                     search.cpp
                     tinyxml2.cpp
-                    xmllogger.cpp)
+                    xmllogger.cpp
+                    node.cpp)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
 

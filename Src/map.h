@@ -4,9 +4,11 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <utility>
 #include <vector>
 
 #include "gl_const.h"
+#include "node.h"
 #include "tinyxml2.h"
 
 //That's the class that stores BOTH grid map data AND start-goal locations.
@@ -38,7 +40,12 @@ public:
     int getValue(int i, int j) const;
     int getMapHeight() const;
     int getMapWidth() const;
+    int getStart_i() const;
+    int getStart_j() const;
+    int getGoal_i() const;
+    int getGoal_j() const;
     double getCellSize() const;
+    std::vector<Node> getNeighbors(Node node) const;
 };
 
 #endif

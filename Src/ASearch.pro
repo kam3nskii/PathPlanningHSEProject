@@ -2,7 +2,7 @@ TARGET = Denis_Kamenskii_ASearch
 CONFIG   += console
 CONFIG   -= app_bundle
 TEMPLATE = app
-QMAKE_CXXFLAGS += -std=c++11 -O2 -Wall -Wextra
+QMAKE_CXXFLAGS += -std=c++17 -O2 -Wall -Wextra
 
 win32 {
 QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
@@ -16,7 +16,8 @@ SOURCES += \
     mission.cpp \
     search.cpp \
     tinyxml2.cpp \
-    xmllogger.cpp 
+    xmllogger.cpp \
+    node.cpp
      
 HEADERS += \
     config.h \
