@@ -1,24 +1,24 @@
 
-set(HEADERS         config.h
-                    environmentoptions.h
-                    gl_const.h
-                    ilogger.h
-                    map.h
-                    mission.h
-                    node.h
-                    search.h
-                    searchresult.h
-                    tinyxml2.h
-                    xmllogger.h)
+set(HEADERS     config.h
+                environmentoptions.h
+                gl_const.h
+                ilogger.h
+                map.h
+                mission.h
+                node.h
+                search.h
+                searchresult.h
+                tinyxml2.h
+                xmllogger.h)
 
-set(SOURCES         config.cpp
-                    environmentoptions.cpp
-                    map.cpp
-                    mission.cpp
-                    search.cpp
-                    tinyxml2.cpp
-                    xmllogger.cpp
-                    node.cpp)
+set(SOURCES     config.cpp
+                environmentoptions.cpp
+                map.cpp
+                mission.cpp
+                node.cpp
+                search.cpp
+                tinyxml2.cpp
+                xmllogger.cpp)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
 

@@ -14,10 +14,10 @@ SOURCES += \
     main.cpp \
     map.cpp \
     mission.cpp \
+    node.cpp \
     search.cpp \
     tinyxml2.cpp \
-    xmllogger.cpp \
-    node.cpp
+    xmllogger.cpp
      
 HEADERS += \
     config.h \
