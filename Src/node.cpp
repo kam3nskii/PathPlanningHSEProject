@@ -9,6 +9,15 @@ Node::Node(int i_, int j_, double g_) {
     ++nodesCreated;
 }
 
+Node::Node(int i_, int j_, double g_, double h_) {
+    i = i_;
+    j = j_;
+    g = g_;
+    H = h_;
+    F = g + H;
+    ++nodesCreated;
+}
+
 Node::Node(const Node& copied) {
     i = copied.i;
     j = copied.j;

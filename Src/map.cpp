@@ -321,17 +321,34 @@ int Map::getGoal_j() const {
     return goal_j;
 }
 
-std::vector<Node> Map::getNeighbors(Node node) const {
+double Map::getTransitionCost(int i1, int j1, int i2, int j2) const {
+    int dx = std::abs(i2 - i1);
+    int dy = std::abs(j2 - j1);
+    if (dx + dy == 2) {
+        return CN_SQRT_TWO;
+    }
+    return 1;
+}
+
+std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options) const {
     std::vector<Node> neighbors;
 
-    // hardcoded only 4 neighbors
-
-    for (int i = -1; i <= 1; i += 2) {
-        neighbors.emplace_back(node.i + i, node.j, node.g + 1);
-    }
-
-    for (int i = -1; i <= 1; i += 2) {
-        neighbors.emplace_back(node.i, node.j + i, node.g + 1);
+    if (!options.allowdiagonal) {
+        for (int i = -1; i <= 1; i += 2) {
+            neighbors.emplace_back(node.i + i, node.j, node.g + 1);
+        }
+        for (int i = -1; i <= 1; i += 2) {
+            neighbors.emplace_back(node.i, node.j + i, node.g + 1);
+        }
+    } else {
+        for (int i = node.i - 1; i <= node.i + 1; ++i) {
+            for (int j = node.j - 1; j <= node.j + 1; ++j) {
+                if (i == node.i && j == node.j) {
+                    continue;
+                }
+                neighbors.emplace_back(i, j, node.g + 1);
+            }
+        }
     }
 
     return neighbors;

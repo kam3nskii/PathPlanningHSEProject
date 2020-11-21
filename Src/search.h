@@ -21,6 +21,10 @@ public:
 protected:
     //CODE HERE
 
+    void makePrimaryPath(Node* curNode);
+    void makeSecondaryPath();
+    double heuristic(int metricType, int i1, int j1, int i2, int j2);
+
     std::list<Node> Open, Close;
 
     //Hint 1. You definetely need class variables for OPEN and CLOSE
