@@ -32,6 +32,9 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
 
         if (curr->i == map.getGoal_i() && curr->j == map.getGoal_j()) {
             makePrimaryPath(curr);
+            auto endTime = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double> duration = endTime - startTime;
+            sresult.time = duration.count();
             makeSecondaryPath();
             sresult.pathfound = true;
             sresult.pathlength = curr->g;
@@ -41,7 +44,6 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
         }
 
         for (Node& next : map.getNeighbors(*curr, options)) {
-            if (map.getValue(next.i, next.j) == CN_GC_NOOBS) {
                 if (std::find(std::begin(Close), std::end(Close), next) != Close.end()) {
                     continue;
                 }
@@ -59,12 +61,8 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                         it->parent = curr;
                     }
                 }
-            }
         }
     }
-    auto endTime = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = endTime - startTime;
-    sresult.time = duration.count();
     return sresult;
 }
 

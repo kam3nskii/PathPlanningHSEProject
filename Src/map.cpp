@@ -333,23 +333,105 @@ double Map::getTransitionCost(int i1, int j1, int i2, int j2) const {
 std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options) const {
     std::vector<Node> neighbors;
 
-    if (!options.allowdiagonal) {
-        for (int i = -1; i <= 1; i += 2) {
-            neighbors.emplace_back(node.i + i, node.j, node.g + 1);
+    for (int k = -1; k <= 1; k += 2) {
+        if (getValue(node.i + k, node.j) == CN_GC_NOOBS) {
+            neighbors.emplace_back(node.i + k, node.j, node.g + 1);
         }
-        for (int i = -1; i <= 1; i += 2) {
-            neighbors.emplace_back(node.i, node.j + i, node.g + 1);
-        }
-    } else {
-        for (int i = node.i - 1; i <= node.i + 1; ++i) {
-            for (int j = node.j - 1; j <= node.j + 1; ++j) {
-                if (i == node.i && j == node.j) {
-                    continue;
-                }
-                neighbors.emplace_back(i, j, node.g + 1);
-            }
+    }
+    for (int k = -1; k <= 1; k += 2) {
+        if (getValue(node.i, node.j + k) == CN_GC_NOOBS) {
+            neighbors.emplace_back(node.i, node.j + k, node.g + 1);
         }
     }
 
+    if (options.allowdiagonal) {
+        if (!options.cutcorners) {  // только диагональ
+            int i = -1, j = -1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+            i = -1;
+            j = 1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+            i = 1;
+            j = 1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+            i = 1;
+            j = -1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+        } else {
+            if (!options.allowsqueeze) {  // диагональ и углы
+                int i = -1, j = -1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+            i = -1;
+            j = 1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+            i = 1;
+            j = 1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+            i = 1;
+            j = -1;
+            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
+                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+            } else {  // диагональ и углы и просачиваться
+                int i = -1, j = -1;
+                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+                i = -1;
+                j = 1;
+                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+                i = 1;
+                j = 1;
+                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+                i = 1;
+                j = -1;
+                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                }
+            }
+        }
+    }
     return neighbors;
 }
