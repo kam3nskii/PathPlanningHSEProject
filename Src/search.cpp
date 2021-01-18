@@ -14,16 +14,21 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
     auto startTime = std::chrono::high_resolution_clock::now();
     Open.emplace_back(map.getStart_i(), map.getStart_j(), 0,
                       heuristic(options.metrictype, map.getStart_i(),
-                                map.getStart_j(), map.getGoal_i(), map.getGoal_j()));
+                                map.getStart_j(), map.getGoal_i(), map.getGoal_j()), options.hweight);
     ++sresult.nodescreated;
     while (!Open.empty()) {
         sresult.numberofsteps++;
 
         std::list<Node>::iterator node = Open.end();
         for (std::list<Node>::iterator it = Open.begin(); it != Open.end(); ++it) {
-            //if (node == Open.end() || node->g > it->g) {
-            if (node == Open.end() || node->F > it->F) {
-                node = it;
+            if (options.breakingties) { // gmax
+                if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g < it->g)) {
+                    node = it;
+                }
+            } else { // gmin
+                if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g > it->g)) {
+                    node = it;
+                }
             }
         }
         Close.emplace_back(*node);
@@ -44,23 +49,23 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
         }
 
         for (Node& next : map.getNeighbors(*curr, options)) {
-                if (std::find(std::begin(Close), std::end(Close), next) != Close.end()) {
-                    continue;
+            if (std::find(std::begin(Close), std::end(Close), next) != Close.end()) {
+                continue;
+            }
+            std::list<Node>::iterator it = std::find(std::begin(Open), std::end(Open), next);
+            if (it == Open.end()) {
+                next.g = curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j);
+                next.parent = curr;
+                next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
+                next.F = next.g + next.H * options.hweight;
+                Open.push_back(next);
+                ++sresult.nodescreated;
+            } else {
+                it->g = std::min(it->g, curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j));
+                if (it->g == curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j)) {
+                    it->parent = curr;
                 }
-                std::list<Node>::iterator it = std::find(std::begin(Open), std::end(Open), next);
-                if (it == Open.end()) {
-                    next.g = curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j);
-                    next.parent = curr;
-                    next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
-                    next.F = next.g + next.H;
-                    Open.push_back(next);
-                    ++sresult.nodescreated;
-                } else {
-                    it->g = std::min(it->g, curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j));
-                    if (it->g == curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j)) {
-                        it->parent = curr;
-                    }
-                }
+            }
         }
     }
     if (!sresult.pathfound) {

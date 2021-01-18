@@ -9,12 +9,12 @@ Node::Node(int i_, int j_, double g_) {
     ++nodesCreated;
 }
 
-Node::Node(int i_, int j_, double g_, double h_) {
+Node::Node(int i_, int j_, double g_, double h_, double HW_) {
     i = i_;
     j = j_;
     g = g_;
     H = h_;
-    F = g + H;
+    F = g + H * HW_;
     ++nodesCreated;
 }
 
