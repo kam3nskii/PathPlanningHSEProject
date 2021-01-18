@@ -63,6 +63,11 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                 }
         }
     }
+    if (!sresult.pathfound) {
+        auto endTime = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> duration = endTime - startTime;
+        sresult.time = duration.count();
+    }
     return sresult;
 }
 

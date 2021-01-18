@@ -5,11 +5,15 @@ EnvironmentOptions::EnvironmentOptions() {
     allowsqueeze = false;
     allowdiagonal = true;
     cutcorners = false;
+    hweight = 1.;
+    breakingties = 1;
 }
 
-EnvironmentOptions::EnvironmentOptions(bool AS, bool AD, bool CC, int MT) {
+EnvironmentOptions::EnvironmentOptions(bool AS, bool AD, bool CC, int MT, double HW, int BT) {
     metrictype = MT;
     allowsqueeze = AS;
     allowdiagonal = AD;
     cutcorners = CC;
+    hweight = HW;
+    breakingties = BT;
 }
