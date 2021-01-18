@@ -5,13 +5,13 @@
 #include <chrono>
 #include <limits>
 #include <list>
+#include <unordered_map>
 #include <vector>
 
 #include "environmentoptions.h"
 #include "ilogger.h"
 #include "node.h"
 #include "searchresult.h"
-#include <unordered_map>
 
 class Search {
 public:

@@ -22,19 +22,11 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
 
         std::list<Node>::iterator node = Open.end();
         for (std::list<Node>::iterator it = Open.begin(); it != Open.end(); ++it) {
-            // if (options.breakingties) { // gmax
-            //     if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g < it->g)) {
-            //         node = it;
-            //     }
-            // } else { // gmin
-            //     if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g > it->g)) {
-            //         node = it;
-            //     }
-            // }
             if (node == Open.end() || node->F > it->F) {
                 node = it;
             } else if (node->F == it->F) {
-                if (node->g > it->g) {
+                if (options.breakingties && node->g < it->g ||
+                    !options.breakingties && node->g > it->g) {
                     node = it;
                 } else if (node->g == it->g) {
                     if (node->i > it->i) {
@@ -79,8 +71,8 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                 if (it->g > next.g) {
                     Open.erase(it);
                     next.parent = curr;
-                next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
-                next.F = next.g + next.H * options.hweight;
+                    next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
+                    next.F = next.g + next.H * options.hweight;
                     Open.push_back(next);
                 }
             }
