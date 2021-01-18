@@ -14,25 +14,41 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
     auto startTime = std::chrono::high_resolution_clock::now();
     Open.emplace_back(map.getStart_i(), map.getStart_j(), 0,
                       heuristic(options.metrictype, map.getStart_i(),
-                                map.getStart_j(), map.getGoal_i(), map.getGoal_j()), options.hweight);
+                                map.getStart_j(), map.getGoal_i(), map.getGoal_j()),
+                      options.hweight);
     ++sresult.nodescreated;
     while (!Open.empty()) {
         sresult.numberofsteps++;
 
         std::list<Node>::iterator node = Open.end();
         for (std::list<Node>::iterator it = Open.begin(); it != Open.end(); ++it) {
-            if (options.breakingties) { // gmax
-                if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g < it->g)) {
+            // if (options.breakingties) { // gmax
+            //     if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g < it->g)) {
+            //         node = it;
+            //     }
+            // } else { // gmin
+            //     if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g > it->g)) {
+            //         node = it;
+            //     }
+            // }
+            if (node == Open.end() || node->F > it->F) {
+                node = it;
+            } else if (node->F == it->F) {
+                if (node->g > it->g) {
                     node = it;
-                }
-            } else { // gmin
-                if (node == Open.end() || node->F > it->F || (node->F == it->F && node->g > it->g)) {
-                    node = it;
+                } else if (node->g == it->g) {
+                    if (node->i > it->i) {
+                        node = it;
+                    } else if (node->i == it->i) {
+                        if (node->j > it->j) {
+                            node = it;
+                        }
+                    }
                 }
             }
         }
-        Close.emplace_back(*node);
-        Node* curr = &Close.back();
+        Close.emplace(node->i * map.getMapHeight() + node->j, *node);
+        Node* curr = &Close.at(node->i * map.getMapHeight() + node->j);
         Open.erase(node);
 
         if (curr->i == map.getGoal_i() && curr->j == map.getGoal_j()) {
@@ -49,21 +65,23 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
         }
 
         for (Node& next : map.getNeighbors(*curr, options)) {
-            if (std::find(std::begin(Close), std::end(Close), next) != Close.end()) {
+            if (Close.find(next.i * map.getMapHeight() + next.j) != Close.end()) {
                 continue;
             }
             std::list<Node>::iterator it = std::find(std::begin(Open), std::end(Open), next);
             if (it == Open.end()) {
-                next.g = curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j);
                 next.parent = curr;
                 next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
                 next.F = next.g + next.H * options.hweight;
                 Open.push_back(next);
                 ++sresult.nodescreated;
             } else {
-                it->g = std::min(it->g, curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j));
-                if (it->g == curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j)) {
-                    it->parent = curr;
+                if (it->g > next.g) {
+                    Open.erase(it);
+                    next.parent = curr;
+                next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
+                next.F = next.g + next.H * options.hweight;
+                    Open.push_back(next);
                 }
             }
         }
@@ -108,7 +126,7 @@ double Search::heuristic(int metricType, int i1, int j1, int i2, int j2) {
     int dy = std::abs(j2 - j1);
     switch (metricType) {
         case 0:  // "diagonal"
-            return std::abs(dx - dy) + CN_SQRT_TWO * std::min(dx, dy);
+            return std::abs(dx - dy) + std::sqrt(2) * std::min(dx, dy);
             break;
         case 1:  // "manhattan" only when diagonal moves are allowed
             return dx + dy;

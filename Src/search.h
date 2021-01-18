@@ -11,6 +11,7 @@
 #include "ilogger.h"
 #include "node.h"
 #include "searchresult.h"
+#include <unordered_map>
 
 class Search {
 public:
@@ -25,7 +26,8 @@ protected:
     void makeSecondaryPath();
     double heuristic(int metricType, int i1, int j1, int i2, int j2);
 
-    std::list<Node> Open, Close;
+    std::list<Node> Open;
+    std::unordered_map<int, Node> Close;
 
     //Hint 1. You definetely need class variables for OPEN and CLOSE
 

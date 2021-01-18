@@ -1,4 +1,5 @@
 #include "map.h"
+#include <cmath>
 
 Map::Map() {
     height = -1;
@@ -325,7 +326,7 @@ double Map::getTransitionCost(int i1, int j1, int i2, int j2) const {
     int dx = std::abs(i2 - i1);
     int dy = std::abs(j2 - j1);
     if (dx + dy == 2) {
-        return CN_SQRT_TWO;
+        return std::sqrt(2);
     }
     return 1;
 }
@@ -350,7 +351,7 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
             i = -1;
@@ -358,7 +359,7 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
             i = 1;
@@ -366,7 +367,7 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
             i = 1;
@@ -374,7 +375,7 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
         } else {
@@ -383,7 +384,7 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
             i = -1;
@@ -391,7 +392,7 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
             i = 1;
@@ -399,7 +400,7 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
             i = 1;
@@ -407,28 +408,28 @@ std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
                     getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
             } else {  // диагональ и углы и просачиваться
                 int i = -1, j = -1;
                 if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
                 i = -1;
                 j = 1;
                 if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
                 i = 1;
                 j = 1;
                 if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
                 i = 1;
                 j = -1;
                 if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
                 }
             }
         }
