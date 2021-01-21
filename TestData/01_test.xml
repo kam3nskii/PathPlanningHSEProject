@@ -46,8 +46,15 @@
         <allowsqueeze>true</allowsqueeze>
     </algorithm>
     <options>
-        <loglevel>1</loglevel>
+        <loglevel>0.5</loglevel>
         <logpath />
         <logfilename />
     </options>
+    <log>
+        <mapfilename>../../Examples/example.xml</mapfilename>
+        <summary numberofsteps="48" nodescreated="84" length="16.071068" length_scaled="385.70562744140625" time="0.000038"/>
+        <path/>
+        <lplevel/>
+        <hplevel/>
+    </log>
 </root>
