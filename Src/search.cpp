@@ -12,21 +12,21 @@ Search::~Search() {}
 
 SearchResult Search::startSearch(ILogger* Logger, const Map& map, const EnvironmentOptions& options) {
     auto startTime = std::chrono::high_resolution_clock::now();
-    Open.emplace_back(map.getStart_i(), map.getStart_j(), 0,
+    Open.emplace_back(map.getStart_i(), map.getStart_j(),
+                      0,
                       heuristic(options.metrictype, map.getStart_i(),
                                 map.getStart_j(), map.getGoal_i(), map.getGoal_j()),
                       options.hweight);
     ++sresult.nodescreated;
     while (!Open.empty()) {
         sresult.numberofsteps++;
-
-        std::list<Node>::iterator node = Open.end();
-        for (std::list<Node>::iterator it = Open.begin(); it != Open.end(); ++it) {
+        auto node = Open.end();
+        for (auto it = Open.begin(); it != Open.end(); ++it) {
             if (node == Open.end() || node->F > it->F) {
                 node = it;
             } else if (node->F == it->F) {
-                if (options.breakingties && node->g < it->g ||
-                    !options.breakingties && node->g > it->g) {
+                if ((options.breakingties && (node->g < it->g)) ||
+                    (!options.breakingties && (node->g > it->g))) {
                     node = it;
                 } else if (node->g == it->g) {
                     if (node->i > it->i) {
@@ -39,8 +39,8 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                 }
             }
         }
-        Close.emplace(node->i * map.getMapHeight() + node->j, *node);
-        Node* curr = &Close.at(node->i * map.getMapHeight() + node->j);
+        Close.emplace(getCloseInd(*node, map), *node);
+        Node* curr = &Close.at(getCloseInd(*node, map));
         Open.erase(node);
 
         if (curr->i == map.getGoal_i() && curr->j == map.getGoal_j()) {
@@ -57,10 +57,10 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
         }
 
         for (Node& next : map.getNeighbors(*curr, options)) {
-            if (Close.find(next.i * map.getMapHeight() + next.j) != Close.end()) {
+            if (Close.find(getCloseInd(next, map)) != Close.end()) {
                 continue;
             }
-            std::list<Node>::iterator it = std::find(std::begin(Open), std::end(Open), next);
+            auto it = std::find(std::begin(Open), std::end(Open), next);
             if (it == Open.end()) {
                 next.parent = curr;
                 next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
@@ -100,7 +100,7 @@ void Search::makeSecondaryPath() {
     Node* prevNode = &lppath.front();
     iPrev = prevNode->i;
     jPrev = prevNode->j;
-    for (std::list<Node>::iterator it = std::next(lppath.begin()); it != lppath.end(); ++it) {
+    for (auto it = std::next(lppath.begin()); it != lppath.end(); ++it) {
         if (it->i - iPrev != iDiff || it->j - jPrev != jDiff) {
             hppath.push_back(*prevNode);
         }
@@ -116,20 +116,27 @@ void Search::makeSecondaryPath() {
 double Search::heuristic(int metricType, int i1, int j1, int i2, int j2) {
     int dx = std::abs(i2 - i1);
     int dy = std::abs(j2 - j1);
+    double ans;
     switch (metricType) {
         case 0:  // "diagonal"
-            return std::abs(dx - dy) + std::sqrt(2) * std::min(dx, dy);
+            ans = std::abs(dx - dy) + std::sqrt(2) * std::min(dx, dy);
             break;
         case 1:  // "manhattan" only when diagonal moves are allowed
-            return dx + dy;
+            ans = dx + dy;
             break;
         case 2:  // "euclidean"
-            return std::sqrt(dx * dx + dy * dy);
+            ans = std::sqrt(dx * dx + dy * dy);
             break;
         case 3:  // "chebyshev"
-            return std::max(dx, dy);
+            ans = std::max(dx, dy);
             break;
         default:
+            ans = 0;
             break;
     }
+    return ans;
+}
+
+int Search::getCloseInd(const Node& node, const Map& map) {
+    return node.i * map.getMapHeight() + node.j;
 }

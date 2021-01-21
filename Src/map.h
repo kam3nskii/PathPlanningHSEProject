@@ -47,7 +47,7 @@ public:
     int getGoal_j() const;
     double getCellSize() const;
     double getTransitionCost(int i1, int j1, int i2, int j2) const;
-    std::vector<Node> getNeighbors(Node node, const EnvironmentOptions& options) const;
+    std::vector<Node> getNeighbors(const Node& node, const EnvironmentOptions& options) const;
 };
 
 #endif

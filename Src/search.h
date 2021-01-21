@@ -1,8 +1,8 @@
 #ifndef SEARCH_H
 #define SEARCH_H
-#include <math.h>
 
 #include <chrono>
+#include <cmath>
 #include <limits>
 #include <list>
 #include <unordered_map>
@@ -25,6 +25,7 @@ protected:
     void makePrimaryPath(Node* curNode);
     void makeSecondaryPath();
     double heuristic(int metricType, int i1, int j1, int i2, int j2);
+    int getCloseInd(const Node& node, const Map& map);
 
     std::list<Node> Open;
     std::unordered_map<int, Node> Close;

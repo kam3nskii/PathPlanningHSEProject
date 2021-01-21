@@ -1,4 +1,5 @@
 #include "map.h"
+
 #include <cmath>
 
 Map::Map() {
@@ -323,113 +324,39 @@ int Map::getGoal_j() const {
 }
 
 double Map::getTransitionCost(int i1, int j1, int i2, int j2) const {
-    int dx = std::abs(i2 - i1);
-    int dy = std::abs(j2 - j1);
-    if (dx + dy == 2) {
+    if (std::abs(i2 - i1) + std::abs(j2 - j1) == 2) {
         return std::sqrt(2);
     }
     return 1;
 }
 
-std::vector<Node> Map::getNeighbors(Node node, const EnvironmentOptions& options) const {
+std::vector<Node> Map::getNeighbors(const Node& node, const EnvironmentOptions& options) const {
     std::vector<Node> neighbors;
-
-    for (int k = -1; k <= 1; k += 2) {
-        if (getValue(node.i + k, node.j) == CN_GC_NOOBS) {
-            neighbors.emplace_back(node.i + k, node.j, node.g + 1);
+    neighbors.reserve(8);
+    for (auto [i, j] : {std::make_pair(0, -1), std::make_pair(-1, 0),
+                        std::make_pair(0, 1), std::make_pair(1, 0)}) {
+        if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
+            neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
         }
     }
-    for (int k = -1; k <= 1; k += 2) {
-        if (getValue(node.i, node.j + k) == CN_GC_NOOBS) {
-            neighbors.emplace_back(node.i, node.j + k, node.g + 1);
-        }
-    }
-
     if (options.allowdiagonal) {
-        if (!options.cutcorners) {  // только диагональ
-            int i = -1, j = -1;
+        for (auto [i, j] : {std::make_pair(-1, -1), std::make_pair(-1, 1),
+                            std::make_pair(1, 1), std::make_pair(1, -1)}) {
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-            i = -1;
-            j = 1;
-            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-            i = 1;
-            j = 1;
-            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-            i = 1;
-            j = -1;
-            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-        } else {
-            if (!options.allowsqueeze) {  // диагональ и углы
-                int i = -1, j = -1;
-            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-            i = -1;
-            j = 1;
-            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-            i = 1;
-            j = 1;
-            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-            i = 1;
-            j = -1;
-            if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
-                    getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-            }
-            } else {  // диагональ и углы и просачиваться
-                int i = -1, j = -1;
-                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-                i = -1;
-                j = 1;
-                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-                i = 1;
-                j = 1;
-                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
-                }
-                i = 1;
-                j = -1;
-                if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-                    neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
+                if (!options.cutcorners) {
+                    if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
+                        getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                        neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
+                    }
+                } else {
+                    if (!options.allowsqueeze) {
+                        if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
+                            getValue(node.i, node.j + j) == CN_GC_NOOBS) {
+                            neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
+                        }
+                    } else {
+                        neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
+                    }
                 }
             }
         }
