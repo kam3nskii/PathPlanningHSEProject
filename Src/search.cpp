@@ -14,13 +14,14 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
     auto startTime = std::chrono::high_resolution_clock::now();
     Open.emplace_back(map.getStart_i(), map.getStart_j(),
                       0,
-                      heuristic(options.metrictype, map.getStart_i(),
-                                map.getStart_j(), map.getGoal_i(), map.getGoal_j()),
+                      heuristic(options, map.getStart_i(), map.getStart_j(),
+                                map.getGoal_i(), map.getGoal_j()),
                       options.hweight);
     ++sresult.nodescreated;
     while (!Open.empty()) {
         sresult.numberofsteps++;
         auto node = Open.end();
+
         for (auto it = Open.begin(); it != Open.end(); ++it) {
             if (node == Open.end() || node->F > it->F) {
                 node = it;
@@ -39,6 +40,7 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                 }
             }
         }
+        
         Close.emplace(getCloseInd(*node, map), *node);
         Node* curr = &Close.at(getCloseInd(*node, map));
         Open.erase(node);
@@ -63,7 +65,7 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
             auto it = std::find(std::begin(Open), std::end(Open), next);
             if (it == Open.end()) {
                 next.parent = curr;
-                next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
+                next.H = heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j());
                 next.F = next.g + next.H * options.hweight;
                 Open.push_back(next);
                 ++sresult.nodescreated;
@@ -71,7 +73,7 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                 if (it->g > next.g) {
                     Open.erase(it);
                     next.parent = curr;
-                    next.H = heuristic(options.metrictype, next.i, next.j, map.getGoal_i(), map.getGoal_j());
+                    next.H = heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j());
                     next.F = next.g + next.H * options.hweight;
                     Open.push_back(next);
                 }
@@ -113,11 +115,14 @@ void Search::makeSecondaryPath() {
     hppath.push_back(lppath.back());
 }
 
-double Search::heuristic(int metricType, int i1, int j1, int i2, int j2) {
+double Search::heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2) {
+    if (options.searchtype == CN_SP_ST_DIJK) {
+        return 0;
+    }
     int dx = std::abs(i2 - i1);
     int dy = std::abs(j2 - j1);
     double ans;
-    switch (metricType) {
+    switch (options.metrictype) {
         case 0:  // "diagonal"
             ans = std::abs(dx - dy) + std::sqrt(2) * std::min(dx, dy);
             break;

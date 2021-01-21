@@ -12,7 +12,6 @@ set(HEADERS     config.h
                 xmllogger.h)
 
 set(SOURCES     config.cpp
-                environmentoptions.cpp
                 map.cpp
                 mission.cpp
                 node.cpp
