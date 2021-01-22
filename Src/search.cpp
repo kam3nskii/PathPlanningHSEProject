@@ -17,6 +17,7 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                       heuristic(options, map.getStart_i(), map.getStart_j(),
                                 map.getGoal_i(), map.getGoal_j()),
                       options.hweight);
+    OpenIterators.emplace(getNodeInd(Open.back(), map), std::prev(Open.end()));
     ++sresult.nodescreated;
     while (!Open.empty()) {
         sresult.numberofsteps++;
@@ -40,9 +41,10 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
                 }
             }
         }
-        
-        Close.emplace(getCloseInd(*node, map), *node);
-        Node* curr = &Close.at(getCloseInd(*node, map));
+
+        Close.emplace(getNodeInd(*node, map), *node);
+        Node* curr = &Close.at(getNodeInd(*node, map));
+        OpenIterators.erase(getNodeInd(*node, map));
         Open.erase(node);
 
         if (curr->i == map.getGoal_i() && curr->j == map.getGoal_j()) {
@@ -59,23 +61,26 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
         }
 
         for (Node& next : map.getNeighbors(*curr, options)) {
-            if (Close.find(getCloseInd(next, map)) != Close.end()) {
+            if (Close.find(getNodeInd(next, map)) != Close.end()) {
                 continue;
             }
-            auto it = std::find(std::begin(Open), std::end(Open), next);
-            if (it == Open.end()) {
+            auto it = OpenIterators.find(getNodeInd(next, map));
+            if (it == OpenIterators.end()) {
                 next.parent = curr;
                 next.H = heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j());
                 next.F = next.g + next.H * options.hweight;
                 Open.push_back(next);
+                OpenIterators.emplace(getNodeInd(next, map), std::prev(Open.end()));
                 ++sresult.nodescreated;
             } else {
-                if (it->g > next.g) {
-                    Open.erase(it);
+                if (it->second->g > next.g) {
                     next.parent = curr;
                     next.H = heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j());
                     next.F = next.g + next.H * options.hweight;
                     Open.push_back(next);
+                    auto tmp = it->second;
+                    OpenIterators.at(getNodeInd(*tmp, map)) = std::prev(Open.end());
+                    Open.erase(tmp);
                 }
             }
         }
@@ -142,6 +147,6 @@ double Search::heuristic(const EnvironmentOptions& options, int i1, int j1, int 
     return ans;
 }
 
-int Search::getCloseInd(const Node& node, const Map& map) {
+int Search::getNodeInd(const Node& node, const Map& map) {
     return node.i * map.getMapHeight() + node.j;
 }
