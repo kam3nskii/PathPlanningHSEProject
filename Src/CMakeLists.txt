@@ -1,5 +1,6 @@
 
-set(HEADERS     config.h
+set(HEADERS     cell.h
+                config.h
                 environmentoptions.h
                 gl_const.h
                 ilogger.h
@@ -11,7 +12,8 @@ set(HEADERS     config.h
                 tinyxml2.h
                 xmllogger.h)
 
-set(SOURCES     config.cpp
+set(SOURCES     cell.cpp
+                config.cpp
                 map.cpp
                 mission.cpp
                 node.cpp

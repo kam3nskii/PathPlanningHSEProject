@@ -330,32 +330,30 @@ double Map::getTransitionCost(int i1, int j1, int i2, int j2) const {
     return 1;
 }
 
-std::vector<Node> Map::getNeighbors(const Node& node, const EnvironmentOptions& options) const {
-    std::vector<Node> neighbors;
+std::vector<Cell> Map::getNeighbors(const Node& node, const EnvironmentOptions& options) const {
+    std::vector<Cell> neighbors;
     neighbors.reserve(8);
-    for (auto [i, j] : {std::make_pair(0, -1), std::make_pair(-1, 0),
-                        std::make_pair(0, 1), std::make_pair(1, 0)}) {
+    for (auto [i, j] : {Cell(0, -1), Cell(-1, 0), Cell(0, 1), Cell(1, 0)}) {
         if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
-            neighbors.emplace_back(node.i + i, node.j + j, node.g + 1);
+            neighbors.emplace_back(node.i + i, node.j + j);
         }
     }
     if (options.allowdiagonal) {
-        for (auto [i, j] : {std::make_pair(-1, -1), std::make_pair(-1, 1),
-                            std::make_pair(1, 1), std::make_pair(1, -1)}) {
+        for (auto [i, j] : {Cell(-1, -1), Cell(-1, 1), Cell(1, 1), Cell(1, -1)}) {
             if (getValue(node.i + i, node.j + j) == CN_GC_NOOBS) {
                 if (!options.cutcorners) {
                     if (getValue(node.i + i, node.j) == CN_GC_NOOBS &&
                         getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                        neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
+                        neighbors.emplace_back(node.i + i, node.j + j);
                     }
                 } else {
                     if (!options.allowsqueeze) {
                         if (getValue(node.i + i, node.j) == CN_GC_NOOBS ||
                             getValue(node.i, node.j + j) == CN_GC_NOOBS) {
-                            neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
+                            neighbors.emplace_back(node.i + i, node.j + j);
                         }
                     } else {
-                        neighbors.emplace_back(node.i + i, node.j + j, node.g + std::sqrt(2));
+                        neighbors.emplace_back(node.i + i, node.j + j);
                     }
                 }
             }

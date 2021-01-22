@@ -9,6 +9,7 @@ QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
 }
 
 SOURCES += \
+    cell.cpp \
     config.cpp \
     main.cpp \
     map.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
     xmllogger.cpp
      
 HEADERS += \
+    cell.h \
     config.h \
     environmentoptions.h \
     gl_const.h \

@@ -8,6 +8,7 @@
 #include <unordered_map>
 #include <vector>
 
+#include "cell.h"
 #include "environmentoptions.h"
 #include "ilogger.h"
 #include "node.h"
@@ -24,6 +25,7 @@ protected:
     void makeSecondaryPath();
     double heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2);
     int getNodeInd(const Node& node, const Map& map);
+    int getNodeInd(const Cell& cell, const Map& map);
 
     std::list<Node> Open;
     std::unordered_map<int, Node> Close;

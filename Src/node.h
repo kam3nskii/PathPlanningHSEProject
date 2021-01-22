@@ -14,7 +14,7 @@ public:
     Node* parent = nullptr;  //backpointer to the predecessor node (e.g. the node which g-value was used to set the g-velue of the current node)
 
     Node(int i_, int j_, double g_);
-    Node(int i_, int j_, double g_, double h_, double HW_);
+    Node(int i_, int j_, double g_, double h_, double HW_, Node* parent_);
 
     Node(const Node& copied);
 

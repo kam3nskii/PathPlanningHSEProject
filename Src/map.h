@@ -7,6 +7,7 @@
 #include <utility>
 #include <vector>
 
+#include "cell.h"
 #include "environmentoptions.h"
 #include "gl_const.h"
 #include "node.h"
@@ -47,7 +48,7 @@ public:
     int getGoal_j() const;
     double getCellSize() const;
     double getTransitionCost(int i1, int j1, int i2, int j2) const;
-    std::vector<Node> getNeighbors(const Node& node, const EnvironmentOptions& options) const;
+    std::vector<Cell> getNeighbors(const Node& node, const EnvironmentOptions& options) const;
 };
 
 #endif
