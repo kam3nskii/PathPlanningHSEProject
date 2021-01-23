@@ -5,6 +5,7 @@
 #include <cmath>
 #include <limits>
 #include <list>
+#include <set>
 #include <unordered_map>
 #include <vector>
 
@@ -27,9 +28,9 @@ protected:
     int getNodeInd(const Node& node, const Map& map);
     int getNodeInd(const Cell& cell, const Map& map);
 
-    std::list<Node> Open;
+    std::set<Node> Open;
+    std::unordered_map<int, std::set<Node>::iterator> OpenIterators;
     std::unordered_map<int, Node> Close;
-    std::unordered_map<int, std::list<Node>::iterator> OpenIterators;
 
     SearchResult sresult;  //This will store the search result
     std::list<Node> lppath, hppath;

@@ -12,36 +12,19 @@ Search::~Search() {}
 
 SearchResult Search::startSearch(ILogger* Logger, const Map& map, const EnvironmentOptions& options) {
     auto startTime = std::chrono::high_resolution_clock::now();
-    Open.emplace_back(map.getStart_i(), map.getStart_j(),
-                      0,
-                      heuristic(options, map.getStart_i(), map.getStart_j(),
-                                map.getGoal_i(), map.getGoal_j()),
-                      options.hweight,
-                      nullptr);
-    OpenIterators.emplace(getNodeInd(Open.back(), map), std::prev(Open.end()));
+    Node::breakingties = options.breakingties;
+    auto iterator = Open.emplace(map.getStart_i(), map.getStart_j(),
+                                 0,
+                                 heuristic(options, map.getStart_i(), map.getStart_j(),
+                                           map.getGoal_i(), map.getGoal_j()),
+                                 options.hweight,
+                                 nullptr)
+                        .first;
+    OpenIterators.emplace(getNodeInd(*iterator, map), iterator);
     ++sresult.nodescreated;
     while (!Open.empty()) {
         sresult.numberofsteps++;
-        auto node = Open.end();
-
-        for (auto it = Open.begin(); it != Open.end(); ++it) {
-            if (node == Open.end() || node->F > it->F) {
-                node = it;
-            } else if (node->F == it->F) {
-                if ((options.breakingties && (node->g < it->g)) ||
-                    (!options.breakingties && (node->g > it->g))) {
-                    node = it;
-                } else if (node->g == it->g) {
-                    if (node->i > it->i) {
-                        node = it;
-                    } else if (node->i == it->i) {
-                        if (node->j > it->j) {
-                            node = it;
-                        }
-                    }
-                }
-            }
-        }
+        auto node = Open.begin();
 
         Close.emplace(getNodeInd(*node, map), *node);
         Node* curr = &Close.at(getNodeInd(*node, map));
@@ -67,22 +50,24 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
             }
             auto it = OpenIterators.find(getNodeInd(next, map));
             if (it == OpenIterators.end()) {
-                Open.emplace_back(next.i, next.j,
-                                  curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
-                                  heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j()),
-                                  options.hweight,
-                                  curr);
-                OpenIterators.emplace(getNodeInd(next, map), std::prev(Open.end()));
+                auto iterator = Open.emplace(next.i, next.j,
+                                             curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
+                                             heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j()),
+                                             options.hweight,
+                                             curr)
+                                    .first;
+                OpenIterators.emplace(getNodeInd(next, map), iterator);
                 ++sresult.nodescreated;
             } else {
                 if (it->second->g > curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j)) {
-                    Open.emplace_back(next.i, next.j,
-                                      curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
-                                      heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j()),
-                                      options.hweight,
-                                      curr);
+                    auto iterator = Open.emplace(next.i, next.j,
+                                                 curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
+                                                 heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j()),
+                                                 options.hweight,
+                                                 curr)
+                                        .first;
                     auto tmp = it->second;
-                    OpenIterators.at(getNodeInd(*tmp, map)) = std::prev(Open.end());
+                    OpenIterators.at(getNodeInd(*tmp, map)) = iterator;
                     Open.erase(tmp);
                 }
             }

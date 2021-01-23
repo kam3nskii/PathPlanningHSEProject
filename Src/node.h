@@ -8,6 +8,7 @@
 class Node {
 public:
     static unsigned int nodesCreated;
+    static int breakingties;
 
     int i, j;                //grid cell coordinates
     double F, g, H;          //f-, g- and h-values of the search node
@@ -20,6 +21,7 @@ public:
 
     bool operator==(const Node& other) const;
     bool operator!=(const Node& other) const;
+    bool operator<(const Node& other) const;
 };
 
 #endif
