@@ -1,4 +1,8 @@
 # PathPlanningProject
+Windows test result:
+
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/kam3nskii/PathPlanningProject)](https://ci.appveyor.com/project/kam3nskii/pathplanningproject/branch/master)
+
 ## Суть проекта
 В рамках данного проекта планируется на `C++17` реализовать версии алгоритмов поиска путей на графах.
 
