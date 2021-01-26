@@ -1,4 +1,8 @@
 # PathPlanningProject
+Linux test result:
+
+[![Build Status](https://travis-ci.com/kam3nskii/PathPlanningProject.svg?branch=master)](https://travis-ci.com/kam3nskii/PathPlanningProject)
+
 Windows test result:
 
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/kam3nskii/PathPlanningProject)](https://ci.appveyor.com/project/kam3nskii/pathplanningproject/branch/master)
@@ -131,7 +135,7 @@ Windows test result:
 ### Linux
 - Git 2.7.4 или выше
 - CMake 3.2 или выше
-- GCC 4.9 или выше
+- GCC 7 или выше
 - Make
 
 ### Mac
