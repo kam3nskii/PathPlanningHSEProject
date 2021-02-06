@@ -136,9 +136,9 @@ double Search::heuristic(const EnvironmentOptions& options, int i1, int j1, int 
 }
 
 int Search::getNodeInd(const Node& node, const Map& map) {
-    return node.i * map.getMapHeight() + node.j;
+    return node.i * map.getMapWidth() + node.j;
 }
 
 int Search::getNodeInd(const Cell& cell, const Map& map) {
-    return cell.i * map.getMapHeight() + cell.j;
+    return cell.i * map.getMapWidth() + cell.j;
 }
