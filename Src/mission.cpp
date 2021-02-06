@@ -1,6 +1,7 @@
 #include "mission.h"
 
 #include <iostream>
+#include <iomanip>
 
 Mission::Mission() {
     logger = nullptr;
@@ -57,9 +58,12 @@ void Mission::printSearchResultsToConsole() {
     std::cout << "numberofsteps=" << sr.numberofsteps << std::endl;
     std::cout << "nodescreated=" << sr.nodescreated << std::endl;
     if (sr.pathfound) {
+        std::cout.setf(std::ios::fixed);
+        std::cout.precision(5);
         std::cout << "pathlength=" << sr.pathlength << std::endl;
         std::cout << "pathlength_scaled=" << sr.pathlength * map.getCellSize() << std::endl;
     }
+    std::cout.precision(7);
     std::cout << "time=" << sr.time << std::endl;
 }
 
