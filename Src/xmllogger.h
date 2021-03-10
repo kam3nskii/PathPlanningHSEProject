@@ -3,10 +3,8 @@
 #include "ilogger.h"
 #include "tinyxml2.h"
 
-//That's the class that flushes the data to the output XML
-
 class XmlLogger : public ILogger {
-public:
+   public:
     XmlLogger(std::string loglevel) : ILogger(loglevel) {}
 
     virtual ~XmlLogger(){};
@@ -17,7 +15,7 @@ public:
 
     void writeToLogMap(const Map& Map, const std::list<Node>& path);
 
-    //void writeToLogOpenClose(const typename &open, const typename &close);
+    // void writeToLogOpenClose(const typename &open, const typename &close);
 
     void writeToLogPath(const std::list<Node>& path);
 
@@ -25,9 +23,10 @@ public:
 
     void writeToLogNotFound();
 
-    void writeToLogSummary(unsigned int numberofsteps, unsigned int nodescreated, float length, double time, double cellSize);
+    void writeToLogSummary(unsigned int numberofsteps, unsigned int nodescreated, float length,
+                           double time, double cellSize);
 
-private:
+   private:
     std::string LogFileName;
     tinyxml2::XMLDocument doc;
 };

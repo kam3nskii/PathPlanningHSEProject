@@ -2,7 +2,7 @@
 #define CELL_H
 
 class Cell {
-public:
+   public:
     Cell(int i_, int j_);
     int i, j;
 };

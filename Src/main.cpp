@@ -16,17 +16,15 @@ int main(int argc, char* argv[]) {
     } else {
         std::cout << "Map OK!" << std::endl
                   << "Parsing configurations (algorithm, log) from XML:" << std::endl;
-        if (!mission.getConfig())
+        if (!mission.getConfig()) {
             std::cout << "Incorrect configurations! Program halted!" << std::endl;
-        else {
-            std::cout << "Configurations OK!" << std::endl
-                      << "Creating log channel:" << std::endl;
+        } else {
+            std::cout << "Configurations OK!" << std::endl << "Creating log channel:" << std::endl;
 
-            if (!mission.createLog())
+            if (!mission.createLog()) {
                 std::cout << "Log chanel has not been created! Program halted!" << std::endl;
-            else {
-                std::cout << "Log OK!" << std::endl
-                          << "Start searching the path:" << std::endl;
+            } else {
+                std::cout << "Log OK!" << std::endl << "Start searching the path:" << std::endl;
 
                 mission.createEnvironmentOptions();
                 mission.createSearch();

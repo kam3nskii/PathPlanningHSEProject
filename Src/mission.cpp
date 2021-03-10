@@ -1,7 +1,7 @@
 #include "mission.h"
 
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 Mission::Mission() {
     logger = nullptr;
@@ -27,7 +27,9 @@ bool Mission::getConfig() {
 }
 
 bool Mission::createLog() {
-    if (logger != nullptr) delete logger;
+    if (logger != nullptr) {
+        delete logger;
+    }
     logger = new XmlLogger(config.LogParams[CN_LP_LEVEL]);
     return logger->getLog(fileName, config.LogParams);
 }
@@ -43,7 +45,7 @@ void Mission::createEnvironmentOptions() {
 }
 
 void Mission::createSearch() {
-    //might be helpful in case numerous algorithms are added
+    // might be helpful in case numerous algorithms are added
 }
 
 void Mission::startSearch() {
@@ -52,8 +54,9 @@ void Mission::startSearch() {
 
 void Mission::printSearchResultsToConsole() {
     std::cout << "Path ";
-    if (!sr.pathfound)
+    if (!sr.pathfound) {
         std::cout << "NOT ";
+    }
     std::cout << "found!" << std::endl;
     std::cout << "numberofsteps=" << sr.numberofsteps << std::endl;
     std::cout << "nodescreated=" << sr.nodescreated << std::endl;
@@ -68,13 +71,18 @@ void Mission::printSearchResultsToConsole() {
 }
 
 void Mission::saveSearchResultsToLog() {
-    logger->writeToLogSummary(sr.numberofsteps, sr.nodescreated, sr.pathlength, sr.time, map.getCellSize());
+    logger->writeToLogSummary(sr.numberofsteps,
+                              sr.nodescreated,
+                              sr.pathlength,
+                              sr.time,
+                              map.getCellSize());
     if (sr.pathfound) {
         logger->writeToLogPath(*sr.lppath);
         logger->writeToLogHPpath(*sr.hppath);
         logger->writeToLogMap(map, *sr.lppath);
-    } else
+    } else {
         logger->writeToLogNotFound();
+    }
     logger->saveLog();
 }
 

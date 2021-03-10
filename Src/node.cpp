@@ -42,8 +42,7 @@ bool Node::operator<(const Node& other) const {
     if (F < other.F) {
         return true;
     } else if (F == other.F) {
-        if ((breakingties && (g > other.g)) ||
-            (!breakingties && (g < other.g))) {
+        if ((breakingties && (g > other.g)) || (!breakingties && (g < other.g))) {
             return true;
         } else if (g == other.g) {
             if (i < other.i) {

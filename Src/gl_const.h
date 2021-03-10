@@ -4,7 +4,7 @@
 #define CN_PI_CONSTANT 3.14159265359
 #define CN_SQRT_TWO 1.41421356237
 
-//XML tags
+// XML tags
 #define CNS_TAG_ROOT "root"
 
 #define CNS_TAG_MAP "map"
@@ -45,7 +45,7 @@
 #define CNS_TAG_POINT "node"
 #define CNS_TAG_CLOSE "close"
 
-//XML tags' attributes
+// XML tags' attributes
 #define CNS_TAG_ATTR_NUMOFSTEPS "numberofsteps"
 #define CNS_TAG_ATTR_NODESCREATED "nodescreated"
 #define CNS_TAG_ATTR_LENGTH "length"
@@ -63,7 +63,7 @@
 #define CNS_TAG_ATTR_FINX "finish.x"
 #define CNS_TAG_ATTR_FINY "finish.y"
 
-//Search Parameters
+// Search Parameters
 #define CN_SP_ST 0
 
 #define CNS_SP_ST_BFS "bfs"
@@ -78,13 +78,13 @@
 #define CN_SP_ST_JP_SEARCH 3
 #define CN_SP_ST_TH 4
 
-#define CN_SP_AD 1  //AllowDiagonal
+#define CN_SP_AD 1   // AllowDiagonal
 
-#define CN_SP_CC 2  //CutCorners
+#define CN_SP_CC 2   // CutCorners
 
-#define CN_SP_AS 3  //AllowSqueeze
+#define CN_SP_AS 3   // AllowSqueeze
 
-#define CN_SP_MT 4  //MetricType
+#define CN_SP_MT 4   // MetricType
 
 #define CNS_SP_MT_DIAG "diagonal"
 #define CNS_SP_MT_MANH "manhattan"
@@ -96,9 +96,9 @@
 #define CN_SP_MT_EUCL 2
 #define CN_SP_MT_CHEB 3
 
-#define CN_SP_HW 5  //HeuristicWeight
+#define CN_SP_HW 5   // HeuristicWeight
 
-#define CN_SP_BT 6  //BreakingTies
+#define CN_SP_BT 6   // BreakingTies
 
 #define CNS_SP_BT_GMIN "g-min"
 #define CNS_SP_BT_GMAX "g-max"
@@ -106,7 +106,7 @@
 #define CN_SP_BT_GMIN 0
 #define CN_SP_BT_GMAX 1
 
-//Log Configuration
+// Log Configuration
 #define CN_LP_LEVEL 0
 
 #define CN_LP_LEVEL_NOPE_VALUE "0"
@@ -123,11 +123,11 @@
 #define CN_LP_PATH 1
 #define CN_LP_NAME 2
 
-//Grid Cell
+// Grid Cell
 #define CN_GC_NOOBS 0
 #define CN_GC_OBS 1
 
-//Other
+// Other
 #define CNS_OTHER_PATHSELECTION "*"
 #define CNS_OTHER_MATRIXSEPARATOR ' '
 

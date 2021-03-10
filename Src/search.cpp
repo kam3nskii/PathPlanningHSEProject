@@ -5,18 +5,24 @@
 #include <cmath>
 
 Search::Search() {
-    //set defaults here
+    // set defaults here
 }
 
-Search::~Search() {}
+Search::~Search() {
+}
 
-SearchResult Search::startSearch(ILogger* Logger, const Map& map, const EnvironmentOptions& options) {
+SearchResult Search::startSearch(ILogger* Logger, const Map& map,
+                                 const EnvironmentOptions& options) {
     auto startTime = std::chrono::high_resolution_clock::now();
     Node::breakingties = options.breakingties;
-    auto iterator = Open.emplace(map.getStart_i(), map.getStart_j(),
+    auto iterator = Open.emplace(map.getStart_i(),
+                                 map.getStart_j(),
                                  0,
-                                 heuristic(options, map.getStart_i(), map.getStart_j(),
-                                           map.getGoal_i(), map.getGoal_j()),
+                                 heuristic(options,
+                                           map.getStart_i(),
+                                           map.getStart_j(),
+                                           map.getGoal_i(),
+                                           map.getGoal_j()),
                                  options.hweight,
                                  nullptr)
                         .first;
@@ -50,22 +56,33 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map, const Environm
             }
             auto it = OpenIterators.find(getNodeInd(next, map));
             if (it == OpenIterators.end()) {
-                auto iterator = Open.emplace(next.i, next.j,
-                                             curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
-                                             heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j()),
-                                             options.hweight,
-                                             curr)
-                                    .first;
+                auto iterator =
+                    Open.emplace(
+                            next.i,
+                            next.j,
+                            curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
+                            heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j()),
+                            options.hweight,
+                            curr)
+                        .first;
                 OpenIterators.emplace(getNodeInd(next, map), iterator);
                 ++sresult.nodescreated;
             } else {
-                if (it->second->g > curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j)) {
-                    auto iterator = Open.emplace(next.i, next.j,
-                                                 curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
-                                                 heuristic(options, next.i, next.j, map.getGoal_i(), map.getGoal_j()),
-                                                 options.hweight,
-                                                 curr)
-                                        .first;
+                if (it->second->g >
+                    curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j)) {
+                    auto iterator =
+                        Open.emplace(
+                                next.i,
+                                next.j,
+                                curr->g + map.getTransitionCost(curr->i, curr->j, next.i, next.j),
+                                heuristic(options,
+                                          next.i,
+                                          next.j,
+                                          map.getGoal_i(),
+                                          map.getGoal_j()),
+                                options.hweight,
+                                curr)
+                            .first;
                     auto tmp = it->second;
                     OpenIterators.at(getNodeInd(*tmp, map)) = iterator;
                     Open.erase(tmp);
@@ -116,16 +133,16 @@ double Search::heuristic(const EnvironmentOptions& options, int i1, int j1, int 
     int dy = std::abs(j2 - j1);
     double ans;
     switch (options.metrictype) {
-        case 0:  // "diagonal"
+        case 0:   // "diagonal"
             ans = std::abs(dx - dy) + std::sqrt(2) * std::min(dx, dy);
             break;
-        case 1:  // "manhattan" only when diagonal moves are allowed
+        case 1:   // "manhattan" only when diagonal moves are allowed
             ans = dx + dy;
             break;
-        case 2:  // "euclidean"
+        case 2:   // "euclidean"
             ans = std::sqrt(dx * dx + dy * dy);
             break;
-        case 3:  // "chebyshev"
+        case 3:   // "chebyshev"
             ans = std::max(dx, dy);
             break;
         default:
