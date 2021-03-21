@@ -1,5 +1,5 @@
-#ifndef SEARCH_H
-#define SEARCH_H
+#ifndef ASTAR_H
+#define ASTAR_H
 
 #include <chrono>
 #include <cmath>
@@ -15,10 +15,10 @@
 #include "node.h"
 #include "searchresult.h"
 
-class Search {
+class Astar {
    public:
-    Search();
-    ~Search(void);
+    Astar();
+    ~Astar(void);
     SearchResult startSearch(ILogger* Logger, const Map& Map, const EnvironmentOptions& options);
 
    protected:

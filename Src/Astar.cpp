@@ -1,17 +1,18 @@
-#include "search.h"
+#include "Astar.h"
 
 #include <algorithm>
 #include <chrono>
 #include <cmath>
 
-Search::Search() {
+Astar::Astar() {
     // set defaults here
 }
 
-Search::~Search() {
+Astar::~Astar() {
+    
 }
 
-SearchResult Search::startSearch(ILogger* Logger, const Map& map,
+SearchResult Astar::startSearch(ILogger* Logger, const Map& map,
                                  const EnvironmentOptions& options) {
     auto startTime = std::chrono::high_resolution_clock::now();
     Node::breakingties = options.breakingties;
@@ -98,7 +99,7 @@ SearchResult Search::startSearch(ILogger* Logger, const Map& map,
     return sresult;
 }
 
-void Search::makePrimaryPath(Node* currNode) {
+void Astar::makePrimaryPath(Node* currNode) {
     while (currNode->parent) {
         lppath.push_front(*currNode);
         currNode = currNode->parent;
@@ -106,7 +107,7 @@ void Search::makePrimaryPath(Node* currNode) {
     lppath.push_front(*currNode);
 }
 
-void Search::makeSecondaryPath() {
+void Astar::makeSecondaryPath() {
     int iPrev, jPrev;
     int iDiff = 0, jDiff = 0;
     Node* prevNode = &lppath.front();
@@ -125,7 +126,7 @@ void Search::makeSecondaryPath() {
     hppath.push_back(lppath.back());
 }
 
-double Search::heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2) {
+double Astar::heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2) {
     if (options.searchtype == CN_SP_ST_DIJK) {
         return 0;
     }
@@ -152,10 +153,10 @@ double Search::heuristic(const EnvironmentOptions& options, int i1, int j1, int 
     return ans;
 }
 
-int Search::getNodeInd(const Node& node, const Map& map) {
+int Astar::getNodeInd(const Node& node, const Map& map) {
     return node.i * map.getMapWidth() + node.j;
 }
 
-int Search::getNodeInd(const Cell& cell, const Map& map) {
+int Astar::getNodeInd(const Cell& cell, const Map& map) {
     return cell.i * map.getMapWidth() + cell.j;
 }

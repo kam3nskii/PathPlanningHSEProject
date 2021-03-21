@@ -5,7 +5,7 @@
 #include "environmentoptions.h"
 #include "ilogger.h"
 #include "map.h"
-#include "search.h"
+#include "Astar.h"
 #include "searchresult.h"
 #include "xmllogger.h"
 
@@ -29,10 +29,10 @@ class Mission {
     Map map;
     Config config;
     EnvironmentOptions options;
-    Search search;
+    Astar search_Astar;
     ILogger* logger;
     const char* fileName;
-    SearchResult sr;
+    SearchResult sr_Astar;
 };
 
 #endif

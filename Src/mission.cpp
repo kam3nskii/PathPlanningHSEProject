@@ -49,37 +49,37 @@ void Mission::createSearch() {
 }
 
 void Mission::startSearch() {
-    sr = search.startSearch(logger, map, options);
+    sr_Astar = search_Astar.startSearch(logger, map, options);
 }
 
 void Mission::printSearchResultsToConsole() {
     std::cout << "Path ";
-    if (!sr.pathfound) {
+    if (!sr_Astar.pathfound) {
         std::cout << "NOT ";
     }
     std::cout << "found!" << std::endl;
-    std::cout << "numberofsteps=" << sr.numberofsteps << std::endl;
-    std::cout << "nodescreated=" << sr.nodescreated << std::endl;
-    if (sr.pathfound) {
+    std::cout << "numberofsteps=" << sr_Astar.numberofsteps << std::endl;
+    std::cout << "nodescreated=" << sr_Astar.nodescreated << std::endl;
+    if (sr_Astar.pathfound) {
         std::cout.setf(std::ios::fixed);
         std::cout.precision(5);
-        std::cout << "pathlength=" << sr.pathlength << std::endl;
-        std::cout << "pathlength_scaled=" << sr.pathlength * map.getCellSize() << std::endl;
+        std::cout << "pathlength=" << sr_Astar.pathlength << std::endl;
+        std::cout << "pathlength_scaled=" << sr_Astar.pathlength * map.getCellSize() << std::endl;
     }
     std::cout.precision(7);
-    std::cout << "time=" << sr.time << std::endl;
+    std::cout << "time=" << sr_Astar.time << std::endl;
 }
 
 void Mission::saveSearchResultsToLog() {
-    logger->writeToLogSummary(sr.numberofsteps,
-                              sr.nodescreated,
-                              sr.pathlength,
-                              sr.time,
+    logger->writeToLogSummary(sr_Astar.numberofsteps,
+                              sr_Astar.nodescreated,
+                              sr_Astar.pathlength,
+                              sr_Astar.time,
                               map.getCellSize());
-    if (sr.pathfound) {
-        logger->writeToLogPath(*sr.lppath);
-        logger->writeToLogHPpath(*sr.hppath);
-        logger->writeToLogMap(map, *sr.lppath);
+    if (sr_Astar.pathfound) {
+        logger->writeToLogPath(*sr_Astar.lppath);
+        logger->writeToLogHPpath(*sr_Astar.hppath);
+        logger->writeToLogMap(map, *sr_Astar.lppath);
     } else {
         logger->writeToLogNotFound();
     }
@@ -87,5 +87,5 @@ void Mission::saveSearchResultsToLog() {
 }
 
 SearchResult Mission::getSearchResult() {
-    return sr;
+    return sr_Astar;
 }

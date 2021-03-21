@@ -15,7 +15,7 @@ SOURCES += \
     map.cpp \
     mission.cpp \
     node.cpp \
-    search.cpp \
+    Astar.cpp \
     tinyxml2.cpp \
     xmllogger.cpp
      
@@ -28,7 +28,7 @@ HEADERS += \
     map.h \
     mission.h \
     node.h \
-    search.h \
+    Astar.h \
     searchresult.h \
     tinyxml2.h \
     xmllogger.h

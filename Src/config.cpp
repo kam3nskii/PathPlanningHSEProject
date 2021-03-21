@@ -64,7 +64,8 @@ bool Config::getConfig(const char* FileName) {
         N = 4;
         SearchParams = new double[N];
         SearchParams[CN_SP_ST] = CN_SP_ST_DIJK;
-    } else if (value == CNS_SP_ST_ASTAR || value == CNS_SP_ST_JP_SEARCH || value == CNS_SP_ST_TH) {
+    } else if (value == CNS_SP_ST_ASTAR || value == CNS_SP_ST_JP_SEARCH || value == CNS_SP_ST_TH ||
+               value == CNS_SP_ST_LPASTAR) {
         N = 7;
         SearchParams = new double[N];
         SearchParams[CN_SP_ST] = CN_SP_ST_ASTAR;
@@ -148,7 +149,7 @@ bool Config::getConfig(const char* FileName) {
                   << "' tag (algorithm name) is not correctly specified." << std::endl;
         std::cout << "Supported algorithm's names are: '" << CNS_SP_ST_BFS << "', '"
                   << CNS_SP_ST_DIJK << "', '" << CNS_SP_ST_ASTAR << "', '" << CNS_SP_ST_TH << "', '"
-                  << CNS_SP_ST_JP_SEARCH << "'." << std::endl;
+                  << CNS_SP_ST_JP_SEARCH << "', '" << CNS_SP_ST_LPASTAR << "'." << std::endl;
         return false;
     }
 
