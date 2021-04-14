@@ -3,13 +3,14 @@ set(HEADERS     cell.h
                 config.h
                 environmentoptions.h
                 gl_const.h
-                ilogger.h
                 map.h
                 mission.h
                 node.h
                 Astar.h
+                ilogger.h
                 searchresult.h
                 tinyxml2.h
+                LPAstar.h
                 xmllogger.h)
 
 set(SOURCES     cell.cpp
@@ -19,6 +20,7 @@ set(SOURCES     cell.cpp
                 node.cpp
                 Astar.cpp
                 tinyxml2.cpp
+                LPAstar.cpp
                 xmllogger.cpp)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)

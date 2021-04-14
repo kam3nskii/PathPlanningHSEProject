@@ -29,13 +29,19 @@ int main(int argc, char* argv[]) {
                 mission.createEnvironmentOptions();
                 mission.createSearch();
                 mission.startSearch();
-
                 std::cout << "Search is finished!" << std::endl;
-
-                mission.printSearchResultsToConsole();
-                mission.saveSearchResultsToLog();
+                mission.saveSearchResultsToLogLPAStar();
+                mission.startSecondSearch();
+                mission.saveSearchResultsToLogLPAStarSecond();
+                mission.saveSearchResultsToLogSecondAstarSecond();
 
                 std::cout << "Results are saved (if chosen) via created log channel." << std::endl;
+                // //
+                // if (!mission.testLogCreate()) {
+                //     std::cout << "TEST Log chanel has not been created! Program halted!" << std::endl;
+                // }
+                // mission.testLogSave();
+                // //
             }
         }
     }

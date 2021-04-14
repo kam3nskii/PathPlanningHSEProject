@@ -17,7 +17,8 @@ SOURCES += \
     node.cpp \
     Astar.cpp \
     tinyxml2.cpp \
-    xmllogger.cpp
+    xmllogger.cpp \
+    LPAstar.cpp
      
 HEADERS += \
     cell.h \
@@ -31,4 +32,5 @@ HEADERS += \
     Astar.h \
     searchresult.h \
     tinyxml2.h \
-    xmllogger.h
+    xmllogger.h \
+    LPAstar.h

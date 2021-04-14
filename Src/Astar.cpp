@@ -12,7 +12,7 @@ Astar::~Astar() {
     
 }
 
-SearchResult Astar::startSearch(ILogger* Logger, const Map& map,
+SearchResult Astar::startSearch(const Map& map,
                                  const EnvironmentOptions& options) {
     auto startTime = std::chrono::high_resolution_clock::now();
     Node::breakingties = options.breakingties;
@@ -135,7 +135,7 @@ double Astar::heuristic(const EnvironmentOptions& options, int i1, int j1, int i
     double ans;
     switch (options.metrictype) {
         case 0:   // "diagonal"
-            ans = std::abs(dx - dy) + std::sqrt(2) * std::min(dx, dy);
+            ans = std::abs(dx - dy) + CN_SQRT_TWO * std::min(dx, dy);
             break;
         case 1:   // "manhattan" only when diagonal moves are allowed
             ans = dx + dy;
@@ -157,6 +157,6 @@ int Astar::getNodeInd(const Node& node, const Map& map) {
     return node.i * map.getMapWidth() + node.j;
 }
 
-int Astar::getNodeInd(const Cell& cell, const Map& map) {
+int Astar::getNodeInd(const Cell& cell, const Map& map) const {
     return cell.i * map.getMapWidth() + cell.j;
 }

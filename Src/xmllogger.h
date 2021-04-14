@@ -12,8 +12,14 @@ class XmlLogger : public ILogger {
     bool getLog(const char* FileName, const std::string* LogParams);
 
     void saveLog();
+    void saveLog(std::string logName);
 
-    void writeToLogMap(const Map& Map, const std::list<Node>& path);
+    std::string getLogFilename();
+
+    void writeToLogMap(const Map& map, const std::list<Node>& path);
+
+    void writeToLogOpen(const Map& map, const Astar& search);
+    void writeToLogOpen(const Map& map, const LPAstar& search);
 
     // void writeToLogOpenClose(const typename &open, const typename &close);
 
@@ -26,7 +32,7 @@ class XmlLogger : public ILogger {
     void writeToLogSummary(unsigned int numberofsteps, unsigned int nodescreated, float length,
                            double time, double cellSize);
 
-   private:
+//    private:
     std::string LogFileName;
     tinyxml2::XMLDocument doc;
 };

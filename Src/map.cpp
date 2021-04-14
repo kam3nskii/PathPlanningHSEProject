@@ -358,7 +358,7 @@ int Map::getGoal_j() const {
 
 double Map::getTransitionCost(int i1, int j1, int i2, int j2) const {
     if (std::abs(i2 - i1) + std::abs(j2 - j1) == 2) {
-        return std::sqrt(2);
+        return CN_SQRT_TWO;
     }
     return 1;
 }
@@ -390,6 +390,18 @@ std::vector<Cell> Map::getNeighbors(const Node& node, const EnvironmentOptions& 
                     }
                 }
             }
+        }
+    }
+    return neighbors;
+}
+
+std::vector<Cell> Map::getALLNeighbors(const Node& node, const EnvironmentOptions& options) const {
+    std::vector<Cell> neighbors;
+    neighbors.reserve(8);
+    for (auto [i, j] : {Cell(0, -1), Cell(-1, 0), Cell(0, 1), Cell(1, 0), 
+                        Cell(-1, -1), Cell(-1, 1), Cell(1, 1), Cell(1, -1)}) {
+        if (getValue(node.i + i, node.j + j) != -1) {
+            neighbors.emplace_back(node.i + i, node.j + j);
         }
     }
     return neighbors;

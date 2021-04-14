@@ -11,22 +11,24 @@
 
 #include "cell.h"
 #include "environmentoptions.h"
-#include "ilogger.h"
+#include "gl_const.h"
+#include "map.h"
 #include "node.h"
 #include "searchresult.h"
+#include "tinyxml2.h"
 
 class Astar {
    public:
     Astar();
     ~Astar(void);
-    SearchResult startSearch(ILogger* Logger, const Map& Map, const EnvironmentOptions& options);
+    SearchResult startSearch(const Map& Map, const EnvironmentOptions& options);
 
-   protected:
+    //    protected:
     void makePrimaryPath(Node* curNode);
     void makeSecondaryPath();
     double heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2);
     int getNodeInd(const Node& node, const Map& map);
-    int getNodeInd(const Cell& cell, const Map& map);
+    int getNodeInd(const Cell& cell, const Map& map) const;
 
     std::set<Node> Open;
     std::unordered_map<int, std::set<Node>::iterator> OpenIterators;

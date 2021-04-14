@@ -98,6 +98,17 @@ void XmlLogger::saveLog() {
     doc.SaveFile(LogFileName.c_str());
 }
 
+std::string XmlLogger::getLogFilename() {
+    return LogFileName;
+}
+
+void XmlLogger::saveLog(std::string logName) {
+    if (loglevel == CN_LP_LEVEL_NOPE_WORD) {
+        return;
+    }
+    doc.SaveFile(logName.c_str());
+}
+
 void XmlLogger::writeToLogMap(const Map& map, const std::list<Node>& path) {
     if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD) {
         return;
@@ -123,6 +134,102 @@ void XmlLogger::writeToLogMap(const Map& map, const std::list<Node>& path) {
             }
             if (!inPath) {
                 str += std::to_string(map.getValue(i, j));
+            } else {
+                str += CNS_OTHER_PATHSELECTION;
+            }
+            str += CNS_OTHER_MATRIXSEPARATOR;
+        }
+
+        element->InsertEndChild(doc.NewText(str.c_str()));
+        mapTag->InsertEndChild(element);
+        str.clear();
+        iterate++;
+    }
+}
+
+void XmlLogger::writeToLogOpen(const Map& map, const LPAstar& search) {
+    if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD) {
+        return;
+    }
+
+    XMLElement* mapTag = doc.FirstChildElement(CNS_TAG_ROOT);
+    mapTag = mapTag->FirstChildElement(CNS_TAG_LOG)->FirstChildElement(CNS_TAG_PATH);
+
+    int iterate = 0;
+    bool inPath;
+    std::string str;
+    for (int i = 0; i < map.getMapHeight(); ++i) {
+        XMLElement* element = doc.NewElement(CNS_TAG_ROW);
+        element->SetAttribute(CNS_TAG_ATTR_NUM, iterate);
+
+        for (int j = 0; j < map.getMapWidth(); ++j) {
+            inPath = false;
+            for (std::list<Node>::const_iterator it = search.lppathSecond.begin();
+                 it != search.lppathSecond.end();
+                 it++) {
+                if (it->i == i && it->j == j) {
+                    inPath = true;
+                    break;
+                }
+            }
+            if (!inPath) {
+                if (map.getValue(i, j) == 1) {
+                    str += std::to_string(map.getValue(i, j));
+                } 
+                else if (search.nodesMap[i][j].debug) {
+                    str += std::to_string(search.nodesMap[i][j].debug);
+                } 
+                // else if (search.nodesMap[i][j].g != std::numeric_limits<double>::infinity()) {
+                //     str += std::to_string(2);
+                // } 
+                else {
+                    str += std::to_string(map.getValue(i, j));
+                }
+            } else {
+                str += CNS_OTHER_PATHSELECTION;
+            }
+            str += CNS_OTHER_MATRIXSEPARATOR;
+        }
+
+        element->InsertEndChild(doc.NewText(str.c_str()));
+        mapTag->InsertEndChild(element);
+        str.clear();
+        iterate++;
+    }
+}
+
+void XmlLogger::writeToLogOpen(const Map& map, const Astar& search) {
+    if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD) {
+        return;
+    }
+
+    XMLElement* mapTag = doc.FirstChildElement(CNS_TAG_ROOT);
+    mapTag = mapTag->FirstChildElement(CNS_TAG_LOG)->FirstChildElement(CNS_TAG_PATH);
+
+    int iterate = 0;
+    bool inPath;
+    std::string str;
+    for (int i = 0; i < map.getMapHeight(); ++i) {
+        XMLElement* element = doc.NewElement(CNS_TAG_ROW);
+        element->SetAttribute(CNS_TAG_ATTR_NUM, iterate);
+
+        for (int j = 0; j < map.getMapWidth(); ++j) {
+            inPath = false;
+            for (std::list<Node>::const_iterator it = search.lppath.begin();
+                 it != search.lppath.end();
+                 it++) {
+                if (it->i == i && it->j == j) {
+                    inPath = true;
+                    break;
+                }
+            }
+            if (!inPath) {
+                auto it = search.Close.find(search.getNodeInd(Cell(i, j), map));
+                if (it != search.Close.end()) {
+                    str += std::to_string(2);
+                } else {
+                    str += std::to_string(map.getValue(i, j));
+                }
             } else {
                 str += CNS_OTHER_PATHSELECTION;
             }
