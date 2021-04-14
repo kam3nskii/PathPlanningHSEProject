@@ -8,10 +8,6 @@ init:
 - git config --global core.longpaths true
 - git config --global core.autocrlf input
 
-branches:
-  only:
-     - master
-     
 install:
 - cmd: SET PATH=C:\mingw-w64\x86_64-7.2.0-posix-seh-rt_v5-rev1\mingw64\bin\;%PATH%
 - rename "C:\Program Files\Git\usr\bin\sh.exe" "sh-ignored.exe"
