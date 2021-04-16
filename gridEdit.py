@@ -50,15 +50,10 @@ def btn1(event):
     print(y, x)
 
 
-def btn3(event):
-    #c.itemconfig(CURRENT, fill='#58F')
-    exit()
-
 root = Tk()
 root.title("Grid")
 c = Canvas(root, width = width * cell_size, height = height * cell_size)
 c.bind("<Button-1>", btn1)
-c.bind("<Button-3>", btn3)
 c.pack()
 for i in range(height):
     for j in range(width):

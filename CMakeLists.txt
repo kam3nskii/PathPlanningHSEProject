@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2)
-set(PROJECT_NAME "Denis_Kamenskii_ASearch")
+set(PROJECT_NAME "LPASearch")
 project(${PROJECT_NAME})
 
 
