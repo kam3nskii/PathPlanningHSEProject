@@ -41,9 +41,9 @@
         <metrictype>diagonal</metrictype>
         <breakingties>g-max</breakingties>
         <hweight>1</hweight>
-        <allowdiagonal>true</allowdiagonal>
-        <cutcorners>true</cutcorners>
-        <allowsqueeze>true</allowsqueeze>
+        <allowdiagonal>0</allowdiagonal>
+        <cutcorners>0</cutcorners>
+        <allowsqueeze>0</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>

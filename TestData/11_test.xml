@@ -530,8 +530,8 @@
         <hweight>1</hweight>
         <breakingties>g-min</breakingties>
         <allowdiagonal>0</allowdiagonal>
-        <allowsqueeze>0</allowsqueeze>
         <cutcorners>0</cutcorners>
+        <allowsqueeze>0</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>

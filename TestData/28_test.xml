@@ -529,9 +529,9 @@
         <searchtype>astar</searchtype>
         <hweight>1</hweight>
         <breakingties>g-max</breakingties>
-        <cutcorners>false</cutcorners>
-        <allowdiagonal>true</allowdiagonal>
-        <allowsqueeze>true</allowsqueeze>
+        <allowdiagonal>0</allowdiagonal>
+        <cutcorners>0</cutcorners>
+        <allowsqueeze>0</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>

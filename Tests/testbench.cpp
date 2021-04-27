@@ -38,15 +38,19 @@ int main(int argc, char* argv[]) {
     SearchResult resultLPA = mission.getLPAstarSearchResult();
     SearchResult resultA = mission.getAstarSearchResult();
 
-    if (mission.checkResult(resultLPA, len) == -1) {
-        return 1;
-    }
-    if (mission.checkResult(resultA, len) == -1) {
+    // if (mission.checkResult(resultLPA, len) == -1) {
+    //     return 1;
+    // }
+    // if (mission.checkResult(resultA, len) == -1) {
+    //     return 1;
+    // }
+
+    if (mission.checkResult(resultLPA, resultA.pathlength) == -1) {
         return 1;
     }
 
-    return 0;
-    // return mission.test(1);
+    // return 0;
+    return mission.test(20);
 }
 
 bool getRealResults(const char* fileName, float* realLen) {
