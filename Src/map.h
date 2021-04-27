@@ -14,12 +14,6 @@
 #include "tinyxml2.h"
 
 class Map {
-   private:
-    int height, width;
-    int start_i, start_j;
-    int goal_i, goal_j;
-    double cellSize;
-
    public:
     int** Grid;
     std::vector<std::vector<int>> prevGrid;
@@ -42,6 +36,12 @@ class Map {
     double getCellSize() const;
     double getTransitionCost(int i1, int j1, int i2, int j2) const;
     std::vector<Cell> getNeighbors(const Node& node, const EnvironmentOptions& options) const;
+
+   private:
+    int height, width;
+    int start_i, start_j;
+    int goal_i, goal_j;
+    double cellSize;
 };
 
 #endif

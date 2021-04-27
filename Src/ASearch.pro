@@ -9,28 +9,28 @@ QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
 }
 
 SOURCES += \
+    Astar.cpp \
     cell.cpp \
     config.cpp \
+    LPAstar.cpp \
     main.cpp \
     map.cpp \
     mission.cpp \
     node.cpp \
-    Astar.cpp \
     tinyxml2.cpp \
-    xmllogger.cpp \
-    LPAstar.cpp
-     
+    xmllogger.cpp
+
 HEADERS += \
+    Astar.h \
     cell.h \
     config.h \
     environmentoptions.h \
     gl_const.h \
     ilogger.h \
+    LPAstar.h \
     map.h \
     mission.h \
     node.h \
-    Astar.h \
     searchresult.h \
     tinyxml2.h \
-    xmllogger.h \
-    LPAstar.h
+    xmllogger.h

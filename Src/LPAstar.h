@@ -27,8 +27,6 @@ class LPAstar {
     void computePath(const Map& map, const EnvironmentOptions& options, int debug);
     SearchResult startSearch(const Map& Map, const EnvironmentOptions& options);
     SearchResult repeat(const Map& map, const EnvironmentOptions& options, const Cell& changed);
-
-    //    protected:
     void makePrimaryPath(Node* curNode);
     void makeSecondaryPath();
     double heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2);
@@ -37,8 +35,6 @@ class LPAstar {
     void updateVertex(const Map& map, Node* node, const EnvironmentOptions& options);
 
     class queue_cmp {
-        bool reverse;
-
        public:
         bool operator()(Node* const lft, Node* const rht) const {
             auto [lftK1, lftK2] = lft->calcKey();
@@ -53,8 +49,6 @@ class LPAstar {
             } else {
                 return lftK1 < rhtK1;
             }
-
-            // return std::tie(lftK1, lftK2) < std::tie(rhtK1, rhtK2);
         }
     };
 
@@ -63,7 +57,6 @@ class LPAstar {
     std::vector<std::vector<Node>> nodesMap;
     Node* start;
     Node* goal;
-
     SearchResult sresult;
     std::list<Node> lppath, hppath;
     int nodesCntInPath;

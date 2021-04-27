@@ -1,10 +1,9 @@
 #include "node.h"
 
-unsigned int Node::nodesCreated = 0;
 int Node::breakingties = 0;
+unsigned int Node::nodesCreated = 0;
 
-Node::Node() {
-}
+Node::Node() {}
 
 Node::Node(int i_, int j_, double g_) {
     i = i_;

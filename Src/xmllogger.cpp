@@ -9,7 +9,6 @@ bool XmlLogger::getLog(const char* FileName, const std::string* LogParams) {
     if (loglevel == CN_LP_LEVEL_NOPE_WORD) {
         return true;
     }
-
     if (doc.LoadFile(FileName) != tinyxml2::XMLError::XML_SUCCESS) {
         std::cout << "Error opening input XML file" << std::endl;
         return false;
@@ -175,13 +174,9 @@ void XmlLogger::writeToLogOpen(const Map& map, const LPAstar& search) {
             if (!inPath) {
                 if (map.getValue(i, j) == 1) {
                     str += std::to_string(map.getValue(i, j));
-                } 
-                else if (search.nodesMap[i][j].debug) {
+                } else if (search.nodesMap[i][j].debug) {
                     str += std::to_string(search.nodesMap[i][j].debug);
-                } 
-                // else if (search.nodesMap[i][j].g != std::numeric_limits<double>::infinity()) {
-                //     str += std::to_string(2);
-                // } 
+                }
                 else {
                     str += std::to_string(map.getValue(i, j));
                 }
@@ -242,15 +237,6 @@ void XmlLogger::writeToLogOpen(const Map& map, const Astar& search) {
         iterate++;
     }
 }
-
-/*void XmlLogger::writeToLogOpenClose(const typename &open, const typename &close)
-{
-    //need to implement
-    if (loglevel != CN_LP_LEVEL_FULL_WORD  && !(loglevel == CN_LP_LEVEL_MEDIUM_WORD && last))
-        return;
-
-
-}*/
 
 void XmlLogger::writeToLogPath(const std::list<Node>& path) {
     if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD || path.empty()) {

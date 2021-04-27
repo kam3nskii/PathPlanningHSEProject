@@ -22,19 +22,16 @@ class Astar {
     Astar();
     ~Astar(void);
     void cleanup();
-    SearchResult startSearch(const Map& Map, const EnvironmentOptions& options);
-
-    //    protected:
     void makePrimaryPath(Node* curNode);
     void makeSecondaryPath();
     double heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2);
     int getNodeInd(const Node& node, const Map& map);
     int getNodeInd(const Cell& cell, const Map& map) const;
+    SearchResult startSearch(const Map& Map, const EnvironmentOptions& options);
 
     std::set<Node> Open;
     std::unordered_map<int, std::set<Node>::iterator> OpenIterators;
     std::unordered_map<int, Node> Close;
-
     SearchResult sresult;
     std::list<Node> lppath, hppath;
 };

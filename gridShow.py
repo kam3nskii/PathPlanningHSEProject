@@ -14,8 +14,6 @@ finishx = int(XMLroot.find("map").find("finishx").text)
 finishy = int(XMLroot.find("map").find("finishy").text)
 
 grid = []
-
-
 for i in range(height):
     grid.append(XMLroot.find("log").find("path")[i].text.split())
 

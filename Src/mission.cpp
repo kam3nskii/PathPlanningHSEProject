@@ -6,8 +6,8 @@
 #include "cell.h"
 
 Mission::Mission() {
-    logger = nullptr;
     fileName = nullptr;
+    logger = nullptr;
     firstsearch = true;
 }
 
@@ -18,8 +18,9 @@ Mission::Mission(const char* FileName) {
 }
 
 Mission::~Mission() {
-    if (logger)
+    if (logger) {
         delete logger;
+    }
 }
 
 bool Mission::getMap() {
@@ -49,7 +50,6 @@ void Mission::createEnvironmentOptions() {
 }
 
 void Mission::createSearch() {
-    // might be helpful in case numerous algorithms are added
 }
 
 void Mission::printSearchResult(const SearchResult& sr) {
@@ -86,27 +86,21 @@ void Mission::startSearch() {
 }
 
 void Mission::run(int cnt) {
-    startSearch();
-    saveLog(sr_LPAstar, "_LPAStarTMP", 0);
-    saveLog(sr_LPAstar, "_LPAStar", 1);
-    saveLog(sr_Astar, "_AStar", 2);
-    std::cout << "Results are saved via created log channel." << std::endl;
-    if (!sr_Astar.pathfound) {
-        return;
-    }
-    for (int i = 0; i < cnt; ++i) {
-        changeMap();
-        if (changed.i == -1) {
-            std::cout << "No changes found!" << std::endl;
-            continue;
-        }
+    int i = 0;
+    while (true) {
         startSearch();
         saveLog(sr_LPAstar, "_LPAStarTMP", 0);
         saveLog(sr_LPAstar, "_LPAStar", 1);
         saveLog(sr_Astar, "_AStar", 2);
         std::cout << "Results are saved via created log channel." << std::endl;
-        if (!sr_Astar.pathfound) {
+        waitingForChanges:
+        if (i++ == cnt || !sr_Astar.pathfound) {
             return;
+        }
+        changeMap();
+        if (changed.i == -1) {
+            std::cout << "No changes found!" << std::endl;
+            goto waitingForChanges;
         }
     }
 }
@@ -127,29 +121,11 @@ int Mission::checkResult(const SearchResult& sr, float realLen) {
     return -1;
 }
 
-// void Mission::changeMapAutomatically() {
-//     std::random_device rd;
-//     std::mt19937 g(rd());
-//     std::uniform_int_distribution<> tmp(2, search_LPAstar.nodesCntInPath - 1);
-//     int target = tmp(g), cnt = 1;
-//     // int target = 6, cnt = 1;
-//     for (const Node& node : *sr_LPAstar.lppath) {
-//         if (target == cnt) {
-//             changed.i = node.i;
-//             changed.j = node.j;
-//             break;
-//         }
-//         ++cnt;
-//     }
-//     std::cout << target << " " << changed.i << " " << changed.j << "<----\n";
-//     map.Grid[changed.i][changed.j] = 1;
-// }
 void Mission::changeMapAutomatically() {
     std::random_device rd;
     std::mt19937 g(rd());
     std::uniform_int_distribution<> tmp(2, search_LPAstar.nodesCntInPath - 1);
     int target = tmp(g), cnt = 1;
-    // int target = debugarr[debugcnt++], cnt = 1;
     for (const Node& node : *sr_LPAstar.lppath) {
         if (target == cnt) {
             changed.i = node.i;
@@ -158,19 +134,17 @@ void Mission::changeMapAutomatically() {
         }
         ++cnt;
     }
-    // std::cout << target << " " << changed.i << " " << changed.j << "<----\n";
     map.Grid[changed.i][changed.j] = 1;
 }
 
 bool Mission::test(int cnt) {
     for (int i = 0; i < cnt; ++i) {
         // getchar();
-
         changeMapAutomatically();
         startSearch();
-        // saveLog(sr_LPAstar, "_LPAStarTMP", 0); //
-        // saveLog(sr_LPAstar, "_LPAStar", 1); //
-        // saveLog(sr_Astar, "_AStar", 2); //
+        // saveLog(sr_LPAstar, "_LPAStarTMP", 0);
+        // saveLog(sr_LPAstar, "_LPAStar", 1);
+        // saveLog(sr_Astar, "_AStar", 2);
         if (sr_LPAstar.pathfound != sr_Astar.pathfound) {
             return 1;
         }
@@ -193,7 +167,7 @@ void Mission::changeMap() {
         exit(1);
     }
     time_t lastModTime = result.st_mtime;
-    while (1) {
+    while (true) {
 #ifndef WIN32
         sleep(1);
 #endif

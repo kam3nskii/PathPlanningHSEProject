@@ -14,9 +14,9 @@ struct SearchResult {
     double time;
     SearchResult() {
         pathfound = false;
-        pathlength = 0;
         lppath = nullptr;
         hppath = nullptr;
+        pathlength = 0;
         nodescreated = 0;
         numberofsteps = 0;
         time = 0;

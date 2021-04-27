@@ -49,8 +49,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // return 0;
-    return mission.test(20);
+    return mission.test(15);
 }
 
 bool getRealResults(const char* fileName, float* realLen) {

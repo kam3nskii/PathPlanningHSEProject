@@ -27,12 +27,12 @@ int main(int argc, char* argv[]) {
                 std::cout << "Log chanel has been created!\n" << std::endl;
                 mission.createEnvironmentOptions();
 
-                mission.run(10);
-                //mission.startSearch();
-                // mission.saveLog(mission.sr_LPAstar, "_LPAStarTMP", 0); //
-                // mission.saveLog(mission.sr_LPAstar, "_LPAStar", 1); //
-                // mission.saveLog(mission.sr_Astar, "_AStar", 2); //
-                //return mission.test(1); // 3
+                mission.run(5);
+                // mission.startSearch();
+                // mission.saveLog(mission.sr_LPAstar, "_LPAStarTMP", 0);
+                // mission.saveLog(mission.sr_LPAstar, "_LPAStar", 1);
+                // mission.saveLog(mission.sr_Astar, "_AStar", 2);
+                // return mission.test(5);
             }
         }
     }

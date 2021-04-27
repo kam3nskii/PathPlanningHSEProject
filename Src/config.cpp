@@ -85,7 +85,6 @@ bool Config::getConfig(const char* FileName) {
             stream >> SearchParams[CN_SP_HW];
             stream.str("");
             stream.clear();
-
             if (SearchParams[CN_SP_HW] < 1) {
                 std::cout << "Warning! Value of '" << CNS_TAG_HW
                           << "' tag is not correctly specified. Should be >= 1." << std::endl;

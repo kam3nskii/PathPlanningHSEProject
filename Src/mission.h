@@ -15,8 +15,8 @@
 #endif
 
 #include <algorithm>
-#include <random>
 #include <cmath>
+#include <random>
 
 #include "Astar.h"
 #include "LPAstar.h"
@@ -43,15 +43,12 @@ class Mission {
     void changeMapAutomatically();
     void run(int cnt);
     bool test(int cnt);
-
     int checkResult(const SearchResult& sr, float realLen);
     void saveLog(const SearchResult& sr, const char* nameSuffix, int searchType);
-
     void printSearchResult(const SearchResult& sr);
     SearchResult getLPAstarSearchResult();
     SearchResult getAstarSearchResult();
 
-    //    private:
     Map map;
     Config config;
     EnvironmentOptions options;
@@ -63,9 +60,6 @@ class Mission {
     SearchResult sr_LPAstar;
     Cell changed;
     bool firstsearch;
-    int debugcnt = 0;
-    // std::vector<int> debugarr = {10, 3, 8, 17, 3, 17, 15, 2, 15, 3, 12, 10, 17, 18, 30, 30};
-    std::vector<int> debugarr = {6};
 };
 
 #endif

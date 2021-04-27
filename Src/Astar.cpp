@@ -5,11 +5,9 @@
 #include <cmath>
 
 Astar::Astar() {
-    // set defaults here
 }
 
 Astar::~Astar() {
-    
 }
 
 void Astar::cleanup() {
@@ -21,8 +19,7 @@ void Astar::cleanup() {
     hppath.clear();
 }
 
-SearchResult Astar::startSearch(const Map& map,
-                                 const EnvironmentOptions& options) {
+SearchResult Astar::startSearch(const Map& map, const EnvironmentOptions& options) {
     cleanup();
     Node::breakingties = options.breakingties;
     auto startTime = std::chrono::high_resolution_clock::now();

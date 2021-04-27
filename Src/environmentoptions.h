@@ -4,13 +4,13 @@
 
 class EnvironmentOptions {
    public:
-    int metrictype;
-    bool allowsqueeze;
+    double hweight;
     bool allowdiagonal;
     bool cutcorners;
-    double hweight;
-    int breakingties;
+    bool allowsqueeze;
     int searchtype;
+    int metrictype;
+    int breakingties;
 };
 
 #endif

@@ -7,7 +7,6 @@
 #include <utility>
 
 LPAstar::LPAstar() {
-    // set defaults here
 }
 
 LPAstar::~LPAstar() {
@@ -52,39 +51,26 @@ void LPAstar::computePath(const Map& map, const EnvironmentOptions& options, int
     while (!Open.empty()) {
         auto node = Open.begin();
         Node* curr = *node;
-        // std::cout << "\n\n\n$$$$$: "<<curr->i <<" "<<curr->j << std::endl;
         if (is_g_or_equal(curr->calcKey(), goal->calcKey()) && is_equal(goal->rhs, goal->g)) {
-        //     std::cout << "\n\n\nBREAK: "<<curr->i << " " << curr->j << " "<<curr->g << " " <<
-        // curr->rhs << " " << curr->calcKey().first << " " << curr->calcKey().second <<
-        // " " << goal->calcKey().first << " " << goal->calcKey().second;
             break;
         }
-        // std::cout << "\n\n\n$$$$$: "<<curr->i <<" "<<curr->j << std::endl;
         sresult.numberofsteps++;
         OpenIterators.erase(getNodeInd(*curr, map));
-        // std::cout << "\n\n\n$$$$$: "<<curr->i <<" "<<curr->j << std::endl;
         Open.erase(node);
-        // std::cout << "\n\n\n$$$$$: "<<curr->i <<" "<<curr->j << std::endl;
         curr->debug = debug;
-        // std::cout << "\n\n\nCURRENT: "<<curr->i << " " << curr->j << " "<<curr->g << " " <<
-        // curr->rhs << " ";
         if (!is_equal(curr->g, curr->rhs) && curr->g > curr->rhs) {
-            // std::cout << "g > rhs\n";
             curr->g = curr->rhs;
             for (Cell& next : map.getNeighbors(*curr, options)) {
                 updateVertex(map, &nodesMap[next.i][next.j], options);
             }
         } else {
-            // std::cout << "g <= rhs\n";
             curr->g = std::numeric_limits<double>::infinity();
             updateVertex(map, &nodesMap[curr->i][curr->j], options);
             for (Cell& next : map.getNeighbors(*curr, options)) {
                 updateVertex(map, &nodesMap[next.i][next.j], options);
             }
         }
-        // std::cout << "\n";
     }
-    // std::cout << "**\n";
 }
 
 SearchResult LPAstar::startSearch(const Map& map, const EnvironmentOptions& options) {
@@ -108,11 +94,8 @@ SearchResult LPAstar::startSearch(const Map& map, const EnvironmentOptions& opti
     start->rhs = 0;
     auto iterator = Open.emplace(start).first;
     OpenIterators.emplace(getNodeInd(**iterator, map), iterator);
-
     auto startTime = std::chrono::high_resolution_clock::now();
-
     computePath(map, options, 3);
-
     auto endTime = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = endTime - startTime;
     sresult.time = duration.count();
@@ -136,25 +119,19 @@ SearchResult LPAstar::repeat(const Map& map, const EnvironmentOptions& options,
     auto startTime = std::chrono::high_resolution_clock::now();
 
     Node* tmp = &nodesMap[changed.i][changed.j];
-    // tmp->g = std::numeric_limits<double>::infinity();
-    // tmp->parent = nullptr;
     updateVertex(map, &nodesMap[tmp->i][tmp->j], options);
     for (Cell& next : map.getNeighbors(*tmp, options)) {
         updateVertex(map, &nodesMap[next.i][next.j], options);
     }
 
     computePath(map, options, 4);
-    // std::cout << "**\n";
     auto endTime = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = endTime - startTime;
     sresult.time = duration.count();
-    // std::cout << "**\n";
     if (goal->g != std::numeric_limits<double>::infinity()) {
-        // std::cout << "!!!\n";
         sresult.pathfound = true;
         sresult.pathlength = goal->g;
         makePrimaryPath(goal);
-        // std::cout << "!!!\n";
         makeSecondaryPath();
         sresult.hppath = &hppath;
         sresult.lppath = &lppath;
@@ -175,31 +152,18 @@ void LPAstar::updateVertex(const Map& map, Node* node, const EnvironmentOptions&
             }
         }
     }
-    // std::cout << "UPD (" << node->i << ", " << node->j << ")" << node->g << " " << node->rhs << ":";
     auto it = OpenIterators.find(getNodeInd(*node, map));
     if (it != OpenIterators.end()) {
-        // std::cout << "delete ";
         auto tmp = it->second;
         OpenIterators.erase(getNodeInd(**tmp, map));
         Open.erase(tmp);
         --sresult.nodescreated;
     }
     if (!is_equal(node->g, node->rhs)) {
-        // std::cout << "add";
         auto iterator = Open.emplace(node).first;
         OpenIterators.emplace(getNodeInd(*(*iterator), map), iterator);
         ++sresult.nodescreated;
     }
-    // std::cout << "\n{";
-    // for (auto it : OpenIterators) {
-    //     std::cout << "(" << (*(it.second))->i << ", " << (*(it.second))->j << ")";
-    // }
-    // std::cout << "}\n";
-    // std::cout << "[";
-    // for (auto it : Open) {
-    //     std::cout << "(" << it->i << ", " << it->j << ")";
-    // }
-    // std::cout << "]\n";
 }
 
 void LPAstar::makePrimaryPath(Node* currNode) {
