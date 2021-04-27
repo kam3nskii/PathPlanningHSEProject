@@ -16,7 +16,7 @@
             <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0</row>
             <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0</row>
             <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 1 1 1 0 1 1 1 0 0</row>
-            <row>1 1 0 1 1 1 1 1 1 1 0 0 0 0 0 0 1 1 1 0 1 1 1 0 0</row>
+            <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 1 1 1 0 1 1 1 0 0</row>
             <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
             <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
             <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
@@ -36,13 +36,13 @@
         </grid>
     </map>
     <algorithm>
-        <searchtype>lpastar</searchtype>
+        <searchtype>astar</searchtype>
         <metrictype>diagonal</metrictype>
         <breakingties>g-max</breakingties>
         <hweight>1</hweight>
-        <allowdiagonal>false</allowdiagonal>
-        <cutcorners>true</cutcorners>
-        <allowsqueeze>true</allowsqueeze>
+        <allowdiagonal>1</allowdiagonal>
+        <cutcorners>1</cutcorners>
+        <allowsqueeze>1</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>1</loglevel>

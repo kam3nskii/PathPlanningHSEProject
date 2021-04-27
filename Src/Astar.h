@@ -21,6 +21,7 @@ class Astar {
    public:
     Astar();
     ~Astar(void);
+    void cleanup();
     SearchResult startSearch(const Map& Map, const EnvironmentOptions& options);
 
     //    protected:

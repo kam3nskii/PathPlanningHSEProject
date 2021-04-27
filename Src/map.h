@@ -19,13 +19,15 @@ class Map {
     int start_i, start_j;
     int goal_i, goal_j;
     double cellSize;
-    int** Grid;
 
    public:
+    int** Grid;
+    std::vector<std::vector<int>> prevGrid;
     Map();
     Map(const Map& orig);
     ~Map();
 
+    void deleteGrid();
     bool getMap(const char* FileName);
     bool CellIsTraversable(int i, int j) const;
     bool CellOnGrid(int i, int j) const;
@@ -40,7 +42,6 @@ class Map {
     double getCellSize() const;
     double getTransitionCost(int i1, int j1, int i2, int j2) const;
     std::vector<Cell> getNeighbors(const Node& node, const EnvironmentOptions& options) const;
-    std::vector<Cell> getALLNeighbors(const Node& node, const EnvironmentOptions& options) const;
 };
 
 #endif

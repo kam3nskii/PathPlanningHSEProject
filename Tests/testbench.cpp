@@ -3,8 +3,6 @@
 #include "mission.h"
 #include "tinyxml2.h"
 
-#define EPS 1e-5
-
 bool getRealResults(const char* fileName, float* realLen);
 
 int main(int argc, char* argv[]) {
@@ -37,25 +35,18 @@ int main(int argc, char* argv[]) {
     mission.createEnvironmentOptions();
     mission.createSearch();
     mission.startSearch();
-    SearchResult result = mission.getSearchResult();
+    SearchResult resultLPA = mission.getLPAstarSearchResult();
+    SearchResult resultA = mission.getAstarSearchResult();
 
-    if (!is_equal(mission.options.hweight, 1)) {
-        if (result.pathlength > mission.options.hweight * len) {
-            std::cerr << "Incorrect path legth" << std::endl;
-            std::cerr << result.pathlength << std::endl;
-            std::cerr << len << std::endl;
-            return 1;
-        }
-    } else {
-        if (abs(len - result.pathlength) > EPS) {
-            std::cerr << "Incorrect path legth" << std::endl;
-            std::cerr << result.pathlength << std::endl;
-            std::cerr << len << std::endl;
-            return 1;
-        }
+    if (mission.checkResult(resultLPA, len) == -1) {
+        return 1;
+    }
+    if (mission.checkResult(resultA, len) == -1) {
+        return 1;
     }
 
     return 0;
+    // return mission.test(1);
 }
 
 bool getRealResults(const char* fileName, float* realLen) {

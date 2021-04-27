@@ -22,26 +22,17 @@ int main(int argc, char* argv[]) {
             std::cout << "Configurations OK!" << std::endl << "Creating log channel:" << std::endl;
 
             if (!mission.createLog()) {
-                std::cout << "Log chanel has not been created! Program halted!" << std::endl;
+                std::cout << "Log chanel has NOT been created! Program halted!" << std::endl;
             } else {
-                std::cout << "Log OK!" << std::endl << "Start searching the path:" << std::endl;
-
+                std::cout << "Log chanel has been created!\n" << std::endl;
                 mission.createEnvironmentOptions();
-                mission.createSearch();
-                mission.startSearch();
-                std::cout << "Search is finished!" << std::endl;
-                mission.saveSearchResultsToLogLPAStar();
-                mission.startSecondSearch();
-                mission.saveSearchResultsToLogLPAStarSecond();
-                mission.saveSearchResultsToLogSecondAstarSecond();
 
-                std::cout << "Results are saved (if chosen) via created log channel." << std::endl;
-                // //
-                // if (!mission.testLogCreate()) {
-                //     std::cout << "TEST Log chanel has not been created! Program halted!" << std::endl;
-                // }
-                // mission.testLogSave();
-                // //
+                mission.run(10);
+                //mission.startSearch();
+                // mission.saveLog(mission.sr_LPAstar, "_LPAStarTMP", 0); //
+                // mission.saveLog(mission.sr_LPAstar, "_LPAStar", 1); //
+                // mission.saveLog(mission.sr_Astar, "_AStar", 2); //
+                //return mission.test(1); // 3
             }
         }
     }

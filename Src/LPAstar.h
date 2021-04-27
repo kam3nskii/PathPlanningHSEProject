@@ -23,16 +23,18 @@ class LPAstar {
    public:
     LPAstar();
     ~LPAstar(void);
+    void cleanup();
+    void computePath(const Map& map, const EnvironmentOptions& options, int debug);
     SearchResult startSearch(const Map& Map, const EnvironmentOptions& options);
-    SearchResult repeat(const Map& map, const EnvironmentOptions& options, Cell& changed);
+    SearchResult repeat(const Map& map, const EnvironmentOptions& options, const Cell& changed);
 
     //    protected:
-    void makePrimaryPath(Node* curNode, std::list<Node>& ppath1);
-    void makeSecondaryPath(std::list<Node>& ppath1, std::list<Node>& ppath2);
+    void makePrimaryPath(Node* curNode);
+    void makeSecondaryPath();
     double heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2);
     int getNodeInd(const Node& node, const Map& map);
     int getNodeInd(const Cell& cell, const Map& map) const;
-    void updateVertex(const Map& map, Node* node, const EnvironmentOptions& options, bool isrepeat);
+    void updateVertex(const Map& map, Node* node, const EnvironmentOptions& options);
 
     class queue_cmp {
         bool reverse;
@@ -63,8 +65,7 @@ class LPAstar {
     Node* goal;
 
     SearchResult sresult;
-    SearchResult sresultSecond;
     std::list<Node> lppath, hppath;
-    std::list<Node> lppathSecond, hppathSecond;
+    int nodesCntInPath;
 };
 #endif

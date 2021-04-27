@@ -164,8 +164,8 @@ void XmlLogger::writeToLogOpen(const Map& map, const LPAstar& search) {
 
         for (int j = 0; j < map.getMapWidth(); ++j) {
             inPath = false;
-            for (std::list<Node>::const_iterator it = search.lppathSecond.begin();
-                 it != search.lppathSecond.end();
+            for (std::list<Node>::const_iterator it = search.lppath.begin();
+                 it != search.lppath.end();
                  it++) {
                 if (it->i == i && it->j == j) {
                     inPath = true;

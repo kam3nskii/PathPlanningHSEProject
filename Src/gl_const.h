@@ -3,6 +3,7 @@
 
 #define CN_PI_CONSTANT 3.14159265359
 #define CN_SQRT_TWO 1.41421356237
+#define EPS 1e-5
 // #define CN_SQRT_TWO 1
 
 // XML tags

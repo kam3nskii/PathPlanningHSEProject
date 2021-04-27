@@ -13,12 +13,17 @@ Map::Map() {
     cellSize = 1;
 }
 
-Map::~Map() {
+void Map::deleteGrid() {
     if (Grid) {
         for (int i = 0; i < height; ++i)
             delete[] Grid[i];
         delete[] Grid;
     }
+    Grid = nullptr;
+}
+
+Map::~Map() {
+    deleteGrid();
 }
 
 bool Map::CellIsTraversable(int i, int j) const {
@@ -390,18 +395,6 @@ std::vector<Cell> Map::getNeighbors(const Node& node, const EnvironmentOptions& 
                     }
                 }
             }
-        }
-    }
-    return neighbors;
-}
-
-std::vector<Cell> Map::getALLNeighbors(const Node& node, const EnvironmentOptions& options) const {
-    std::vector<Cell> neighbors;
-    neighbors.reserve(8);
-    for (auto [i, j] : {Cell(0, -1), Cell(-1, 0), Cell(0, 1), Cell(1, 0), 
-                        Cell(-1, -1), Cell(-1, 1), Cell(1, 1), Cell(1, -1)}) {
-        if (getValue(node.i + i, node.j + j) != -1) {
-            neighbors.emplace_back(node.i + i, node.j + j);
         }
     }
     return neighbors;

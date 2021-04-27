@@ -12,10 +12,20 @@ Astar::~Astar() {
     
 }
 
+void Astar::cleanup() {
+    Open.clear();
+    OpenIterators.clear();
+    Close.clear();
+    sresult = SearchResult();
+    lppath.clear();
+    hppath.clear();
+}
+
 SearchResult Astar::startSearch(const Map& map,
                                  const EnvironmentOptions& options) {
-    auto startTime = std::chrono::high_resolution_clock::now();
+    cleanup();
     Node::breakingties = options.breakingties;
+    auto startTime = std::chrono::high_resolution_clock::now();
     auto iterator = Open.emplace(map.getStart_i(),
                                  map.getStart_j(),
                                  0,
