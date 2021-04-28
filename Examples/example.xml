@@ -1,48 +1,38 @@
 <root>
     <map>
-        <width>25</width>
-        <height>25</height>
+        <width>15</width>
+        <height>15</height>
         <cellsize>24</cellsize>
-        <startx>12</startx>
-        <starty>20</starty>
+        <startx>2</startx>
+        <starty>1</starty>
         <finishx>12</finishx>
-        <finishy>7</finishy>
+        <finishy>10</finishy>
         <grid>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0</row>
-            <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0</row>
-            <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 1 1 1 0 1 1 1 0 0</row>
-            <row>0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 1 1 1 0 1 1 1 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 1 0 0 1 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 1 0 0 1 0 0 0 0 1 0 0</row>
+            <row>0 0 0 0 1 0 0 1 0 0 0 1 0 0 0</row>
+            <row>1 1 1 0 1 0 0 0 0 0 1 0 0 0 0</row>
+            <row>0 0 0 0 1 0 0 0 0 1 0 0 0 0 0</row>
+            <row>0 0 0 0 1 0 0 0 1 0 0 0 0 0 0</row>
+            <row>0 0 1 1 1 0 0 1 1 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 1 0 1 1 0 0 0 0 0</row>
+            <row>0 0 0 0 0 1 0 0 1 0 1 0 0 0 0</row>
+            <row>0 0 0 0 1 0 0 0 1 0 1 1 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 1 0 1 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 1 0 1 0 0 0 0</row>
+            <row>1 1 1 1 1 0 0 0 1 0 1 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 1 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 1 0 0 0 0</row>
         </grid>
     </map>
     <algorithm>
-        <searchtype>astar</searchtype>
         <metrictype>diagonal</metrictype>
-        <breakingties>g-max</breakingties>
+        <searchtype>astar</searchtype>
         <hweight>1</hweight>
-        <allowdiagonal>1</allowdiagonal>
-        <cutcorners>1</cutcorners>
-        <allowsqueeze>1</allowsqueeze>
+        <breakingties>g-max</breakingties>
+        <allowdiagonal>0</allowdiagonal>
+        <cutcorners>0</cutcorners>
+        <allowsqueeze>0</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>1</loglevel>
