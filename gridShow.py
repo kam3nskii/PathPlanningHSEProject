@@ -22,42 +22,56 @@ grid[finishy][finishx] = '#'
 
 cell_size = 24
 
+def printGrid():
+    for i in range(height):
+        for j in range(width):
+            if grid[j][i] == '@':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='green')
+            elif grid[j][i] == '#':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='red')
+            elif grid[j][i] == '*':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='#58F')
+            elif grid[j][i] == '1':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='gray')
+            elif grid[j][i] == '0':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='white')
+            elif grid[j][i] == '2':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='yellow')
+            elif grid[j][i] == '3':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='yellow')
+            elif grid[j][i] == '4':
+                c.create_rectangle(i * cell_size, j * cell_size,
+                            i * cell_size + cell_size, j * cell_size + cell_size,
+                            fill='pink')
+
+def btn3(event):
+    global grid
+    XMLrootTMP = ET.parse(sys.argv[1]).getroot()
+    for i in range(height):
+        grid[i] = XMLrootTMP.find("log").find("path")[i].text.split()
+
+    grid[starty][startx] = '@'
+    grid[finishy][finishx] = '#'
+    printGrid()
+
 root = Tk()
 root.title(sys.argv[1])
 c = Canvas(root, width = width * cell_size, height = height * cell_size)
+c.bind("<Button-3>", btn3)
 c.pack()
-for i in range(height):
-    for j in range(width):
-        if grid[j][i] == '@':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='green')
-        elif grid[j][i] == '#':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='red')
-        elif grid[j][i] == '*':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='#58F')
-        elif grid[j][i] == '1':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='gray')
-        elif grid[j][i] == '0':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='white')
-        elif grid[j][i] == '2':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='yellow')
-        elif grid[j][i] == '3':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='yellow')
-        elif grid[j][i] == '4':
-            c.create_rectangle(i * cell_size, j * cell_size,
-                           i * cell_size + cell_size, j * cell_size + cell_size,
-                           fill='pink')
+printGrid()
 root.mainloop()

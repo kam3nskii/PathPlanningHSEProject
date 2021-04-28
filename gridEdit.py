@@ -65,8 +65,7 @@ def btn1(event):
 
 def btn3(event):
     global outputGrid
-    tree3 = ET.parse(fileWithPath)
-    XMLrootTMP = tree3.getroot()
+    XMLrootTMP = ET.parse(fileWithPath).getroot()
     for i in range(height):
         outputGrid[i] = XMLrootTMP.find("log").find("path")[i].text.split()
     outputGrid[starty][startx] = '@'
