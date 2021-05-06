@@ -68,9 +68,13 @@ def btn3(event):
     grid[finishy][finishx] = '#'
     printGrid()
 
+def btn2(event):
+    btn3(event)
+
 root = Tk()
 root.title(sys.argv[1])
 c = Canvas(root, width = width * cell_size, height = height * cell_size)
+c.bind("<Button-2>", btn2)
 c.bind("<Button-3>", btn3)
 c.pack()
 printGrid()
