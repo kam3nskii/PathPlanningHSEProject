@@ -1,4 +1,4 @@
-TARGET = Denis_Kamenskii_ASearch
+TARGET = search
 CONFIG   += console
 CONFIG   -= app_bundle
 TEMPLATE = app
@@ -11,7 +11,9 @@ QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
 SOURCES += \
     Astar.cpp \
     cell.cpp \
+    commonfuncs.cpp \
     config.cpp \
+    DstarLite.cpp \
     LPAstar.cpp \
     main.cpp \
     map.cpp \
@@ -23,7 +25,9 @@ SOURCES += \
 HEADERS += \
     Astar.h \
     cell.h \
+    commonfuncs.h \
     config.h \
+    DstarLite.h \
     environmentoptions.h \
     gl_const.h \
     ilogger.h \

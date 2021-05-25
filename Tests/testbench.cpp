@@ -15,41 +15,56 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    Mission mission(argv[1]);
-
-    if (!mission.getMap()) {
-        std::cerr << "Incorrect map! Program halted!" << std::endl;
-        return -1;
+    {
+        Mission mission(argv[1]);
+        if (!mission.getMap()) {
+            std::cerr << "Incorrect map! Program halted!" << std::endl;
+            return -1;
+        }
+        if (!mission.getConfig()) {
+            std::cerr << "Incorrect configurations! Program halted!" << std::endl;
+            return -1;
+        }
+        if (!mission.createLog()) {
+            std::cerr << "Log chanel has not been created! Program halted!" << std::endl;
+            return -1;
+        }
+        mission.createEnvironmentOptions();
+        mission.createSearch();
+        mission.startSearchLPAstar();
+        SearchResult resultLPA = mission.getLPAstarSearchResult();
+        SearchResult resultA = mission.getAstarSearchResult();
+        if (mission.checkResult(resultLPA, resultA.pathlength) == -1) {
+            return 1;
+        }
+        if (mission.testLPAstar(30)) {
+            return 1;
+        }
     }
-
-    if (!mission.getConfig()) {
-        std::cerr << "Incorrect configurations! Program halted!" << std::endl;
-        return -1;
+    {
+        Mission mission(argv[1]);
+        if (!mission.getMap()) {
+            std::cerr << "Incorrect map! Program halted!" << std::endl;
+            return -1;
+        }
+        if (!mission.getConfig()) {
+            std::cerr << "Incorrect configurations! Program halted!" << std::endl;
+            return -1;
+        }
+        if (!mission.createLog()) {
+            std::cerr << "Log chanel has not been created! Program halted!" << std::endl;
+            return -1;
+        }
+        mission.createEnvironmentOptions();
+        mission.createSearch();
+        mission.startSearchDstarLite();
+        SearchResult resultDstar = mission.getDstarLiteSearchResult();
+        SearchResult resultA = mission.getAstarSearchResult();
+        if (mission.checkResult(resultDstar, resultA.pathlength) == -1) {
+            return 1;
+        }
+        return mission.testDstarLite(30);
     }
-
-    if (!mission.createLog()) {
-        std::cerr << "Log chanel has not been created! Program halted!" << std::endl;
-        return -1;
-    }
-
-    mission.createEnvironmentOptions();
-    mission.createSearch();
-    mission.startSearch();
-    SearchResult resultLPA = mission.getLPAstarSearchResult();
-    SearchResult resultA = mission.getAstarSearchResult();
-
-    // if (mission.checkResult(resultLPA, len) == -1) {
-    //     return 1;
-    // }
-    // if (mission.checkResult(resultA, len) == -1) {
-    //     return 1;
-    // }
-
-    if (mission.checkResult(resultLPA, resultA.pathlength) == -1) {
-        return 1;
-    }
-
-    return mission.test(15);
 }
 
 bool getRealResults(const char* fileName, float* realLen) {

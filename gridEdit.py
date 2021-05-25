@@ -18,14 +18,11 @@ inputGrid = []
 for i in range(height):
     inputGrid.append(XMLroot.find("map").find("grid")[i].text.split())
 
-fileWithPath = sys.argv[1][:-4] + "_log_LPAStarTMP.xml"
+fileWithPath = sys.argv[1][:-4] + "_log_TMP.xml"
 XMLrootPath = ET.parse(fileWithPath).getroot()
 outputGrid = []
 for i in range(height):
     outputGrid.append(XMLrootPath.find("log").find("path")[i].text.split())
-
-outputGrid[starty][startx] = '@'
-outputGrid[finishy][finishx] = '#'
 
 cell_size = 24
 
@@ -68,8 +65,6 @@ def btn3(event):
     XMLrootTMP = ET.parse(fileWithPath).getroot()
     for i in range(height):
         outputGrid[i] = XMLrootTMP.find("log").find("path")[i].text.split()
-    outputGrid[starty][startx] = '@'
-    outputGrid[finishy][finishx] = '#'
     printGrid()
 
 def btn2(event):

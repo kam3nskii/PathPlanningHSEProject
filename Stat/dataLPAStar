@@ -1,0 +1,9152 @@
+
+A*:
+Path found!
+numberofsteps=64
+nodescreated=107
+pathlength=16.07107
+time=0.000059600000000
+LPA*:
+Path found!
+numberofsteps=65
+nodescreated=734
+pathlength=16.07107
+time=0.000132100000000
+
+A*:
+Path found!
+numberofsteps=63
+nodescreated=106
+pathlength=16.07107
+time=0.000045900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=16.07107
+time=0.000003000000000
+
+A*:
+Path found!
+numberofsteps=62
+nodescreated=105
+pathlength=16.07107
+time=0.000058900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=16.07107
+time=0.000003300000000
+
+A*:
+Path found!
+numberofsteps=61
+nodescreated=104
+pathlength=16.07107
+time=0.000042300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=16.07107
+time=0.000002500000000
+
+A*:
+Path found!
+numberofsteps=60
+nodescreated=103
+pathlength=16.07107
+time=0.000075200000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=16.07107
+time=0.000005700000000
+
+A*:
+Path found!
+numberofsteps=75
+nodescreated=124
+pathlength=16.89949
+time=0.000072200000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=40
+pathlength=16.89949
+time=0.000109100000000
+
+A*:
+Path found!
+numberofsteps=91
+nodescreated=141
+pathlength=17.48528
+time=0.000076200000000
+LPA*:
+Path found!
+numberofsteps=24
+nodescreated=25
+pathlength=17.48528
+time=0.000063700000000
+
+A*:
+Path found!
+numberofsteps=358
+nodescreated=402
+pathlength=29.38478
+time=0.000229500000000
+LPA*:
+Path found!
+numberofsteps=280
+nodescreated=275
+pathlength=29.38478
+time=0.000544400000000
+
+A*:
+Path found!
+numberofsteps=369
+nodescreated=406
+pathlength=30.21320
+time=0.000234100000000
+LPA*:
+Path found!
+numberofsteps=32
+nodescreated=27
+pathlength=30.21320
+time=0.000127300000000
+
+A*:
+Path found!
+numberofsteps=368
+nodescreated=405
+pathlength=30.21320
+time=0.000234300000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=30.21320
+time=0.000006100000000
+
+A*:
+Path found!
+numberofsteps=367
+nodescreated=404
+pathlength=30.21320
+time=0.000220900000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=30.21320
+time=0.000011500000000
+
+A*:
+Path found!
+numberofsteps=378
+nodescreated=420
+pathlength=30.79899
+time=0.000255000000000
+LPA*:
+Path found!
+numberofsteps=15
+nodescreated=17
+pathlength=30.79899
+time=0.000073800000000
+
+A*:
+Path found!
+numberofsteps=392
+nodescreated=436
+pathlength=31.62742
+time=0.000275600000000
+LPA*:
+Path found!
+numberofsteps=33
+nodescreated=35
+pathlength=31.62742
+time=0.000069500000000
+
+A*:
+Path found!
+numberofsteps=392
+nodescreated=435
+pathlength=31.62742
+time=0.000208200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=31.62742
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=403
+nodescreated=453
+pathlength=32.21320
+time=0.000281400000000
+LPA*:
+Path found!
+numberofsteps=37
+nodescreated=41
+pathlength=32.21320
+time=0.000079900000000
+
+A*:
+Path found!
+numberofsteps=405
+nodescreated=451
+pathlength=32.21320
+time=0.000285000000000
+LPA*:
+Path found!
+numberofsteps=1
+nodescreated=0
+pathlength=32.21320
+time=0.000007800000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.017340600000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.045505500000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.019003300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000003000000000
+
+A*:
+Path found!
+numberofsteps=26940
+nodescreated=27037
+pathlength=641.29858
+time=0.018338700000000
+LPA*:
+Path found!
+numberofsteps=8930
+nodescreated=8935
+pathlength=641.29858
+time=0.019343100000000
+
+A*:
+Path found!
+numberofsteps=26939
+nodescreated=27036
+pathlength=641.29858
+time=0.018653500000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=641.29858
+time=0.000010700000000
+
+A*:
+Path found!
+numberofsteps=26938
+nodescreated=27035
+pathlength=641.29858
+time=0.019391600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.29858
+time=0.000003300000000
+
+A*:
+Path found!
+numberofsteps=26946
+nodescreated=27044
+pathlength=642.12701
+time=0.018868500000000
+LPA*:
+Path found!
+numberofsteps=28119
+nodescreated=28120
+pathlength=642.12701
+time=0.050057200000000
+
+A*:
+Path found!
+numberofsteps=26945
+nodescreated=27043
+pathlength=642.12701
+time=0.019311500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=26956
+nodescreated=27058
+pathlength=642.71277
+time=0.018362700000000
+LPA*:
+Path found!
+numberofsteps=7736
+nodescreated=7740
+pathlength=642.71277
+time=0.013987300000000
+
+A*:
+Path found!
+numberofsteps=26965
+nodescreated=27065
+pathlength=643.29858
+time=0.019485400000000
+LPA*:
+Path found!
+numberofsteps=28248
+nodescreated=28246
+pathlength=643.29858
+time=0.051923100000000
+
+A*:
+Path found!
+numberofsteps=26964
+nodescreated=27064
+pathlength=643.29858
+time=0.020413500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.29858
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26975
+nodescreated=27073
+pathlength=643.88434
+time=0.020535500000000
+LPA*:
+Path found!
+numberofsteps=9500
+nodescreated=9498
+pathlength=643.88434
+time=0.016761400000000
+
+A*:
+Path found!
+numberofsteps=26974
+nodescreated=27072
+pathlength=643.88434
+time=0.019576600000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=643.88434
+time=0.000007500000000
+
+A*:
+Path found!
+numberofsteps=26973
+nodescreated=27071
+pathlength=643.88434
+time=0.021317900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.88434
+time=0.000003600000000
+
+A*:
+Path found!
+numberofsteps=26972
+nodescreated=27070
+pathlength=644.47015
+time=0.023558000000000
+LPA*:
+Path found!
+numberofsteps=48862
+nodescreated=48862
+pathlength=644.47015
+time=0.096590800000000
+
+A*:
+Path found!
+numberofsteps=26971
+nodescreated=27069
+pathlength=644.47015
+time=0.021552900000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=34
+pathlength=644.47015
+time=0.000054200000000
+
+A*:
+Path found!
+numberofsteps=26987
+nodescreated=27087
+pathlength=645.29858
+time=0.019084000000000
+LPA*:
+Path found!
+numberofsteps=7903
+nodescreated=7905
+pathlength=645.29858
+time=0.015332400000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.017346000000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.045033900000000
+
+A*:
+Path found!
+numberofsteps=26923
+nodescreated=27019
+pathlength=640.71277
+time=0.020236500000000
+LPA*:
+Path found!
+numberofsteps=15490
+nodescreated=15494
+pathlength=640.71277
+time=0.030387700000000
+
+A*:
+Path found!
+numberofsteps=26922
+nodescreated=27018
+pathlength=640.71277
+time=0.018345400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.71277
+time=0.000003000000000
+
+A*:
+Path found!
+numberofsteps=26921
+nodescreated=27017
+pathlength=640.71277
+time=0.018581400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.71277
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=26932
+nodescreated=27030
+pathlength=641.54120
+time=0.023357400000000
+LPA*:
+Path found!
+numberofsteps=15556
+nodescreated=15558
+pathlength=641.54120
+time=0.027305100000000
+
+A*:
+Path found!
+numberofsteps=26931
+nodescreated=27029
+pathlength=641.54120
+time=0.020102600000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=34
+pathlength=641.54120
+time=0.000053200000000
+
+A*:
+Path found!
+numberofsteps=26930
+nodescreated=27028
+pathlength=641.54120
+time=0.019297200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=26950
+nodescreated=27051
+pathlength=642.95538
+time=0.019289100000000
+LPA*:
+Path found!
+numberofsteps=15497
+nodescreated=15500
+pathlength=642.95538
+time=0.031265000000000
+
+A*:
+Path found!
+numberofsteps=26949
+nodescreated=27050
+pathlength=642.95538
+time=0.019931500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.95538
+time=0.000002700000000
+
+A*:
+Path found!
+numberofsteps=26959
+nodescreated=27057
+pathlength=643.78381
+time=0.020333200000000
+LPA*:
+Path found!
+numberofsteps=23899
+nodescreated=23896
+pathlength=643.78381
+time=0.045747100000000
+
+A*:
+Path found!
+numberofsteps=26958
+nodescreated=27056
+pathlength=643.78381
+time=0.020388700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.78381
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26957
+nodescreated=27055
+pathlength=643.78381
+time=0.019381600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.78381
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=26956
+nodescreated=27054
+pathlength=643.78381
+time=0.019201500000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=34
+pathlength=643.78381
+time=0.000056100000000
+
+A*:
+Path found!
+numberofsteps=26975
+nodescreated=27074
+pathlength=644.36963
+time=0.019115000000000
+LPA*:
+Path found!
+numberofsteps=1190
+nodescreated=1191
+pathlength=644.36963
+time=0.002199600000000
+
+A*:
+Path found!
+numberofsteps=26974
+nodescreated=27073
+pathlength=644.36963
+time=0.019165700000000
+LPA*:
+Path found!
+numberofsteps=56
+nodescreated=56
+pathlength=644.36963
+time=0.000078500000000
+
+A*:
+Path found!
+numberofsteps=26996
+nodescreated=27093
+pathlength=645.78381
+time=0.020364600000000
+LPA*:
+Path found!
+numberofsteps=15959
+nodescreated=15957
+pathlength=645.78381
+time=0.032189600000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.017995600000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.046964300000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.020186400000000
+LPA*:
+Path found!
+numberofsteps=140
+nodescreated=140
+pathlength=639.29858
+time=0.000274700000000
+
+A*:
+Path found!
+numberofsteps=26912
+nodescreated=27005
+pathlength=639.88434
+time=0.019477600000000
+LPA*:
+Path found!
+numberofsteps=28274
+nodescreated=28275
+pathlength=639.88434
+time=0.052730000000000
+
+A*:
+Path found!
+numberofsteps=26911
+nodescreated=27004
+pathlength=639.88434
+time=0.020919500000000
+LPA*:
+Path found!
+numberofsteps=30
+nodescreated=30
+pathlength=639.88434
+time=0.000049700000000
+
+A*:
+Path found!
+numberofsteps=26931
+nodescreated=27025
+pathlength=640.71277
+time=0.018510700000000
+LPA*:
+Path found!
+numberofsteps=1237
+nodescreated=1238
+pathlength=640.71277
+time=0.002161400000000
+
+A*:
+Path found!
+numberofsteps=26930
+nodescreated=27024
+pathlength=640.71277
+time=0.019677000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.71277
+time=0.000002900000000
+
+A*:
+Path found!
+numberofsteps=26929
+nodescreated=27023
+pathlength=640.71277
+time=0.018554400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.71277
+time=0.000002800000000
+
+A*:
+Path found!
+numberofsteps=26928
+nodescreated=27022
+pathlength=640.71277
+time=0.019794000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.71277
+time=0.000003300000000
+
+A*:
+Path found!
+numberofsteps=26938
+nodescreated=27034
+pathlength=641.54120
+time=0.019978500000000
+LPA*:
+Path found!
+numberofsteps=28125
+nodescreated=28127
+pathlength=641.54120
+time=0.053908900000000
+
+A*:
+Path found!
+numberofsteps=26943
+nodescreated=27040
+pathlength=642.12701
+time=0.018575400000000
+LPA*:
+Path found!
+numberofsteps=32520
+nodescreated=32521
+pathlength=642.12701
+time=0.057910900000000
+
+A*:
+Path found!
+numberofsteps=26942
+nodescreated=27039
+pathlength=642.12701
+time=0.020311600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=26941
+nodescreated=27038
+pathlength=642.12701
+time=0.018908300000000
+LPA*:
+Path found!
+numberofsteps=96
+nodescreated=96
+pathlength=642.12701
+time=0.000180300000000
+
+A*:
+Path found!
+numberofsteps=26940
+nodescreated=27037
+pathlength=642.95538
+time=0.019151900000000
+LPA*:
+Path found!
+numberofsteps=48902
+nodescreated=48902
+pathlength=642.95538
+time=0.091478400000000
+
+A*:
+Path found!
+numberofsteps=26939
+nodescreated=27036
+pathlength=642.95538
+time=0.019051900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.95538
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26952
+nodescreated=27051
+pathlength=643.78381
+time=0.018836700000000
+LPA*:
+Path found!
+numberofsteps=16240
+nodescreated=16242
+pathlength=643.78381
+time=0.029274700000000
+
+A*:
+Path found!
+numberofsteps=26951
+nodescreated=27050
+pathlength=643.78381
+time=0.018893700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.78381
+time=0.000003600000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.018837700000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.044870400000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.019445000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=26913
+nodescreated=27006
+pathlength=639.88434
+time=0.018620600000000
+LPA*:
+Path found!
+numberofsteps=15879
+nodescreated=15880
+pathlength=639.88434
+time=0.030568100000000
+
+A*:
+Path found!
+numberofsteps=26912
+nodescreated=27005
+pathlength=641.29858
+time=0.019959400000000
+LPA*:
+Path found!
+numberofsteps=48462
+nodescreated=48462
+pathlength=641.29858
+time=0.096396000000000
+
+A*:
+Path found!
+numberofsteps=26911
+nodescreated=27004
+pathlength=641.29858
+time=0.020290300000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=641.29858
+time=0.000010600000000
+
+A*:
+Path found!
+numberofsteps=26910
+nodescreated=27003
+pathlength=641.29858
+time=0.018168800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.29858
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=26909
+nodescreated=27002
+pathlength=641.29858
+time=0.020091900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.29858
+time=0.000002900000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27001
+pathlength=641.29858
+time=0.018520500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.29858
+time=0.000003600000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=27000
+pathlength=641.29858
+time=0.019998100000000
+LPA*:
+Path found!
+numberofsteps=28
+nodescreated=28
+pathlength=641.29858
+time=0.000046900000000
+
+A*:
+Path found!
+numberofsteps=26919
+nodescreated=27016
+pathlength=642.12701
+time=0.018035600000000
+LPA*:
+Path found!
+numberofsteps=8601
+nodescreated=8605
+pathlength=642.12701
+time=0.015598100000000
+
+A*:
+Path found!
+numberofsteps=26918
+nodescreated=27015
+pathlength=642.12701
+time=0.020118100000000
+LPA*:
+Path found!
+numberofsteps=58
+nodescreated=58
+pathlength=642.12701
+time=0.000074500000000
+
+A*:
+Path found!
+numberofsteps=26917
+nodescreated=27014
+pathlength=642.12701
+time=0.019663400000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=642.12701
+time=0.000016200000000
+
+A*:
+Path found!
+numberofsteps=26916
+nodescreated=27013
+pathlength=642.12701
+time=0.021029700000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=642.12701
+time=0.000013600000000
+
+A*:
+Path found!
+numberofsteps=26915
+nodescreated=27012
+pathlength=642.12701
+time=0.018036700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26914
+nodescreated=27011
+pathlength=642.12701
+time=0.020441800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=26913
+nodescreated=27010
+pathlength=642.12701
+time=0.018281600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.018255100000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.047469400000000
+
+A*:
+Path found!
+numberofsteps=26926
+nodescreated=27017
+pathlength=639.88434
+time=0.019008500000000
+LPA*:
+Path found!
+numberofsteps=2193
+nodescreated=2192
+pathlength=639.88434
+time=0.003932300000000
+
+A*:
+Path found!
+numberofsteps=26932
+nodescreated=27026
+pathlength=640.71277
+time=0.019822500000000
+LPA*:
+Path found!
+numberofsteps=28117
+nodescreated=28120
+pathlength=640.71277
+time=0.054712300000000
+
+A*:
+Path found!
+numberofsteps=26931
+nodescreated=27025
+pathlength=640.71277
+time=0.022398400000000
+LPA*:
+Path found!
+numberofsteps=30
+nodescreated=30
+pathlength=640.71277
+time=0.000046700000000
+
+A*:
+Path found!
+numberofsteps=26961
+nodescreated=27061
+pathlength=641.54120
+time=0.019593200000000
+LPA*:
+Path found!
+numberofsteps=1235
+nodescreated=1241
+pathlength=641.54120
+time=0.002886700000000
+
+A*:
+Path found!
+numberofsteps=26960
+nodescreated=27060
+pathlength=641.54120
+time=0.018808600000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=641.54120
+time=0.000007600000000
+
+A*:
+Path found!
+numberofsteps=26965
+nodescreated=27066
+pathlength=642.12701
+time=0.019815900000000
+LPA*:
+Path found!
+numberofsteps=24006
+nodescreated=24007
+pathlength=642.12701
+time=0.044996900000000
+
+A*:
+Path found!
+numberofsteps=26964
+nodescreated=27065
+pathlength=642.12701
+time=0.018944200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26963
+nodescreated=27064
+pathlength=642.95538
+time=0.019614600000000
+LPA*:
+Path found!
+numberofsteps=48030
+nodescreated=48030
+pathlength=642.95538
+time=0.135082000000000
+
+A*:
+Path found!
+numberofsteps=26976
+nodescreated=27075
+pathlength=643.54120
+time=0.019847000000000
+LPA*:
+Path found!
+numberofsteps=2466
+nodescreated=2464
+pathlength=643.54120
+time=0.004209700000000
+
+A*:
+Path found!
+numberofsteps=26975
+nodescreated=27074
+pathlength=643.54120
+time=0.020886100000000
+LPA*:
+Path found!
+numberofsteps=32
+nodescreated=32
+pathlength=643.54120
+time=0.000063600000000
+
+A*:
+Path found!
+numberofsteps=26974
+nodescreated=27073
+pathlength=643.54120
+time=0.019830400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.54120
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=26985
+nodescreated=27083
+pathlength=644.36963
+time=0.020155600000000
+LPA*:
+Path found!
+numberofsteps=28180
+nodescreated=28179
+pathlength=644.36963
+time=0.052745400000000
+
+A*:
+Path found!
+numberofsteps=27016
+nodescreated=27114
+pathlength=645.78381
+time=0.024020300000000
+LPA*:
+Path found!
+numberofsteps=8094
+nodescreated=8094
+pathlength=645.78381
+time=0.024233000000000
+
+A*:
+Path found!
+numberofsteps=27015
+nodescreated=27113
+pathlength=645.78381
+time=0.022134700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=645.78381
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=27014
+nodescreated=27112
+pathlength=645.78381
+time=0.019531700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=645.78381
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.018456300000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.047037700000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.019403000000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=639.29858
+time=0.000011600000000
+
+A*:
+Path found!
+numberofsteps=26906
+nodescreated=26998
+pathlength=639.29858
+time=0.019397600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26905
+nodescreated=26997
+pathlength=639.29858
+time=0.020874700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26904
+nodescreated=26996
+pathlength=639.29858
+time=0.019213400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=26925
+nodescreated=27017
+pathlength=640.12701
+time=0.020767800000000
+LPA*:
+Path found!
+numberofsteps=1228
+nodescreated=1228
+pathlength=640.12701
+time=0.002463300000000
+
+A*:
+Path found!
+numberofsteps=26924
+nodescreated=27016
+pathlength=640.12701
+time=0.018020600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000003600000000
+
+A*:
+Path found!
+numberofsteps=26923
+nodescreated=27015
+pathlength=640.12701
+time=0.019767100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000003600000000
+
+A*:
+Path found!
+numberofsteps=26922
+nodescreated=27014
+pathlength=640.12701
+time=0.019719100000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=640.12701
+time=0.000006700000000
+
+A*:
+Path found!
+numberofsteps=26928
+nodescreated=27022
+pathlength=640.71277
+time=0.019168700000000
+LPA*:
+Path found!
+numberofsteps=15895
+nodescreated=15897
+pathlength=640.71277
+time=0.029128500000000
+
+A*:
+Path found!
+numberofsteps=26921
+nodescreated=27019
+pathlength=640.71277
+time=0.018434800000000
+LPA*:
+Path found!
+numberofsteps=21
+nodescreated=24
+pathlength=640.71277
+time=0.000049300000000
+
+A*:
+Path found!
+numberofsteps=26946
+nodescreated=27050
+pathlength=641.29858
+time=0.018493800000000
+LPA*:
+Path found!
+numberofsteps=1988
+nodescreated=1994
+pathlength=641.29858
+time=0.003554500000000
+
+A*:
+Path found!
+numberofsteps=26945
+nodescreated=27049
+pathlength=641.88434
+time=0.020306400000000
+LPA*:
+Path found!
+numberofsteps=48616
+nodescreated=48616
+pathlength=641.88434
+time=0.099281100000000
+
+A*:
+Path found!
+numberofsteps=26953
+nodescreated=27058
+pathlength=642.71277
+time=0.019998100000000
+LPA*:
+Path found!
+numberofsteps=28137
+nodescreated=28138
+pathlength=642.71277
+time=0.052452100000000
+
+A*:
+Path found!
+numberofsteps=26952
+nodescreated=27057
+pathlength=642.71277
+time=0.019736200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.71277
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26967
+nodescreated=27073
+pathlength=643.54120
+time=0.019251300000000
+LPA*:
+Path found!
+numberofsteps=8656
+nodescreated=8657
+pathlength=643.54120
+time=0.016363700000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.018388400000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.047462800000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.021838500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000016200000000
+
+A*:
+Path found!
+numberofsteps=26914
+nodescreated=27008
+pathlength=640.12701
+time=0.019099800000000
+LPA*:
+Path found!
+numberofsteps=23890
+nodescreated=23892
+pathlength=640.12701
+time=0.047119800000000
+
+A*:
+Path found!
+numberofsteps=26931
+nodescreated=27025
+pathlength=640.71277
+time=0.019646500000000
+LPA*:
+Path found!
+numberofsteps=2350
+nodescreated=2350
+pathlength=640.71277
+time=0.004056500000000
+
+A*:
+Path found!
+numberofsteps=26930
+nodescreated=27024
+pathlength=640.71277
+time=0.024737200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.71277
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=26929
+nodescreated=27023
+pathlength=641.54120
+time=0.019972100000000
+LPA*:
+Path found!
+numberofsteps=48524
+nodescreated=48524
+pathlength=641.54120
+time=0.098344000000000
+
+A*:
+Path found!
+numberofsteps=26928
+nodescreated=27022
+pathlength=641.54120
+time=0.020880300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=26927
+nodescreated=27021
+pathlength=641.54120
+time=0.020523600000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=641.54120
+time=0.000008700000000
+
+A*:
+Path found!
+numberofsteps=26926
+nodescreated=27020
+pathlength=641.54120
+time=0.021258500000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=641.54120
+time=0.000012000000000
+
+A*:
+Path found!
+numberofsteps=26925
+nodescreated=27019
+pathlength=641.54120
+time=0.019784000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000005700000000
+
+A*:
+Path found!
+numberofsteps=26924
+nodescreated=27018
+pathlength=641.54120
+time=0.018417000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=26923
+nodescreated=27017
+pathlength=641.54120
+time=0.018341800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26953
+nodescreated=27053
+pathlength=642.36963
+time=0.020904400000000
+LPA*:
+Path found!
+numberofsteps=1243
+nodescreated=1249
+pathlength=642.36963
+time=0.002172700000000
+
+A*:
+Path found!
+numberofsteps=26943
+nodescreated=27042
+pathlength=643.19806
+time=0.019747600000000
+LPA*:
+Path found!
+numberofsteps=47999
+nodescreated=47998
+pathlength=643.19806
+time=0.094226600000000
+
+A*:
+Path found!
+numberofsteps=26985
+nodescreated=27083
+pathlength=644.61224
+time=0.019076700000000
+LPA*:
+Path found!
+numberofsteps=2235
+nodescreated=2234
+pathlength=644.61224
+time=0.003924900000000
+
+A*:
+Path found!
+numberofsteps=26984
+nodescreated=27082
+pathlength=644.61224
+time=0.021142700000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=644.61224
+time=0.000007500000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.017593200000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.044967700000000
+
+A*:
+Path found!
+numberofsteps=26905
+nodescreated=26998
+pathlength=639.88434
+time=0.018746600000000
+LPA*:
+Path found!
+numberofsteps=13950
+nodescreated=13951
+pathlength=639.88434
+time=0.026908400000000
+
+A*:
+Path found!
+numberofsteps=26904
+nodescreated=26997
+pathlength=639.88434
+time=0.020344200000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=639.88434
+time=0.000015100000000
+
+A*:
+Path found!
+numberofsteps=26903
+nodescreated=26996
+pathlength=639.88434
+time=0.018853500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.88434
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=27001
+pathlength=640.47015
+time=0.019938800000000
+LPA*:
+Path found!
+numberofsteps=28255
+nodescreated=28256
+pathlength=640.47015
+time=0.052173400000000
+
+A*:
+Path found!
+numberofsteps=26906
+nodescreated=27000
+pathlength=640.47015
+time=0.018683500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.47015
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26905
+nodescreated=26999
+pathlength=640.47015
+time=0.019199800000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=34
+pathlength=640.47015
+time=0.000078800000000
+
+A*:
+Path found!
+numberofsteps=26904
+nodescreated=26998
+pathlength=640.47015
+time=0.019924100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.47015
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=26903
+nodescreated=26997
+pathlength=640.47015
+time=0.018756800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.47015
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26902
+nodescreated=26996
+pathlength=640.47015
+time=0.018210700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.47015
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=26922
+nodescreated=27018
+pathlength=641.05591
+time=0.019149200000000
+LPA*:
+Path found!
+numberofsteps=665
+nodescreated=667
+pathlength=641.05591
+time=0.001210500000000
+
+A*:
+Path found!
+numberofsteps=26921
+nodescreated=27017
+pathlength=641.05591
+time=0.018768600000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=641.05591
+time=0.000012400000000
+
+A*:
+Path found!
+numberofsteps=26920
+nodescreated=27016
+pathlength=642.47015
+time=0.018212600000000
+LPA*:
+Path found!
+numberofsteps=48560
+nodescreated=48560
+pathlength=642.47015
+time=0.096342400000000
+
+A*:
+Path found!
+numberofsteps=26941
+nodescreated=27042
+pathlength=643.05591
+time=0.019026200000000
+LPA*:
+Path found!
+numberofsteps=672
+nodescreated=677
+pathlength=643.05591
+time=0.001653200000000
+
+A*:
+Path found!
+numberofsteps=26940
+nodescreated=27041
+pathlength=643.05591
+time=0.019006400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.05591
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=26939
+nodescreated=27040
+pathlength=643.05591
+time=0.019158000000000
+LPA*:
+Path found!
+numberofsteps=30
+nodescreated=30
+pathlength=643.05591
+time=0.000044800000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.018557700000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.047699200000000
+
+A*:
+Path found!
+numberofsteps=26929
+nodescreated=27021
+pathlength=640.12701
+time=0.020171500000000
+LPA*:
+Path found!
+numberofsteps=1228
+nodescreated=1228
+pathlength=640.12701
+time=0.002413300000000
+
+A*:
+Path found!
+numberofsteps=26928
+nodescreated=27020
+pathlength=640.12701
+time=0.019332400000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=640.12701
+time=0.000010000000000
+
+A*:
+Path found!
+numberofsteps=26927
+nodescreated=27019
+pathlength=640.12701
+time=0.018870700000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=640.12701
+time=0.000007200000000
+
+A*:
+Path found!
+numberofsteps=26936
+nodescreated=27030
+pathlength=640.71277
+time=0.018515100000000
+LPA*:
+Path found!
+numberofsteps=9082
+nodescreated=9084
+pathlength=640.71277
+time=0.017561700000000
+
+A*:
+Path found!
+numberofsteps=26935
+nodescreated=27029
+pathlength=641.29858
+time=0.019514800000000
+LPA*:
+Path found!
+numberofsteps=48230
+nodescreated=48230
+pathlength=641.29858
+time=0.092626000000000
+
+A*:
+Path found!
+numberofsteps=26949
+nodescreated=27044
+pathlength=642.12701
+time=0.018838800000000
+LPA*:
+Path found!
+numberofsteps=7909
+nodescreated=7910
+pathlength=642.12701
+time=0.014422300000000
+
+A*:
+Path found!
+numberofsteps=26948
+nodescreated=27043
+pathlength=642.12701
+time=0.021039600000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=642.12701
+time=0.000008100000000
+
+A*:
+Path found!
+numberofsteps=26947
+nodescreated=27042
+pathlength=642.12701
+time=0.018514500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26946
+nodescreated=27041
+pathlength=642.12701
+time=0.018016800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26957
+nodescreated=27053
+pathlength=642.71277
+time=0.019226900000000
+LPA*:
+Path found!
+numberofsteps=8920
+nodescreated=8921
+pathlength=642.71277
+time=0.015320600000000
+
+A*:
+Path found!
+numberofsteps=26970
+nodescreated=27068
+pathlength=643.54120
+time=0.019237200000000
+LPA*:
+Path found!
+numberofsteps=16424
+nodescreated=16426
+pathlength=643.54120
+time=0.029596000000000
+
+A*:
+Path found!
+numberofsteps=26969
+nodescreated=27067
+pathlength=643.54120
+time=0.018976800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=643.54120
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=26968
+nodescreated=27066
+pathlength=643.54120
+time=0.019769500000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=643.54120
+time=0.000013300000000
+
+A*:
+Path found!
+numberofsteps=26989
+nodescreated=27087
+pathlength=644.95538
+time=0.018773100000000
+LPA*:
+Path found!
+numberofsteps=15530
+nodescreated=15530
+pathlength=644.95538
+time=0.029600800000000
+
+A*:
+Path found!
+numberofsteps=26988
+nodescreated=27086
+pathlength=644.95538
+time=0.018285700000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=644.95538
+time=0.000014300000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.017332000000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.045334300000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.020731400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000003200000000
+
+A*:
+Path found!
+numberofsteps=26914
+nodescreated=27008
+pathlength=640.12701
+time=0.019240100000000
+LPA*:
+Path found!
+numberofsteps=28104
+nodescreated=28106
+pathlength=640.12701
+time=0.055429300000000
+
+A*:
+Path found!
+numberofsteps=26913
+nodescreated=27007
+pathlength=640.12701
+time=0.020008400000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=640.12701
+time=0.000008100000000
+
+A*:
+Path found!
+numberofsteps=26912
+nodescreated=27006
+pathlength=640.12701
+time=0.019915600000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=640.12701
+time=0.000010400000000
+
+A*:
+Path found!
+numberofsteps=26917
+nodescreated=27013
+pathlength=640.71277
+time=0.019283200000000
+LPA*:
+Path found!
+numberofsteps=16552
+nodescreated=16554
+pathlength=640.71277
+time=0.028027200000000
+
+A*:
+Path found!
+numberofsteps=26916
+nodescreated=27012
+pathlength=640.71277
+time=0.021129200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.71277
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=26932
+nodescreated=27031
+pathlength=641.54120
+time=0.018646100000000
+LPA*:
+Path found!
+numberofsteps=8611
+nodescreated=8614
+pathlength=641.54120
+time=0.017005100000000
+
+A*:
+Path found!
+numberofsteps=26931
+nodescreated=27030
+pathlength=641.54120
+time=0.018879200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=26936
+nodescreated=27036
+pathlength=642.12701
+time=0.018302100000000
+LPA*:
+Path found!
+numberofsteps=28222
+nodescreated=28223
+pathlength=642.12701
+time=0.050738800000000
+
+A*:
+Path found!
+numberofsteps=26935
+nodescreated=27035
+pathlength=642.12701
+time=0.018910500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=26934
+nodescreated=27034
+pathlength=642.12701
+time=0.019084400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=26933
+nodescreated=27033
+pathlength=642.12701
+time=0.019638700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000002700000000
+
+A*:
+Path found!
+numberofsteps=26932
+nodescreated=27032
+pathlength=642.12701
+time=0.018773000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=26931
+nodescreated=27031
+pathlength=642.12701
+time=0.019514400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=642.12701
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=26941
+nodescreated=27043
+pathlength=642.71277
+time=0.018561500000000
+LPA*:
+Path found!
+numberofsteps=8487
+nodescreated=8489
+pathlength=642.71277
+time=0.014513900000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.017535900000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.046498400000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.018286300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=26906
+nodescreated=26998
+pathlength=639.29858
+time=0.018545400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000002800000000
+
+A*:
+Path found!
+numberofsteps=26911
+nodescreated=27004
+pathlength=639.88434
+time=0.019183400000000
+LPA*:
+Path found!
+numberofsteps=32582
+nodescreated=32583
+pathlength=639.88434
+time=0.059084500000000
+
+A*:
+Path found!
+numberofsteps=26928
+nodescreated=27026
+pathlength=641.29858
+time=0.019310700000000
+LPA*:
+Path found!
+numberofsteps=15490
+nodescreated=15495
+pathlength=641.29858
+time=0.033225000000000
+
+A*:
+Path found!
+numberofsteps=26927
+nodescreated=27025
+pathlength=641.88434
+time=0.019361200000000
+LPA*:
+Path found!
+numberofsteps=48576
+nodescreated=48576
+pathlength=641.88434
+time=0.096698200000000
+
+A*:
+Path found!
+numberofsteps=26926
+nodescreated=27024
+pathlength=641.88434
+time=0.018775300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.88434
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=26925
+nodescreated=27023
+pathlength=641.88434
+time=0.018897100000000
+LPA*:
+Path found!
+numberofsteps=40
+nodescreated=40
+pathlength=641.88434
+time=0.000063900000000
+
+A*:
+Path found!
+numberofsteps=26924
+nodescreated=27022
+pathlength=641.88434
+time=0.019282700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.88434
+time=0.000003600000000
+
+A*:
+Path found!
+numberofsteps=26923
+nodescreated=27021
+pathlength=641.88434
+time=0.019190600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.88434
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=26922
+nodescreated=27020
+pathlength=641.88434
+time=0.019086000000000
+LPA*:
+Path found!
+numberofsteps=28
+nodescreated=28
+pathlength=641.88434
+time=0.000048000000000
+
+A*:
+Path found!
+numberofsteps=26921
+nodescreated=27019
+pathlength=641.88434
+time=0.019313300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.88434
+time=0.000003000000000
+
+A*:
+Path found!
+numberofsteps=26920
+nodescreated=27018
+pathlength=641.88434
+time=0.019969600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.88434
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=26919
+nodescreated=27017
+pathlength=641.88434
+time=0.020202700000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=641.88434
+time=0.000010300000000
+
+A*:
+Path found!
+numberofsteps=26918
+nodescreated=27016
+pathlength=641.88434
+time=0.020366900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.88434
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=26916
+nodescreated=27014
+pathlength=641.88434
+time=0.019000800000000
+LPA*:
+Path found!
+numberofsteps=5
+nodescreated=5
+pathlength=641.88434
+time=0.000018700000000
+
+A*:
+Path found!
+numberofsteps=26908
+nodescreated=27000
+pathlength=639.29858
+time=0.018177600000000
+LPA*:
+Path found!
+numberofsteps=26909
+nodescreated=289149
+pathlength=639.29858
+time=0.047719900000000
+
+A*:
+Path found!
+numberofsteps=26907
+nodescreated=26999
+pathlength=639.29858
+time=0.018320500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=639.29858
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=26919
+nodescreated=27014
+pathlength=640.12701
+time=0.019300200000000
+LPA*:
+Path found!
+numberofsteps=9713
+nodescreated=9716
+pathlength=640.12701
+time=0.019942800000000
+
+A*:
+Path found!
+numberofsteps=26918
+nodescreated=27013
+pathlength=640.12701
+time=0.018835200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=26917
+nodescreated=27012
+pathlength=640.12701
+time=0.018755700000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=640.12701
+time=0.000011700000000
+
+A*:
+Path found!
+numberofsteps=26916
+nodescreated=27011
+pathlength=640.12701
+time=0.019604400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000003600000000
+
+A*:
+Path found!
+numberofsteps=26915
+nodescreated=27010
+pathlength=640.12701
+time=0.018878100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=26914
+nodescreated=27009
+pathlength=640.12701
+time=0.019371700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=26913
+nodescreated=27008
+pathlength=640.12701
+time=0.018549400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=26912
+nodescreated=27007
+pathlength=640.12701
+time=0.021012000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=640.12701
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=26921
+nodescreated=27018
+pathlength=640.71277
+time=0.019572800000000
+LPA*:
+Path found!
+numberofsteps=7700
+nodescreated=7702
+pathlength=640.71277
+time=0.015907100000000
+
+A*:
+Path found!
+numberofsteps=26932
+nodescreated=27031
+pathlength=641.54120
+time=0.019984700000000
+LPA*:
+Path found!
+numberofsteps=15552
+nodescreated=15554
+pathlength=641.54120
+time=0.030314900000000
+
+A*:
+Path found!
+numberofsteps=26931
+nodescreated=27030
+pathlength=641.54120
+time=0.019086500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=26930
+nodescreated=27029
+pathlength=641.54120
+time=0.019429100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=26929
+nodescreated=27028
+pathlength=641.54120
+time=0.018534200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=26928
+nodescreated=27027
+pathlength=641.54120
+time=0.018631100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=641.54120
+time=0.000005100000000
+
+A*:
+Path found!
+numberofsteps=20379
+nodescreated=21103
+pathlength=495.43860
+time=0.014268700000000
+LPA*:
+Path found!
+numberofsteps=20426
+nodescreated=272151
+pathlength=495.43860
+time=0.045392600000000
+
+A*:
+Path found!
+numberofsteps=20378
+nodescreated=21102
+pathlength=495.43860
+time=0.014457500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=495.43860
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=20377
+nodescreated=21101
+pathlength=495.43860
+time=0.014005600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=495.43860
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=20376
+nodescreated=21100
+pathlength=495.43860
+time=0.014698900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=495.43860
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=20375
+nodescreated=21098
+pathlength=495.43860
+time=0.014425900000000
+LPA*:
+Path found!
+numberofsteps=1
+nodescreated=0
+pathlength=495.43860
+time=0.000017400000000
+
+A*:
+Path found!
+numberofsteps=20978
+nodescreated=21778
+pathlength=496.26703
+time=0.015098400000000
+LPA*:
+Path found!
+numberofsteps=12298
+nodescreated=12375
+pathlength=496.26703
+time=0.030339700000000
+
+A*:
+Path found!
+numberofsteps=21637
+nodescreated=22309
+pathlength=497.09546
+time=0.015250900000000
+LPA*:
+Path found!
+numberofsteps=11094
+nodescreated=10966
+pathlength=497.09546
+time=0.026543700000000
+
+A*:
+Path found!
+numberofsteps=21636
+nodescreated=22308
+pathlength=497.09546
+time=0.016550000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=21635
+nodescreated=22307
+pathlength=497.09546
+time=0.014992300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=21634
+nodescreated=22306
+pathlength=497.09546
+time=0.015127600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=21633
+nodescreated=22305
+pathlength=497.09546
+time=0.016548400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=21632
+nodescreated=22304
+pathlength=497.09546
+time=0.014659000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=21631
+nodescreated=22303
+pathlength=497.09546
+time=0.015395100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=21618
+nodescreated=22290
+pathlength=497.09546
+time=0.016066600000000
+LPA*:
+Path found!
+numberofsteps=464
+nodescreated=464
+pathlength=497.09546
+time=0.001093000000000
+
+A*:
+Path found!
+numberofsteps=21617
+nodescreated=22289
+pathlength=497.09546
+time=0.016558300000000
+LPA*:
+Path found!
+numberofsteps=38
+nodescreated=38
+pathlength=497.09546
+time=0.000062100000000
+
+A*:
+Path found!
+numberofsteps=21616
+nodescreated=22288
+pathlength=497.09546
+time=0.017042200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=47173
+nodescreated=48381
+pathlength=497.96045
+time=0.036400600000000
+LPA*:
+Path found!
+numberofsteps=47200
+nodescreated=299399
+pathlength=497.96045
+time=0.106250600000000
+
+A*:
+Path found!
+numberofsteps=47172
+nodescreated=48380
+pathlength=497.96045
+time=0.034296700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=47171
+nodescreated=48379
+pathlength=497.96045
+time=0.033258100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000005500000000
+
+A*:
+Path found!
+numberofsteps=47170
+nodescreated=48378
+pathlength=497.96045
+time=0.034105300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=47169
+nodescreated=48377
+pathlength=497.96045
+time=0.033977100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=47168
+nodescreated=48376
+pathlength=497.96045
+time=0.033487200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=47167
+nodescreated=48375
+pathlength=497.96045
+time=0.034335300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000005600000000
+
+A*:
+Path found!
+numberofsteps=47165
+nodescreated=48373
+pathlength=497.96045
+time=0.033132900000000
+LPA*:
+Path found!
+numberofsteps=10
+nodescreated=10
+pathlength=497.96045
+time=0.000037600000000
+
+A*:
+Path found!
+numberofsteps=47164
+nodescreated=48372
+pathlength=497.96045
+time=0.035034700000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=497.96045
+time=0.000009300000000
+
+A*:
+Path found!
+numberofsteps=47163
+nodescreated=48371
+pathlength=497.96045
+time=0.035181300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=47162
+nodescreated=48370
+pathlength=497.96045
+time=0.033676200000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=497.96045
+time=0.000015000000000
+
+A*:
+Path found!
+numberofsteps=47161
+nodescreated=48369
+pathlength=497.96045
+time=0.033947700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=47160
+nodescreated=48368
+pathlength=497.96045
+time=0.033371200000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=497.96045
+time=0.000018100000000
+
+A*:
+Path found!
+numberofsteps=47735
+nodescreated=48913
+pathlength=498.54623
+time=0.043895600000000
+LPA*:
+Path found!
+numberofsteps=7098
+nodescreated=7068
+pathlength=498.54623
+time=0.016495600000000
+
+A*:
+Path found!
+numberofsteps=47734
+nodescreated=48912
+pathlength=498.54623
+time=0.031385100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=498.54623
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=47733
+nodescreated=48911
+pathlength=498.54623
+time=0.033537600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=498.54623
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=20380
+nodescreated=21466
+pathlength=461.88226
+time=0.014231900000000
+LPA*:
+Path found!
+numberofsteps=20414
+nodescreated=272499
+pathlength=461.88226
+time=0.041380200000000
+
+A*:
+Path found!
+numberofsteps=20379
+nodescreated=21465
+pathlength=461.88226
+time=0.014916200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000005100000000
+
+A*:
+Path found!
+numberofsteps=20378
+nodescreated=21464
+pathlength=461.88226
+time=0.014529700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=20377
+nodescreated=21463
+pathlength=461.88226
+time=0.015218500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=20375
+nodescreated=21461
+pathlength=461.88226
+time=0.015771800000000
+LPA*:
+Path found!
+numberofsteps=12
+nodescreated=12
+pathlength=461.88226
+time=0.000048100000000
+
+A*:
+Path found!
+numberofsteps=21894
+nodescreated=22922
+pathlength=462.71069
+time=0.015798500000000
+LPA*:
+Path found!
+numberofsteps=2372
+nodescreated=2315
+pathlength=462.71069
+time=0.005596400000000
+
+A*:
+Path found!
+numberofsteps=21893
+nodescreated=22921
+pathlength=462.71069
+time=0.018062200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=21892
+nodescreated=22920
+pathlength=462.71069
+time=0.016882800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=21891
+nodescreated=22919
+pathlength=462.71069
+time=0.016510700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=21889
+nodescreated=22917
+pathlength=462.71069
+time=0.017816600000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=462.71069
+time=0.000029500000000
+
+A*:
+Path found!
+numberofsteps=21888
+nodescreated=22916
+pathlength=462.71069
+time=0.015506500000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=462.71069
+time=0.000011900000000
+
+A*:
+Path found!
+numberofsteps=21887
+nodescreated=22915
+pathlength=462.71069
+time=0.016420100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=21886
+nodescreated=22914
+pathlength=462.71069
+time=0.016792900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=21885
+nodescreated=22913
+pathlength=462.71069
+time=0.016026300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=21884
+nodescreated=22912
+pathlength=462.71069
+time=0.016693300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=21883
+nodescreated=22911
+pathlength=462.71069
+time=0.017014300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=462.71069
+time=0.000006200000000
+
+A*:
+Path found!
+numberofsteps=48622
+nodescreated=49515
+pathlength=678.25903
+time=0.037807300000000
+LPA*:
+Path found!
+numberofsteps=48703
+nodescreated=300599
+pathlength=678.25903
+time=0.095835600000000
+
+A*:
+Path found!
+numberofsteps=48621
+nodescreated=49514
+pathlength=678.25903
+time=0.037025300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=48620
+nodescreated=49513
+pathlength=678.25903
+time=0.035542500000000
+LPA*:
+Path found!
+numberofsteps=32
+nodescreated=32
+pathlength=678.25903
+time=0.000061700000000
+
+A*:
+Path found!
+numberofsteps=48877
+nodescreated=49771
+pathlength=678.84479
+time=0.035384900000000
+LPA*:
+Path found!
+numberofsteps=11520
+nodescreated=11521
+pathlength=678.84479
+time=0.027732400000000
+
+A*:
+Path found!
+numberofsteps=48876
+nodescreated=49770
+pathlength=678.84479
+time=0.035445700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.84479
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=48875
+nodescreated=49769
+pathlength=678.84479
+time=0.038209900000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=678.84479
+time=0.000009600000000
+
+A*:
+Path found!
+numberofsteps=48874
+nodescreated=49768
+pathlength=678.84479
+time=0.035803300000000
+LPA*:
+Path found!
+numberofsteps=50
+nodescreated=50
+pathlength=678.84479
+time=0.000098300000000
+
+A*:
+Path found!
+numberofsteps=48913
+nodescreated=49808
+pathlength=679.43060
+time=0.037123800000000
+LPA*:
+Path found!
+numberofsteps=44236
+nodescreated=44237
+pathlength=679.43060
+time=0.099085500000000
+
+A*:
+Path found!
+numberofsteps=48912
+nodescreated=49807
+pathlength=679.43060
+time=0.039630900000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=679.43060
+time=0.000008200000000
+
+A*:
+Path found!
+numberofsteps=48911
+nodescreated=49806
+pathlength=679.43060
+time=0.038810000000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=34
+pathlength=679.43060
+time=0.000069700000000
+
+A*:
+Path found!
+numberofsteps=48910
+nodescreated=49805
+pathlength=679.43060
+time=0.039505400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=679.43060
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=48910
+nodescreated=49804
+pathlength=679.43060
+time=0.037114100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=679.43060
+time=0.000007700000000
+
+A*:
+Path found!
+numberofsteps=48909
+nodescreated=49803
+pathlength=679.43060
+time=0.039082400000000
+LPA*:
+Path found!
+numberofsteps=92
+nodescreated=92
+pathlength=679.43060
+time=0.000150700000000
+
+A*:
+Path found!
+numberofsteps=48908
+nodescreated=49802
+pathlength=679.43060
+time=0.039445700000000
+LPA*:
+Path found!
+numberofsteps=134
+nodescreated=134
+pathlength=679.43060
+time=0.000192500000000
+
+A*:
+Path found!
+numberofsteps=48907
+nodescreated=49801
+pathlength=679.43060
+time=0.040220200000000
+LPA*:
+Path found!
+numberofsteps=40
+nodescreated=40
+pathlength=679.43060
+time=0.000079000000000
+
+A*:
+Path found!
+numberofsteps=48906
+nodescreated=49800
+pathlength=679.43060
+time=0.039283700000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=679.43060
+time=0.000011700000000
+
+A*:
+Path found!
+numberofsteps=58227
+nodescreated=59235
+pathlength=581.26910
+time=0.051295100000000
+LPA*:
+Path found!
+numberofsteps=58230
+nodescreated=310241
+pathlength=581.26910
+time=0.129776300000000
+
+A*:
+Path found!
+numberofsteps=58226
+nodescreated=59234
+pathlength=581.26910
+time=0.045427100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000007100000000
+
+A*:
+Path found!
+numberofsteps=58692
+nodescreated=59677
+pathlength=581.85492
+time=0.047669000000000
+LPA*:
+Path found!
+numberofsteps=817
+nodescreated=794
+pathlength=581.85492
+time=0.002457900000000
+
+A*:
+Path found!
+numberofsteps=58691
+nodescreated=59676
+pathlength=581.85492
+time=0.047099100000000
+LPA*:
+Path found!
+numberofsteps=320
+nodescreated=320
+pathlength=581.85492
+time=0.000826400000000
+
+A*:
+Path found!
+numberofsteps=58690
+nodescreated=59675
+pathlength=581.85492
+time=0.044292100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=58689
+nodescreated=59674
+pathlength=581.85492
+time=0.046827800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=58688
+nodescreated=59673
+pathlength=581.85492
+time=0.043710100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000006800000000
+
+A*:
+Path found!
+numberofsteps=58687
+nodescreated=59672
+pathlength=581.85492
+time=0.045710600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=58686
+nodescreated=59671
+pathlength=581.85492
+time=0.048396300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=58685
+nodescreated=59670
+pathlength=581.85492
+time=0.045596000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=58684
+nodescreated=59669
+pathlength=581.85492
+time=0.050232500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000008500000000
+
+A*:
+Path found!
+numberofsteps=58683
+nodescreated=59668
+pathlength=581.85492
+time=0.049031400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=58682
+nodescreated=59667
+pathlength=581.85492
+time=0.045853700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000006800000000
+
+A*:
+Path found!
+numberofsteps=58681
+nodescreated=59666
+pathlength=581.85492
+time=0.045576700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000006300000000
+
+A*:
+Path found!
+numberofsteps=58680
+nodescreated=59665
+pathlength=581.85492
+time=0.046733000000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=581.85492
+time=0.000013800000000
+
+A*:
+Path found!
+numberofsteps=58679
+nodescreated=59664
+pathlength=581.85492
+time=0.045698100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.85492
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=20379
+nodescreated=21103
+pathlength=495.43860
+time=0.012967600000000
+LPA*:
+Path found!
+numberofsteps=20426
+nodescreated=272151
+pathlength=495.43860
+time=0.038603500000000
+
+A*:
+Path found!
+numberofsteps=20378
+nodescreated=21102
+pathlength=495.43860
+time=0.015882800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=495.43860
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=20377
+nodescreated=21101
+pathlength=495.43860
+time=0.013294000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=495.43860
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=20980
+nodescreated=21781
+pathlength=496.26703
+time=0.016398200000000
+LPA*:
+Path found!
+numberofsteps=12404
+nodescreated=12481
+pathlength=496.26703
+time=0.027520000000000
+
+A*:
+Path found!
+numberofsteps=20979
+nodescreated=21780
+pathlength=496.26703
+time=0.014275800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=496.26703
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=20978
+nodescreated=21779
+pathlength=496.26703
+time=0.015637900000000
+LPA*:
+Path found!
+numberofsteps=338
+nodescreated=338
+pathlength=496.26703
+time=0.000599800000000
+
+A*:
+Path found!
+numberofsteps=20977
+nodescreated=21778
+pathlength=496.26703
+time=0.017614500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=496.26703
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=20976
+nodescreated=21777
+pathlength=496.26703
+time=0.013918800000000
+LPA*:
+Path found!
+numberofsteps=110
+nodescreated=110
+pathlength=496.26703
+time=0.000185000000000
+
+A*:
+Path found!
+numberofsteps=20975
+nodescreated=21776
+pathlength=496.26703
+time=0.014874300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=496.26703
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=20973
+nodescreated=21774
+pathlength=496.26703
+time=0.016080800000000
+LPA*:
+Path found!
+numberofsteps=19
+nodescreated=19
+pathlength=496.26703
+time=0.000040200000000
+
+A*:
+Path found!
+numberofsteps=20972
+nodescreated=21773
+pathlength=496.26703
+time=0.015213800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=496.26703
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=21631
+nodescreated=22304
+pathlength=497.09546
+time=0.017975100000000
+LPA*:
+Path found!
+numberofsteps=12010
+nodescreated=11882
+pathlength=497.09546
+time=0.032325600000000
+
+A*:
+Path found!
+numberofsteps=21630
+nodescreated=22303
+pathlength=497.09546
+time=0.019420800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000006400000000
+
+A*:
+Path found!
+numberofsteps=21629
+nodescreated=22302
+pathlength=497.09546
+time=0.017738200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=21629
+nodescreated=22301
+pathlength=497.09546
+time=0.014994100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000012100000000
+
+A*:
+Path found!
+numberofsteps=21628
+nodescreated=22300
+pathlength=497.09546
+time=0.016298400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.09546
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=47173
+nodescreated=48381
+pathlength=497.96045
+time=0.034015000000000
+LPA*:
+Path found!
+numberofsteps=47200
+nodescreated=299399
+pathlength=497.96045
+time=0.098372300000000
+
+A*:
+Path found!
+numberofsteps=47748
+nodescreated=48926
+pathlength=498.54623
+time=0.032247300000000
+LPA*:
+Path found!
+numberofsteps=7106
+nodescreated=7076
+pathlength=498.54623
+time=0.017268400000000
+
+A*:
+Path found!
+numberofsteps=48621
+nodescreated=49858
+pathlength=499.37466
+time=0.033234300000000
+LPA*:
+Path found!
+numberofsteps=7253
+nodescreated=7306
+pathlength=499.37466
+time=0.019025300000000
+
+A*:
+Path found!
+numberofsteps=48687
+nodescreated=49933
+pathlength=499.57568
+time=0.033197300000000
+LPA*:
+Path found!
+numberofsteps=3320
+nodescreated=3345
+pathlength=499.57568
+time=0.008448500000000
+
+A*:
+Path found!
+numberofsteps=48685
+nodescreated=49932
+pathlength=499.57568
+time=0.035304200000000
+LPA*:
+Path found!
+numberofsteps=53
+nodescreated=54
+pathlength=499.57568
+time=0.000104300000000
+
+A*:
+Path found!
+numberofsteps=48684
+nodescreated=49931
+pathlength=499.57568
+time=0.035236500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=499.57568
+time=0.000003200000000
+
+A*:
+Path found!
+numberofsteps=48683
+nodescreated=49930
+pathlength=499.57568
+time=0.036626500000000
+LPA*:
+Path found!
+numberofsteps=112
+nodescreated=112
+pathlength=499.57568
+time=0.000349100000000
+
+A*:
+Path found!
+numberofsteps=48682
+nodescreated=49929
+pathlength=499.57568
+time=0.036062800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=499.57568
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=48681
+nodescreated=49928
+pathlength=499.57568
+time=0.035652000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=499.57568
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=48680
+nodescreated=49927
+pathlength=499.57568
+time=0.033975600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=499.57568
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=48680
+nodescreated=49926
+pathlength=499.57568
+time=0.035095200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=499.57568
+time=0.000010300000000
+
+A*:
+Path found!
+numberofsteps=48679
+nodescreated=49925
+pathlength=499.57568
+time=0.033657000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=499.57568
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=48678
+nodescreated=49924
+pathlength=499.57568
+time=0.035853300000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=499.57568
+time=0.000007000000000
+
+A*:
+Path found!
+numberofsteps=48677
+nodescreated=49923
+pathlength=499.57568
+time=0.034771400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=499.57568
+time=0.000002900000000
+
+A*:
+Path found!
+numberofsteps=49092
+nodescreated=50323
+pathlength=500.16147
+time=0.034276000000000
+LPA*:
+Path found!
+numberofsteps=13164
+nodescreated=13149
+pathlength=500.16147
+time=0.029990100000000
+
+A*:
+Path found!
+numberofsteps=49090
+nodescreated=50321
+pathlength=500.16147
+time=0.032814800000000
+LPA*:
+Path found!
+numberofsteps=25
+nodescreated=25
+pathlength=500.16147
+time=0.000083200000000
+
+A*:
+Path found!
+numberofsteps=20380
+nodescreated=21466
+pathlength=461.88226
+time=0.014636800000000
+LPA*:
+Path found!
+numberofsteps=20414
+nodescreated=272499
+pathlength=461.88226
+time=0.041740800000000
+
+A*:
+Path found!
+numberofsteps=20379
+nodescreated=21465
+pathlength=461.88226
+time=0.015105800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=20378
+nodescreated=21464
+pathlength=461.88226
+time=0.014229700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=20377
+nodescreated=21463
+pathlength=461.88226
+time=0.015978000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000005700000000
+
+A*:
+Path found!
+numberofsteps=20376
+nodescreated=21462
+pathlength=461.88226
+time=0.014756700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=20375
+nodescreated=21461
+pathlength=461.88226
+time=0.014661500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=20374
+nodescreated=21460
+pathlength=461.88226
+time=0.015652700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=20374
+nodescreated=21459
+pathlength=461.88226
+time=0.014141700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000013200000000
+
+A*:
+Path found!
+numberofsteps=20373
+nodescreated=21458
+pathlength=461.88226
+time=0.013779800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=20372
+nodescreated=21457
+pathlength=461.88226
+time=0.014871200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000006300000000
+
+A*:
+Path found!
+numberofsteps=20371
+nodescreated=21456
+pathlength=461.88226
+time=0.015244600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=20370
+nodescreated=21455
+pathlength=461.88226
+time=0.014462500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=20369
+nodescreated=21454
+pathlength=461.88226
+time=0.015125900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=20368
+nodescreated=21453
+pathlength=461.88226
+time=0.014035400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=20367
+nodescreated=21452
+pathlength=461.88226
+time=0.015923100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=20366
+nodescreated=21451
+pathlength=461.88226
+time=0.016521200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=48622
+nodescreated=49515
+pathlength=678.25903
+time=0.034470400000000
+LPA*:
+Path found!
+numberofsteps=48703
+nodescreated=300599
+pathlength=678.25903
+time=0.092639800000000
+
+A*:
+Path found!
+numberofsteps=48621
+nodescreated=49514
+pathlength=678.25903
+time=0.035057100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=48620
+nodescreated=49513
+pathlength=678.25903
+time=0.035625900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000005500000000
+
+A*:
+Path found!
+numberofsteps=48619
+nodescreated=49512
+pathlength=678.25903
+time=0.034286900000000
+LPA*:
+Path found!
+numberofsteps=136
+nodescreated=136
+pathlength=678.25903
+time=0.000216100000000
+
+A*:
+Path found!
+numberofsteps=48618
+nodescreated=49511
+pathlength=678.25903
+time=0.037292300000000
+LPA*:
+Path found!
+numberofsteps=38
+nodescreated=38
+pathlength=678.25903
+time=0.000075600000000
+
+A*:
+Path found!
+numberofsteps=48617
+nodescreated=49510
+pathlength=678.25903
+time=0.035207200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=48616
+nodescreated=49509
+pathlength=678.25903
+time=0.038434500000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=678.25903
+time=0.000015600000000
+
+A*:
+Path found!
+numberofsteps=48615
+nodescreated=49508
+pathlength=678.25903
+time=0.035188700000000
+LPA*:
+Path found!
+numberofsteps=22
+nodescreated=22
+pathlength=678.25903
+time=0.000045300000000
+
+A*:
+Path found!
+numberofsteps=48614
+nodescreated=49507
+pathlength=678.25903
+time=0.036024700000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=678.25903
+time=0.000010200000000
+
+A*:
+Path found!
+numberofsteps=48613
+nodescreated=49506
+pathlength=678.25903
+time=0.036251000000000
+LPA*:
+Path found!
+numberofsteps=38
+nodescreated=38
+pathlength=678.25903
+time=0.000078900000000
+
+A*:
+Path found!
+numberofsteps=48612
+nodescreated=49505
+pathlength=678.25903
+time=0.036611800000000
+LPA*:
+Path found!
+numberofsteps=750
+nodescreated=750
+pathlength=678.25903
+time=0.001154700000000
+
+A*:
+Path found!
+numberofsteps=48611
+nodescreated=49504
+pathlength=678.25903
+time=0.035779400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000005600000000
+
+A*:
+Path found!
+numberofsteps=48610
+nodescreated=49503
+pathlength=678.25903
+time=0.037932800000000
+LPA*:
+Path found!
+numberofsteps=50
+nodescreated=50
+pathlength=678.25903
+time=0.000090500000000
+
+A*:
+Path found!
+numberofsteps=48609
+nodescreated=49502
+pathlength=678.25903
+time=0.034440400000000
+LPA*:
+Path found!
+numberofsteps=90
+nodescreated=90
+pathlength=678.25903
+time=0.000190000000000
+
+A*:
+Path found!
+numberofsteps=48608
+nodescreated=49501
+pathlength=678.25903
+time=0.037258600000000
+LPA*:
+Path found!
+numberofsteps=22
+nodescreated=22
+pathlength=678.25903
+time=0.000052000000000
+
+A*:
+Path found!
+numberofsteps=48865
+nodescreated=49759
+pathlength=678.84479
+time=0.035538400000000
+LPA*:
+Path found!
+numberofsteps=11392
+nodescreated=11393
+pathlength=678.84479
+time=0.027914100000000
+
+A*:
+Path found!
+numberofsteps=58227
+nodescreated=59235
+pathlength=581.26910
+time=0.043559600000000
+LPA*:
+Path found!
+numberofsteps=58230
+nodescreated=310241
+pathlength=581.26910
+time=0.122698300000000
+
+A*:
+Path found!
+numberofsteps=58226
+nodescreated=59234
+pathlength=581.26910
+time=0.041460600000000
+LPA*:
+Path found!
+numberofsteps=320
+nodescreated=320
+pathlength=581.26910
+time=0.000544800000000
+
+A*:
+Path found!
+numberofsteps=58224
+nodescreated=59232
+pathlength=581.26910
+time=0.042298400000000
+LPA*:
+Path found!
+numberofsteps=113
+nodescreated=113
+pathlength=581.26910
+time=0.000211600000000
+
+A*:
+Path found!
+numberofsteps=58223
+nodescreated=59231
+pathlength=581.26910
+time=0.043313200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=58222
+nodescreated=59230
+pathlength=581.26910
+time=0.042292100000000
+LPA*:
+Path found!
+numberofsteps=32
+nodescreated=32
+pathlength=581.26910
+time=0.000063700000000
+
+A*:
+Path found!
+numberofsteps=58221
+nodescreated=59229
+pathlength=581.26910
+time=0.045701800000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=581.26910
+time=0.000007500000000
+
+A*:
+Path found!
+numberofsteps=58220
+nodescreated=59228
+pathlength=581.26910
+time=0.044023900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=58219
+nodescreated=59227
+pathlength=581.26910
+time=0.043673000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000003200000000
+
+A*:
+Path found!
+numberofsteps=58218
+nodescreated=59226
+pathlength=581.26910
+time=0.044051600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=58217
+nodescreated=59225
+pathlength=581.26910
+time=0.046424300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005600000000
+
+A*:
+Path found!
+numberofsteps=58216
+nodescreated=59224
+pathlength=581.26910
+time=0.043962400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=58215
+nodescreated=59223
+pathlength=581.26910
+time=0.044885700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=58214
+nodescreated=59222
+pathlength=581.26910
+time=0.045442200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000006700000000
+
+A*:
+Path found!
+numberofsteps=58213
+nodescreated=59221
+pathlength=581.26910
+time=0.042751200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000006700000000
+
+A*:
+Path found!
+numberofsteps=58212
+nodescreated=59220
+pathlength=581.26910
+time=0.044379100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=58211
+nodescreated=59219
+pathlength=581.26910
+time=0.045960100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=47173
+nodescreated=48381
+pathlength=497.96045
+time=0.033302800000000
+LPA*:
+Path found!
+numberofsteps=47200
+nodescreated=299399
+pathlength=497.96045
+time=0.097648700000000
+
+A*:
+Path found!
+numberofsteps=47172
+nodescreated=48380
+pathlength=497.96045
+time=0.030423600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=47171
+nodescreated=48379
+pathlength=497.96045
+time=0.032060200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=47170
+nodescreated=48378
+pathlength=497.96045
+time=0.033097200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000005900000000
+
+A*:
+Path found!
+numberofsteps=47169
+nodescreated=48377
+pathlength=497.96045
+time=0.033797700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=47168
+nodescreated=48376
+pathlength=497.96045
+time=0.032075100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000005700000000
+
+A*:
+Path found!
+numberofsteps=47167
+nodescreated=48375
+pathlength=497.96045
+time=0.032861100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=47166
+nodescreated=48374
+pathlength=497.96045
+time=0.031731900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000006200000000
+
+A*:
+Path found!
+numberofsteps=47165
+nodescreated=48373
+pathlength=497.96045
+time=0.032422300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=47164
+nodescreated=48372
+pathlength=497.96045
+time=0.031867300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=497.96045
+time=0.000007300000000
+
+A*:
+Path found!
+numberofsteps=47163
+nodescreated=48371
+pathlength=497.96045
+time=0.033775400000000
+LPA*:
+Path found!
+numberofsteps=60
+nodescreated=60
+pathlength=497.96045
+time=0.000108300000000
+
+A*:
+Path found!
+numberofsteps=47162
+nodescreated=48370
+pathlength=497.96045
+time=0.032406300000000
+LPA*:
+Path found!
+numberofsteps=42
+nodescreated=42
+pathlength=497.96045
+time=0.000077000000000
+
+A*:
+Path found!
+numberofsteps=47988
+nodescreated=49163
+pathlength=498.78888
+time=0.034805300000000
+LPA*:
+Path found!
+numberofsteps=4133
+nodescreated=4100
+pathlength=498.78888
+time=0.009679800000000
+
+A*:
+Path found!
+numberofsteps=47987
+nodescreated=49162
+pathlength=498.78888
+time=0.031762900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=498.78888
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=47986
+nodescreated=49161
+pathlength=498.78888
+time=0.033478700000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=498.78888
+time=0.000007300000000
+
+A*:
+Path found!
+numberofsteps=47985
+nodescreated=49159
+pathlength=498.78888
+time=0.032628700000000
+LPA*:
+Path found!
+numberofsteps=1
+nodescreated=0
+pathlength=498.78888
+time=0.000013500000000
+
+A*:
+Path found!
+numberofsteps=20380
+nodescreated=21466
+pathlength=461.88226
+time=0.015633600000000
+LPA*:
+Path found!
+numberofsteps=20414
+nodescreated=272499
+pathlength=461.88226
+time=0.041411400000000
+
+A*:
+Path found!
+numberofsteps=20379
+nodescreated=21465
+pathlength=461.88226
+time=0.014439100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=20378
+nodescreated=21464
+pathlength=461.88226
+time=0.014181700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=20377
+nodescreated=21463
+pathlength=461.88226
+time=0.015088000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=20376
+nodescreated=21462
+pathlength=461.88226
+time=0.014449100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=20375
+nodescreated=21461
+pathlength=461.88226
+time=0.015108700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000008200000000
+
+A*:
+Path found!
+numberofsteps=20374
+nodescreated=21460
+pathlength=461.88226
+time=0.020718700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=20373
+nodescreated=21459
+pathlength=461.88226
+time=0.019731100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000006000000000
+
+A*:
+Path found!
+numberofsteps=20372
+nodescreated=21458
+pathlength=461.88226
+time=0.016923200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=20371
+nodescreated=21457
+pathlength=461.88226
+time=0.018496900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=20370
+nodescreated=21456
+pathlength=461.88226
+time=0.016166700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=20369
+nodescreated=21455
+pathlength=461.88226
+time=0.016340700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=20368
+nodescreated=21454
+pathlength=461.88226
+time=0.019080900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=20366
+nodescreated=21452
+pathlength=461.88226
+time=0.018370000000000
+LPA*:
+Path found!
+numberofsteps=18
+nodescreated=18
+pathlength=461.88226
+time=0.000059300000000
+
+A*:
+Path found!
+numberofsteps=20365
+nodescreated=21451
+pathlength=461.88226
+time=0.016624200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=461.88226
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=20363
+nodescreated=21449
+pathlength=461.88226
+time=0.017372400000000
+LPA*:
+Path found!
+numberofsteps=20
+nodescreated=20
+pathlength=461.88226
+time=0.000074000000000
+
+A*:
+Path found!
+numberofsteps=48622
+nodescreated=49515
+pathlength=678.25903
+time=0.038844100000000
+LPA*:
+Path found!
+numberofsteps=48703
+nodescreated=300599
+pathlength=678.25903
+time=0.098349700000000
+
+A*:
+Path found!
+numberofsteps=48621
+nodescreated=49514
+pathlength=678.25903
+time=0.037690700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=48621
+nodescreated=49513
+pathlength=678.25903
+time=0.040370300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000012900000000
+
+A*:
+Path found!
+numberofsteps=48620
+nodescreated=49512
+pathlength=678.25903
+time=0.039646300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000005800000000
+
+A*:
+Path found!
+numberofsteps=48619
+nodescreated=49511
+pathlength=678.25903
+time=0.038156700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=678.25903
+time=0.000007400000000
+
+A*:
+Path found!
+numberofsteps=48852
+nodescreated=49745
+pathlength=678.84479
+time=0.039782300000000
+LPA*:
+Path found!
+numberofsteps=11486
+nodescreated=11487
+pathlength=678.84479
+time=0.028804700000000
+
+A*:
+Path found!
+numberofsteps=48851
+nodescreated=49744
+pathlength=678.84479
+time=0.039219300000000
+LPA*:
+Path found!
+numberofsteps=56
+nodescreated=56
+pathlength=678.84479
+time=0.000115800000000
+
+A*:
+Path found!
+numberofsteps=48890
+nodescreated=49784
+pathlength=679.43060
+time=0.040695500000000
+LPA*:
+Path found!
+numberofsteps=44186
+nodescreated=44187
+pathlength=679.43060
+time=0.105487000000000
+
+A*:
+Path found!
+numberofsteps=48889
+nodescreated=49783
+pathlength=679.43060
+time=0.039326300000000
+LPA*:
+Path found!
+numberofsteps=762
+nodescreated=762
+pathlength=679.43060
+time=0.001181000000000
+
+A*:
+Path found!
+numberofsteps=48888
+nodescreated=49782
+pathlength=679.43060
+time=0.040447400000000
+LPA*:
+Path found!
+numberofsteps=50
+nodescreated=50
+pathlength=679.43060
+time=0.000099900000000
+
+A*:
+Path found!
+numberofsteps=48887
+nodescreated=49781
+pathlength=679.43060
+time=0.039980300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=679.43060
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=48886
+nodescreated=49780
+pathlength=679.43060
+time=0.040455400000000
+LPA*:
+Path found!
+numberofsteps=88
+nodescreated=88
+pathlength=679.43060
+time=0.000164400000000
+
+A*:
+Path found!
+numberofsteps=48885
+nodescreated=49779
+pathlength=679.43060
+time=0.039989800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=679.43060
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=48884
+nodescreated=49778
+pathlength=679.43060
+time=0.040399000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=679.43060
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=48883
+nodescreated=49777
+pathlength=679.43060
+time=0.039923200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=679.43060
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=48882
+nodescreated=49776
+pathlength=679.43060
+time=0.038867100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=679.43060
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=58227
+nodescreated=59235
+pathlength=581.26910
+time=0.049302600000000
+LPA*:
+Path found!
+numberofsteps=58230
+nodescreated=310241
+pathlength=581.26910
+time=0.137467300000000
+
+A*:
+Path found!
+numberofsteps=58226
+nodescreated=59234
+pathlength=581.26910
+time=0.046803200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=58225
+nodescreated=59233
+pathlength=581.26910
+time=0.047630000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=58224
+nodescreated=59232
+pathlength=581.26910
+time=0.056110600000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=581.26910
+time=0.000009900000000
+
+A*:
+Path found!
+numberofsteps=58223
+nodescreated=59231
+pathlength=581.26910
+time=0.052353000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=58222
+nodescreated=59230
+pathlength=581.26910
+time=0.052958300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000010800000000
+
+A*:
+Path found!
+numberofsteps=58221
+nodescreated=59229
+pathlength=581.26910
+time=0.122829200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000008100000000
+
+A*:
+Path found!
+numberofsteps=58220
+nodescreated=59228
+pathlength=581.26910
+time=0.163460800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005800000000
+
+A*:
+Path found!
+numberofsteps=58219
+nodescreated=59227
+pathlength=581.26910
+time=0.159867400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005500000000
+
+A*:
+Path found!
+numberofsteps=58218
+nodescreated=59226
+pathlength=581.26910
+time=0.111717600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005500000000
+
+A*:
+Path found!
+numberofsteps=58217
+nodescreated=59225
+pathlength=581.26910
+time=0.054667400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=58216
+nodescreated=59224
+pathlength=581.26910
+time=0.054959500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=58215
+nodescreated=59223
+pathlength=581.26910
+time=0.050927800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005100000000
+
+A*:
+Path found!
+numberofsteps=58214
+nodescreated=59222
+pathlength=581.26910
+time=0.047506000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000006600000000
+
+A*:
+Path found!
+numberofsteps=58213
+nodescreated=59221
+pathlength=581.26910
+time=0.054360100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=58212
+nodescreated=59220
+pathlength=581.26910
+time=0.062090800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=581.26910
+time=0.000005600000000
+
+A*:
+Path found!
+numberofsteps=81974
+nodescreated=82779
+pathlength=969.78595
+time=0.082443700000000
+LPA*:
+Path found!
+numberofsteps=82015
+nodescreated=476034
+pathlength=969.78595
+time=0.180356600000000
+
+A*:
+Path found!
+numberofsteps=81973
+nodescreated=82778
+pathlength=969.78595
+time=0.115014700000000
+LPA*:
+Path found!
+numberofsteps=46
+nodescreated=46
+pathlength=969.78595
+time=0.000087600000000
+
+A*:
+Path found!
+numberofsteps=81972
+nodescreated=82777
+pathlength=969.78595
+time=0.140918400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=969.78595
+time=0.000006400000000
+
+A*:
+Path found!
+numberofsteps=81971
+nodescreated=82776
+pathlength=969.78595
+time=0.105194600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=969.78595
+time=0.000003200000000
+
+A*:
+Path found!
+numberofsteps=81970
+nodescreated=82775
+pathlength=969.78595
+time=0.068591500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=969.78595
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=81969
+nodescreated=82774
+pathlength=969.78595
+time=0.065572900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=969.78595
+time=0.000006300000000
+
+A*:
+Path found!
+numberofsteps=82242
+nodescreated=83092
+pathlength=970.61438
+time=0.066536200000000
+LPA*:
+Path found!
+numberofsteps=22208
+nodescreated=22253
+pathlength=970.61438
+time=0.051683500000000
+
+A*:
+Path found!
+numberofsteps=82241
+nodescreated=83091
+pathlength=971.20013
+time=0.066727000000000
+LPA*:
+Path found!
+numberofsteps=121688
+nodescreated=121688
+pathlength=971.20013
+time=0.285510400000000
+
+A*:
+Path found!
+numberofsteps=82240
+nodescreated=83090
+pathlength=971.20013
+time=0.069979800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=971.20013
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=82239
+nodescreated=83089
+pathlength=971.20013
+time=0.069093600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=971.20013
+time=0.000003100000000
+
+A*:
+Path found!
+numberofsteps=82238
+nodescreated=83088
+pathlength=971.20013
+time=0.072365100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=971.20013
+time=0.000003300000000
+
+A*:
+Path found!
+numberofsteps=82237
+nodescreated=83087
+pathlength=971.20013
+time=0.067905700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=971.20013
+time=0.000003400000000
+
+A*:
+Path found!
+numberofsteps=82236
+nodescreated=83086
+pathlength=971.20013
+time=0.067419600000000
+LPA*:
+Path found!
+numberofsteps=418
+nodescreated=418
+pathlength=971.20013
+time=0.000653600000000
+
+A*:
+Path found!
+numberofsteps=82235
+nodescreated=83085
+pathlength=971.20013
+time=0.066025700000000
+LPA*:
+Path found!
+numberofsteps=874
+nodescreated=874
+pathlength=971.20013
+time=0.001600900000000
+
+A*:
+Path found!
+numberofsteps=82234
+nodescreated=83084
+pathlength=971.20013
+time=0.070300900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=971.20013
+time=0.000005100000000
+
+A*:
+Path found!
+numberofsteps=82233
+nodescreated=83083
+pathlength=971.20013
+time=0.065906200000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=971.20013
+time=0.000008900000000
+
+A*:
+Path found!
+numberofsteps=80318
+nodescreated=80898
+pathlength=1008.30780
+time=0.061981400000000
+LPA*:
+Path found!
+numberofsteps=80406
+nodescreated=277596
+pathlength=1008.30780
+time=0.172810600000000
+
+A*:
+Path found!
+numberofsteps=80316
+nodescreated=80896
+pathlength=1008.30780
+time=0.057815400000000
+LPA*:
+Path found!
+numberofsteps=174
+nodescreated=174
+pathlength=1008.30780
+time=0.000280400000000
+
+A*:
+Path found!
+numberofsteps=80314
+nodescreated=80894
+pathlength=1008.30780
+time=0.057509500000000
+LPA*:
+Path found!
+numberofsteps=148
+nodescreated=148
+pathlength=1008.30780
+time=0.000237800000000
+
+A*:
+Path found!
+numberofsteps=80313
+nodescreated=80893
+pathlength=1008.30780
+time=0.058310700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000018300000000
+
+A*:
+Path found!
+numberofsteps=80313
+nodescreated=80892
+pathlength=1008.30780
+time=0.058179700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000008800000000
+
+A*:
+Path found!
+numberofsteps=80312
+nodescreated=80891
+pathlength=1008.30780
+time=0.056553200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=80311
+nodescreated=80890
+pathlength=1008.30780
+time=0.061681600000000
+LPA*:
+Path found!
+numberofsteps=96
+nodescreated=96
+pathlength=1008.30780
+time=0.000281500000000
+
+A*:
+Path found!
+numberofsteps=80310
+nodescreated=80889
+pathlength=1008.30780
+time=0.070684900000000
+LPA*:
+Path found!
+numberofsteps=100
+nodescreated=100
+pathlength=1008.30780
+time=0.000157000000000
+
+A*:
+Path found!
+numberofsteps=80309
+nodescreated=80888
+pathlength=1008.30780
+time=0.066891200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=80308
+nodescreated=80887
+pathlength=1008.30780
+time=0.065735600000000
+LPA*:
+Path found!
+numberofsteps=74
+nodescreated=74
+pathlength=1008.30780
+time=0.000129900000000
+
+A*:
+Path found!
+numberofsteps=80307
+nodescreated=80886
+pathlength=1008.30780
+time=0.063292200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=80286
+nodescreated=80866
+pathlength=1008.30780
+time=0.066792500000000
+LPA*:
+Path found!
+numberofsteps=15598
+nodescreated=15599
+pathlength=1008.30780
+time=0.041754100000000
+
+A*:
+Path found!
+numberofsteps=80285
+nodescreated=80865
+pathlength=1008.30780
+time=0.063039900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=80284
+nodescreated=80864
+pathlength=1008.30780
+time=0.064866800000000
+LPA*:
+Path found!
+numberofsteps=48
+nodescreated=48
+pathlength=1008.30780
+time=0.000081100000000
+
+A*:
+Path found!
+numberofsteps=80283
+nodescreated=80863
+pathlength=1008.30780
+time=0.065544400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000008900000000
+
+A*:
+Path found!
+numberofsteps=80282
+nodescreated=80862
+pathlength=1008.30780
+time=0.072422000000000
+LPA*:
+Path found!
+numberofsteps=44
+nodescreated=44
+pathlength=1008.30780
+time=0.000122600000000
+
+A*:
+Path found!
+numberofsteps=88778
+nodescreated=89933
+pathlength=1008.42554
+time=0.087580700000000
+LPA*:
+Path found!
+numberofsteps=88992
+nodescreated=286757
+pathlength=1008.42554
+time=0.269411100000000
+
+A*:
+Path found!
+numberofsteps=88777
+nodescreated=89932
+pathlength=1008.42554
+time=0.166422900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000005500000000
+
+A*:
+Path found!
+numberofsteps=88776
+nodescreated=89931
+pathlength=1008.42554
+time=0.085481400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000005200000000
+
+A*:
+Path found!
+numberofsteps=88775
+nodescreated=89930
+pathlength=1008.42554
+time=0.086933000000000
+LPA*:
+Path found!
+numberofsteps=96
+nodescreated=96
+pathlength=1008.42554
+time=0.000279200000000
+
+A*:
+Path found!
+numberofsteps=88775
+nodescreated=89929
+pathlength=1008.42554
+time=0.076699000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000009700000000
+
+A*:
+Path found!
+numberofsteps=88774
+nodescreated=89928
+pathlength=1008.42554
+time=0.068435900000000
+LPA*:
+Path found!
+numberofsteps=196
+nodescreated=196
+pathlength=1008.42554
+time=0.000388600000000
+
+A*:
+Path found!
+numberofsteps=88773
+nodescreated=89927
+pathlength=1008.42554
+time=0.077721000000000
+LPA*:
+Path found!
+numberofsteps=16
+nodescreated=16
+pathlength=1008.42554
+time=0.000043500000000
+
+A*:
+Path found!
+numberofsteps=88772
+nodescreated=89926
+pathlength=1008.42554
+time=0.062108300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=88771
+nodescreated=89925
+pathlength=1008.42554
+time=0.061880700000000
+LPA*:
+Path found!
+numberofsteps=340
+nodescreated=340
+pathlength=1008.42554
+time=0.000531200000000
+
+A*:
+Path found!
+numberofsteps=88770
+nodescreated=89924
+pathlength=1008.42554
+time=0.062569700000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=1008.42554
+time=0.000011800000000
+
+A*:
+Path found!
+numberofsteps=88769
+nodescreated=89923
+pathlength=1008.42554
+time=0.069145000000000
+LPA*:
+Path found!
+numberofsteps=10
+nodescreated=10
+pathlength=1008.42554
+time=0.000022100000000
+
+A*:
+Path found!
+numberofsteps=88768
+nodescreated=89922
+pathlength=1008.42554
+time=0.059863900000000
+LPA*:
+Path found!
+numberofsteps=64
+nodescreated=64
+pathlength=1008.42554
+time=0.000111500000000
+
+A*:
+Path found!
+numberofsteps=88767
+nodescreated=89921
+pathlength=1008.42554
+time=0.062283700000000
+LPA*:
+Path found!
+numberofsteps=184
+nodescreated=184
+pathlength=1008.42554
+time=0.000294100000000
+
+A*:
+Path found!
+numberofsteps=88766
+nodescreated=89920
+pathlength=1008.42554
+time=0.061000200000000
+LPA*:
+Path found!
+numberofsteps=10
+nodescreated=10
+pathlength=1008.42554
+time=0.000024400000000
+
+A*:
+Path found!
+numberofsteps=88765
+nodescreated=89919
+pathlength=1008.42554
+time=0.066014100000000
+LPA*:
+Path found!
+numberofsteps=146
+nodescreated=146
+pathlength=1008.42554
+time=0.000238800000000
+
+A*:
+Path found!
+numberofsteps=88764
+nodescreated=89918
+pathlength=1008.42554
+time=0.072322800000000
+LPA*:
+Path found!
+numberofsteps=10
+nodescreated=10
+pathlength=1008.42554
+time=0.000025300000000
+
+A*:
+Path found!
+numberofsteps=79698
+nodescreated=80134
+pathlength=1008.86920
+time=0.060096700000000
+LPA*:
+Path found!
+numberofsteps=79732
+nodescreated=276773
+pathlength=1008.86920
+time=0.173143100000000
+
+A*:
+Path found!
+numberofsteps=79697
+nodescreated=80133
+pathlength=1008.86920
+time=0.053668400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.86920
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=79695
+nodescreated=80131
+pathlength=1008.86920
+time=0.057883900000000
+LPA*:
+Path found!
+numberofsteps=47
+nodescreated=47
+pathlength=1008.86920
+time=0.000151900000000
+
+A*:
+Path found!
+numberofsteps=79694
+nodescreated=80130
+pathlength=1008.86920
+time=0.057546500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.86920
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=79693
+nodescreated=80129
+pathlength=1008.86920
+time=0.061312000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.86920
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=79692
+nodescreated=80128
+pathlength=1008.86920
+time=0.060601700000000
+LPA*:
+Path found!
+numberofsteps=64
+nodescreated=64
+pathlength=1008.86920
+time=0.000119200000000
+
+A*:
+Path found!
+numberofsteps=79691
+nodescreated=80127
+pathlength=1008.86920
+time=0.057984200000000
+LPA*:
+Path found!
+numberofsteps=16
+nodescreated=16
+pathlength=1008.86920
+time=0.000032600000000
+
+A*:
+Path found!
+numberofsteps=79690
+nodescreated=80126
+pathlength=1008.86920
+time=0.060123200000000
+LPA*:
+Path found!
+numberofsteps=76
+nodescreated=76
+pathlength=1008.86920
+time=0.000168500000000
+
+A*:
+Path found!
+numberofsteps=79690
+nodescreated=80125
+pathlength=1008.86920
+time=0.062140900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.86920
+time=0.000008500000000
+
+A*:
+Path found!
+numberofsteps=79688
+nodescreated=80123
+pathlength=1008.86920
+time=0.059099400000000
+LPA*:
+Path found!
+numberofsteps=1
+nodescreated=1
+pathlength=1008.86920
+time=0.000012600000000
+
+A*:
+Path found!
+numberofsteps=79687
+nodescreated=80122
+pathlength=1008.86920
+time=0.060307400000000
+LPA*:
+Path found!
+numberofsteps=56
+nodescreated=56
+pathlength=1008.86920
+time=0.000086900000000
+
+A*:
+Path found!
+numberofsteps=79686
+nodescreated=80121
+pathlength=1008.86920
+time=0.057241300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.86920
+time=0.000003300000000
+
+A*:
+Path found!
+numberofsteps=79685
+nodescreated=80120
+pathlength=1008.86920
+time=0.056946500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.86920
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=79684
+nodescreated=80119
+pathlength=1008.86920
+time=0.069281500000000
+LPA*:
+Path found!
+numberofsteps=38
+nodescreated=38
+pathlength=1008.86920
+time=0.000064800000000
+
+A*:
+Path found!
+numberofsteps=79683
+nodescreated=80118
+pathlength=1008.86920
+time=0.055474100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.86920
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=79682
+nodescreated=80117
+pathlength=1008.86920
+time=0.054979200000000
+LPA*:
+Path found!
+numberofsteps=8
+nodescreated=8
+pathlength=1008.86920
+time=0.000018300000000
+
+A*:
+Path found!
+numberofsteps=80800
+nodescreated=81373
+pathlength=1007.57990
+time=0.056121900000000
+LPA*:
+Path found!
+numberofsteps=80892
+nodescreated=278075
+pathlength=1007.57990
+time=0.166942200000000
+
+A*:
+Path found!
+numberofsteps=80798
+nodescreated=81371
+pathlength=1007.57990
+time=0.055691300000000
+LPA*:
+Path found!
+numberofsteps=158
+nodescreated=158
+pathlength=1007.57990
+time=0.000256000000000
+
+A*:
+Path found!
+numberofsteps=80797
+nodescreated=81370
+pathlength=1007.57990
+time=0.071191400000000
+LPA*:
+Path found!
+numberofsteps=1390
+nodescreated=1390
+pathlength=1007.57990
+time=0.002723800000000
+
+A*:
+Path found!
+numberofsteps=80795
+nodescreated=81368
+pathlength=1007.57990
+time=0.070664600000000
+LPA*:
+Path found!
+numberofsteps=44
+nodescreated=44
+pathlength=1007.57990
+time=0.000076400000000
+
+A*:
+Path found!
+numberofsteps=80794
+nodescreated=81367
+pathlength=1007.57990
+time=0.055575400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1007.57990
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=80793
+nodescreated=81366
+pathlength=1007.57990
+time=0.056980900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1007.57990
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=80792
+nodescreated=81365
+pathlength=1007.57990
+time=0.059013100000000
+LPA*:
+Path found!
+numberofsteps=114
+nodescreated=114
+pathlength=1007.57990
+time=0.000186900000000
+
+A*:
+Path found!
+numberofsteps=80791
+nodescreated=81364
+pathlength=1007.57990
+time=0.060287900000000
+LPA*:
+Path found!
+numberofsteps=128
+nodescreated=128
+pathlength=1007.57990
+time=0.000208600000000
+
+A*:
+Path found!
+numberofsteps=80790
+nodescreated=81363
+pathlength=1007.57990
+time=0.062015400000000
+LPA*:
+Path found!
+numberofsteps=92
+nodescreated=92
+pathlength=1007.57990
+time=0.000154800000000
+
+A*:
+Path found!
+numberofsteps=80789
+nodescreated=81362
+pathlength=1007.57990
+time=0.058289000000000
+LPA*:
+Path found!
+numberofsteps=162
+nodescreated=162
+pathlength=1007.57990
+time=0.000247900000000
+
+A*:
+Path found!
+numberofsteps=80788
+nodescreated=81361
+pathlength=1007.57990
+time=0.063907000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1007.57990
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=80787
+nodescreated=81360
+pathlength=1007.57990
+time=0.059231900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1007.57990
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=80786
+nodescreated=81359
+pathlength=1007.57990
+time=0.058686500000000
+LPA*:
+Path found!
+numberofsteps=74
+nodescreated=74
+pathlength=1007.57990
+time=0.000127500000000
+
+A*:
+Path found!
+numberofsteps=80785
+nodescreated=81358
+pathlength=1007.57990
+time=0.058668700000000
+LPA*:
+Path found!
+numberofsteps=28
+nodescreated=28
+pathlength=1007.57990
+time=0.000053200000000
+
+A*:
+Path found!
+numberofsteps=80784
+nodescreated=81357
+pathlength=1007.57990
+time=0.058390100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1007.57990
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=80783
+nodescreated=81356
+pathlength=1007.57990
+time=0.059726600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1007.57990
+time=0.000005100000000
+
+A*:
+Path found!
+numberofsteps=81375
+nodescreated=81880
+pathlength=1009.19507
+time=0.063372200000000
+LPA*:
+Path found!
+numberofsteps=81466
+nodescreated=278581
+pathlength=1009.19507
+time=0.178674600000000
+
+A*:
+Path found!
+numberofsteps=81374
+nodescreated=81879
+pathlength=1009.19507
+time=0.074178500000000
+LPA*:
+Path found!
+numberofsteps=76
+nodescreated=76
+pathlength=1009.19507
+time=0.000133700000000
+
+A*:
+Path found!
+numberofsteps=81373
+nodescreated=81878
+pathlength=1009.19507
+time=0.070330400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=81372
+nodescreated=81877
+pathlength=1009.19507
+time=0.062122000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=81370
+nodescreated=81875
+pathlength=1009.19507
+time=0.065839600000000
+LPA*:
+Path found!
+numberofsteps=96
+nodescreated=96
+pathlength=1009.19507
+time=0.000159600000000
+
+A*:
+Path found!
+numberofsteps=81368
+nodescreated=81873
+pathlength=1009.19507
+time=0.062980200000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=1009.19507
+time=0.000029300000000
+
+A*:
+Path found!
+numberofsteps=81368
+nodescreated=81872
+pathlength=1009.19507
+time=0.061359800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000009700000000
+
+A*:
+Path found!
+numberofsteps=81367
+nodescreated=81871
+pathlength=1009.19507
+time=0.061455400000000
+LPA*:
+Path found!
+numberofsteps=14
+nodescreated=14
+pathlength=1009.19507
+time=0.000028500000000
+
+A*:
+Path found!
+numberofsteps=81366
+nodescreated=81870
+pathlength=1009.19507
+time=0.060677400000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=34
+pathlength=1009.19507
+time=0.000059800000000
+
+A*:
+Path found!
+numberofsteps=81365
+nodescreated=81869
+pathlength=1009.19507
+time=0.060390200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=81364
+nodescreated=81868
+pathlength=1009.19507
+time=0.062265600000000
+LPA*:
+Path found!
+numberofsteps=64
+nodescreated=64
+pathlength=1009.19507
+time=0.000105000000000
+
+A*:
+Path found!
+numberofsteps=81362
+nodescreated=81866
+pathlength=1009.19507
+time=0.060979700000000
+LPA*:
+Path found!
+numberofsteps=24
+nodescreated=24
+pathlength=1009.19507
+time=0.000050900000000
+
+A*:
+Path found!
+numberofsteps=81361
+nodescreated=81865
+pathlength=1009.19507
+time=0.063721500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=81360
+nodescreated=81864
+pathlength=1009.19507
+time=0.064919800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=81359
+nodescreated=81863
+pathlength=1009.19507
+time=0.059155900000000
+LPA*:
+Path found!
+numberofsteps=40
+nodescreated=40
+pathlength=1009.19507
+time=0.000063500000000
+
+A*:
+Path found!
+numberofsteps=81358
+nodescreated=81862
+pathlength=1009.19507
+time=0.060087200000000
+LPA*:
+Path found!
+numberofsteps=38
+nodescreated=38
+pathlength=1009.19507
+time=0.000071400000000
+
+A*:
+Path found!
+numberofsteps=102564
+nodescreated=103737
+pathlength=1010.73926
+time=0.076445200000000
+LPA*:
+Path found!
+numberofsteps=102719
+nodescreated=300502
+pathlength=1010.73926
+time=0.226659000000000
+
+A*:
+Path found!
+numberofsteps=102564
+nodescreated=103736
+pathlength=1010.73926
+time=0.072436200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000013600000000
+
+A*:
+Path found!
+numberofsteps=102564
+nodescreated=103735
+pathlength=1010.73926
+time=0.068763600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000011400000000
+
+A*:
+Path found!
+numberofsteps=102563
+nodescreated=103734
+pathlength=1010.73926
+time=0.066961000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=102562
+nodescreated=103733
+pathlength=1010.73926
+time=0.068650900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=102560
+nodescreated=103731
+pathlength=1010.73926
+time=0.070949400000000
+LPA*:
+Path found!
+numberofsteps=6
+nodescreated=6
+pathlength=1010.73926
+time=0.000068400000000
+
+A*:
+Path found!
+numberofsteps=102559
+nodescreated=103730
+pathlength=1010.73926
+time=0.071317600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000006400000000
+
+A*:
+Path found!
+numberofsteps=102558
+nodescreated=103729
+pathlength=1010.73926
+time=0.069303900000000
+LPA*:
+Path found!
+numberofsteps=52
+nodescreated=52
+pathlength=1010.73926
+time=0.000093000000000
+
+A*:
+Path found!
+numberofsteps=102690
+nodescreated=103858
+pathlength=1011.56769
+time=0.071283100000000
+LPA*:
+Path found!
+numberofsteps=55825
+nodescreated=55822
+pathlength=1011.56769
+time=0.175051500000000
+
+A*:
+Path found!
+numberofsteps=102689
+nodescreated=103857
+pathlength=1011.56769
+time=0.070959100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1011.56769
+time=0.000006000000000
+
+A*:
+Path found!
+numberofsteps=102688
+nodescreated=103856
+pathlength=1011.56769
+time=0.081120100000000
+LPA*:
+Path found!
+numberofsteps=74
+nodescreated=74
+pathlength=1011.56769
+time=0.000126600000000
+
+A*:
+Path found!
+numberofsteps=102687
+nodescreated=103855
+pathlength=1011.56769
+time=0.067288600000000
+LPA*:
+Path found!
+numberofsteps=34
+nodescreated=34
+pathlength=1011.56769
+time=0.000073600000000
+
+A*:
+Path found!
+numberofsteps=102686
+nodescreated=103854
+pathlength=1011.56769
+time=0.070082300000000
+LPA*:
+Path found!
+numberofsteps=12
+nodescreated=12
+pathlength=1011.56769
+time=0.000029100000000
+
+A*:
+Path found!
+numberofsteps=102685
+nodescreated=103853
+pathlength=1011.56769
+time=0.066508300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1011.56769
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=102684
+nodescreated=103852
+pathlength=1011.56769
+time=0.072659700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1011.56769
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=102683
+nodescreated=103851
+pathlength=1011.56769
+time=0.073396600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1011.56769
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=193053
+nodescreated=194618
+pathlength=1206.89868
+time=0.235864900000000
+LPA*:
+Path found!
+numberofsteps=193147
+nodescreated=719002
+pathlength=1206.89868
+time=1.172086800000000
+
+A*:
+Path found!
+numberofsteps=193052
+nodescreated=194617
+pathlength=1206.89868
+time=0.446758900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000007400000000
+
+A*:
+Path found!
+numberofsteps=193051
+nodescreated=194616
+pathlength=1206.89868
+time=0.263006700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000006200000000
+
+A*:
+Path found!
+numberofsteps=193049
+nodescreated=194615
+pathlength=1206.89868
+time=0.248249900000000
+LPA*:
+Path found!
+numberofsteps=113
+nodescreated=114
+pathlength=1206.89868
+time=0.000275200000000
+
+A*:
+Path found!
+numberofsteps=193048
+nodescreated=194614
+pathlength=1206.89868
+time=0.256547600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=193033
+nodescreated=194599
+pathlength=1206.89868
+time=0.179521200000000
+LPA*:
+Path found!
+numberofsteps=305
+nodescreated=305
+pathlength=1206.89868
+time=0.000635500000000
+
+A*:
+Path found!
+numberofsteps=193032
+nodescreated=194598
+pathlength=1206.89868
+time=0.170312300000000
+LPA*:
+Path found!
+numberofsteps=238
+nodescreated=238
+pathlength=1206.89868
+time=0.000387900000000
+
+A*:
+Path found!
+numberofsteps=193031
+nodescreated=194597
+pathlength=1206.89868
+time=0.176737300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=193030
+nodescreated=194596
+pathlength=1206.89868
+time=0.198194500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=193029
+nodescreated=194595
+pathlength=1206.89868
+time=0.167686800000000
+LPA*:
+Path found!
+numberofsteps=66
+nodescreated=66
+pathlength=1206.89868
+time=0.000129300000000
+
+A*:
+Path found!
+numberofsteps=193028
+nodescreated=194594
+pathlength=1206.89868
+time=0.177423700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=193027
+nodescreated=194593
+pathlength=1206.89868
+time=0.179926800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=193026
+nodescreated=194592
+pathlength=1206.89868
+time=0.168558700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=193025
+nodescreated=194591
+pathlength=1206.89868
+time=0.205165100000000
+LPA*:
+Path found!
+numberofsteps=8
+nodescreated=8
+pathlength=1206.89868
+time=0.000022400000000
+
+A*:
+Path found!
+numberofsteps=193024
+nodescreated=194590
+pathlength=1206.89868
+time=0.184112400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000006000000000
+
+A*:
+Path found!
+numberofsteps=193023
+nodescreated=194589
+pathlength=1206.89868
+time=0.180982100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=215583
+nodescreated=217061
+pathlength=1208.81531
+time=0.198965600000000
+LPA*:
+Path found!
+numberofsteps=215714
+nodescreated=741480
+pathlength=1208.81531
+time=0.525827000000000
+
+A*:
+Path found!
+numberofsteps=215582
+nodescreated=217060
+pathlength=1208.81531
+time=0.173245700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1208.81531
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=215581
+nodescreated=217059
+pathlength=1208.81531
+time=0.179986800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1208.81531
+time=0.000006500000000
+
+A*:
+Path found!
+numberofsteps=215580
+nodescreated=217058
+pathlength=1208.81531
+time=0.180951000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1208.81531
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=215579
+nodescreated=217057
+pathlength=1208.81531
+time=0.186331100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1208.81531
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=215578
+nodescreated=217056
+pathlength=1208.81531
+time=0.177401700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1208.81531
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=215577
+nodescreated=217055
+pathlength=1208.81531
+time=0.188106500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1208.81531
+time=0.000007800000000
+
+A*:
+Path found!
+numberofsteps=216187
+nodescreated=217660
+pathlength=1209.64380
+time=0.217000800000000
+LPA*:
+Path found!
+numberofsteps=22517
+nodescreated=22512
+pathlength=1209.64380
+time=0.064300900000000
+
+A*:
+Path found!
+numberofsteps=216186
+nodescreated=217659
+pathlength=1209.64380
+time=0.186092700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=216185
+nodescreated=217658
+pathlength=1209.64380
+time=0.187028200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=216184
+nodescreated=217657
+pathlength=1209.64380
+time=0.184313300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=216183
+nodescreated=217656
+pathlength=1209.64380
+time=0.178984500000000
+LPA*:
+Path found!
+numberofsteps=30
+nodescreated=30
+pathlength=1209.64380
+time=0.000097800000000
+
+A*:
+Path found!
+numberofsteps=216182
+nodescreated=217655
+pathlength=1209.64380
+time=0.175190200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000005100000000
+
+A*:
+Path found!
+numberofsteps=216181
+nodescreated=217654
+pathlength=1209.64380
+time=0.187824000000000
+LPA*:
+Path found!
+numberofsteps=18
+nodescreated=18
+pathlength=1209.64380
+time=0.000038600000000
+
+A*:
+Path found!
+numberofsteps=216180
+nodescreated=217653
+pathlength=1209.64380
+time=0.206310300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=216179
+nodescreated=217652
+pathlength=1209.64380
+time=0.176428800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=80318
+nodescreated=80898
+pathlength=1008.30780
+time=0.055653400000000
+LPA*:
+Path found!
+numberofsteps=80406
+nodescreated=277596
+pathlength=1008.30780
+time=0.175483500000000
+
+A*:
+Path found!
+numberofsteps=80317
+nodescreated=80897
+pathlength=1008.30780
+time=0.057676700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=80316
+nodescreated=80896
+pathlength=1008.30780
+time=0.057267200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=80314
+nodescreated=80894
+pathlength=1008.30780
+time=0.056609000000000
+LPA*:
+Path found!
+numberofsteps=10
+nodescreated=10
+pathlength=1008.30780
+time=0.000034100000000
+
+A*:
+Path found!
+numberofsteps=80313
+nodescreated=80893
+pathlength=1008.30780
+time=0.057074000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=80312
+nodescreated=80892
+pathlength=1008.30780
+time=0.059280600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=80311
+nodescreated=80891
+pathlength=1008.30780
+time=0.060429100000000
+LPA*:
+Path found!
+numberofsteps=64
+nodescreated=64
+pathlength=1008.30780
+time=0.000114600000000
+
+A*:
+Path found!
+numberofsteps=80310
+nodescreated=80890
+pathlength=1008.30780
+time=0.060389300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=80309
+nodescreated=80889
+pathlength=1008.30780
+time=0.062087000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=80308
+nodescreated=80888
+pathlength=1008.30780
+time=0.061247100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=80307
+nodescreated=80887
+pathlength=1008.30780
+time=0.061479600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=80306
+nodescreated=80886
+pathlength=1008.30780
+time=0.060874300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=80305
+nodescreated=80885
+pathlength=1008.30780
+time=0.061788500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000005700000000
+
+A*:
+Path found!
+numberofsteps=80304
+nodescreated=80884
+pathlength=1008.30780
+time=0.062481400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.30780
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=80303
+nodescreated=80883
+pathlength=1008.30780
+time=0.062045200000000
+LPA*:
+Path found!
+numberofsteps=188
+nodescreated=188
+pathlength=1008.30780
+time=0.000307500000000
+
+A*:
+Path found!
+numberofsteps=80302
+nodescreated=80882
+pathlength=1008.30780
+time=0.060872000000000
+LPA*:
+Path found!
+numberofsteps=136
+nodescreated=136
+pathlength=1008.30780
+time=0.000225300000000
+
+A*:
+Path found!
+numberofsteps=88778
+nodescreated=89933
+pathlength=1008.42554
+time=0.069185300000000
+LPA*:
+Path found!
+numberofsteps=88992
+nodescreated=286757
+pathlength=1008.42554
+time=0.187263200000000
+
+A*:
+Path found!
+numberofsteps=88777
+nodescreated=89932
+pathlength=1008.42554
+time=0.055653500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=88776
+nodescreated=89931
+pathlength=1008.42554
+time=0.064733200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=88776
+nodescreated=89930
+pathlength=1008.42554
+time=0.065352500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000010100000000
+
+A*:
+Path found!
+numberofsteps=88775
+nodescreated=89929
+pathlength=1008.42554
+time=0.062342100000000
+LPA*:
+Path found!
+numberofsteps=18
+nodescreated=18
+pathlength=1008.42554
+time=0.000039900000000
+
+A*:
+Path found!
+numberofsteps=88774
+nodescreated=89928
+pathlength=1008.42554
+time=0.060367400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000005800000000
+
+A*:
+Path found!
+numberofsteps=88774
+nodescreated=89927
+pathlength=1008.42554
+time=0.063301900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000016800000000
+
+A*:
+Path found!
+numberofsteps=88773
+nodescreated=89926
+pathlength=1008.42554
+time=0.061377400000000
+LPA*:
+Path found!
+numberofsteps=60
+nodescreated=60
+pathlength=1008.42554
+time=0.000207200000000
+
+A*:
+Path found!
+numberofsteps=88772
+nodescreated=89925
+pathlength=1008.42554
+time=0.060976800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000006600000000
+
+A*:
+Path found!
+numberofsteps=88771
+nodescreated=89924
+pathlength=1008.42554
+time=0.060343500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=88770
+nodescreated=89923
+pathlength=1008.42554
+time=0.060668700000000
+LPA*:
+Path found!
+numberofsteps=114
+nodescreated=114
+pathlength=1008.42554
+time=0.000187200000000
+
+A*:
+Path found!
+numberofsteps=88769
+nodescreated=89922
+pathlength=1008.42554
+time=0.061223700000000
+LPA*:
+Path found!
+numberofsteps=4
+nodescreated=4
+pathlength=1008.42554
+time=0.000012500000000
+
+A*:
+Path found!
+numberofsteps=88768
+nodescreated=89921
+pathlength=1008.42554
+time=0.060072700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.42554
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=88767
+nodescreated=89920
+pathlength=1008.42554
+time=0.061719800000000
+LPA*:
+Path found!
+numberofsteps=98
+nodescreated=98
+pathlength=1008.42554
+time=0.000154600000000
+
+A*:
+Path found!
+numberofsteps=88766
+nodescreated=89919
+pathlength=1008.42554
+time=0.060481300000000
+LPA*:
+Path found!
+numberofsteps=10
+nodescreated=10
+pathlength=1008.42554
+time=0.000022400000000
+
+A*:
+Path found!
+numberofsteps=88765
+nodescreated=89918
+pathlength=1008.42554
+time=0.058676600000000
+LPA*:
+Path found!
+numberofsteps=14
+nodescreated=14
+pathlength=1008.42554
+time=0.000028900000000
+
+A*:
+Path found!
+numberofsteps=79698
+nodescreated=80134
+pathlength=1008.86920
+time=0.057084000000000
+LPA*:
+Path found!
+numberofsteps=79732
+nodescreated=276773
+pathlength=1008.86920
+time=0.164221300000000
+
+A*:
+Path found!
+numberofsteps=79697
+nodescreated=80133
+pathlength=1008.86920
+time=0.054776100000000
+LPA*:
+Path found!
+numberofsteps=78
+nodescreated=78
+pathlength=1008.86920
+time=0.000132200000000
+
+A*:
+Path found!
+numberofsteps=79696
+nodescreated=80132
+pathlength=1008.86920
+time=0.055894100000000
+LPA*:
+Path found!
+numberofsteps=86
+nodescreated=86
+pathlength=1008.86920
+time=0.000140700000000
+
+A*:
+Path found!
+numberofsteps=79710
+nodescreated=80145
+pathlength=1009.45496
+time=0.055672200000000
+LPA*:
+Path found!
+numberofsteps=47193
+nodescreated=47192
+pathlength=1009.45496
+time=0.097329700000000
+
+A*:
+Path found!
+numberofsteps=79709
+nodescreated=80144
+pathlength=1009.45496
+time=0.056377500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.45496
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=79764
+nodescreated=80200
+pathlength=1010.28339
+time=0.055081600000000
+LPA*:
+Path found!
+numberofsteps=49998
+nodescreated=49999
+pathlength=1010.28339
+time=0.112515200000000
+
+A*:
+Path found!
+numberofsteps=79763
+nodescreated=80199
+pathlength=1010.28339
+time=0.054963700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=79762
+nodescreated=80198
+pathlength=1010.28339
+time=0.056046100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000023700000000
+
+A*:
+Path found!
+numberofsteps=79761
+nodescreated=80197
+pathlength=1010.28339
+time=0.056305100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=79760
+nodescreated=80196
+pathlength=1010.28339
+time=0.059118000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=79759
+nodescreated=80195
+pathlength=1010.28339
+time=0.058236400000000
+LPA*:
+Path found!
+numberofsteps=86
+nodescreated=86
+pathlength=1010.28339
+time=0.000145400000000
+
+A*:
+Path found!
+numberofsteps=79758
+nodescreated=80194
+pathlength=1010.28339
+time=0.058840000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=79757
+nodescreated=80193
+pathlength=1010.28339
+time=0.056947800000000
+LPA*:
+Path found!
+numberofsteps=194
+nodescreated=194
+pathlength=1010.28339
+time=0.000275300000000
+
+A*:
+Path found!
+numberofsteps=79756
+nodescreated=80192
+pathlength=1010.28339
+time=0.056287400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000005100000000
+
+A*:
+Path found!
+numberofsteps=79755
+nodescreated=80191
+pathlength=1010.28339
+time=0.055296500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=79754
+nodescreated=80190
+pathlength=1010.28339
+time=0.056128600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.28339
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=80800
+nodescreated=81373
+pathlength=1007.57990
+time=0.059328300000000
+LPA*:
+Path found!
+numberofsteps=80892
+nodescreated=278075
+pathlength=1007.57990
+time=0.179858600000000
+
+A*:
+Path found!
+numberofsteps=80799
+nodescreated=81372
+pathlength=1007.57990
+time=0.055729800000000
+LPA*:
+Path found!
+numberofsteps=30
+nodescreated=30
+pathlength=1007.57990
+time=0.000053000000000
+
+A*:
+Path found!
+numberofsteps=80798
+nodescreated=81371
+pathlength=1007.57990
+time=0.055738200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1007.57990
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=80809
+nodescreated=81388
+pathlength=1008.40833
+time=0.056614400000000
+LPA*:
+Path found!
+numberofsteps=80058
+nodescreated=80064
+pathlength=1008.40833
+time=0.193779000000000
+
+A*:
+Path found!
+numberofsteps=80808
+nodescreated=81387
+pathlength=1008.40833
+time=0.059036400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.40833
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=80807
+nodescreated=81386
+pathlength=1008.40833
+time=0.058652400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.40833
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=80805
+nodescreated=81384
+pathlength=1008.40833
+time=0.058201700000000
+LPA*:
+Path found!
+numberofsteps=129
+nodescreated=129
+pathlength=1008.40833
+time=0.000212800000000
+
+A*:
+Path found!
+numberofsteps=80805
+nodescreated=81383
+pathlength=1008.40833
+time=0.058560400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.40833
+time=0.000007800000000
+
+A*:
+Path found!
+numberofsteps=80804
+nodescreated=81382
+pathlength=1008.40833
+time=0.058061600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.40833
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=80803
+nodescreated=81381
+pathlength=1008.40833
+time=0.057141200000000
+LPA*:
+Path found!
+numberofsteps=104
+nodescreated=104
+pathlength=1008.40833
+time=0.000156500000000
+
+A*:
+Path found!
+numberofsteps=80802
+nodescreated=81380
+pathlength=1008.40833
+time=0.057401300000000
+LPA*:
+Path found!
+numberofsteps=7820
+nodescreated=7820
+pathlength=1008.40833
+time=0.014771200000000
+
+A*:
+Path found!
+numberofsteps=80801
+nodescreated=81379
+pathlength=1008.40833
+time=0.057893200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.40833
+time=0.000003300000000
+
+A*:
+Path found!
+numberofsteps=80800
+nodescreated=81378
+pathlength=1008.40833
+time=0.058795700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1008.40833
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=80844
+nodescreated=81417
+pathlength=1009.23669
+time=0.058736600000000
+LPA*:
+Path found!
+numberofsteps=52847
+nodescreated=52842
+pathlength=1009.23669
+time=0.122944400000000
+
+A*:
+Path found!
+numberofsteps=80843
+nodescreated=81416
+pathlength=1009.23669
+time=0.063287800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.23669
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=80842
+nodescreated=81415
+pathlength=1009.23669
+time=0.078357900000000
+LPA*:
+Path found!
+numberofsteps=62
+nodescreated=62
+pathlength=1009.23669
+time=0.000098000000000
+
+A*:
+Path found!
+numberofsteps=81375
+nodescreated=81880
+pathlength=1009.19507
+time=0.059302500000000
+LPA*:
+Path found!
+numberofsteps=81466
+nodescreated=278581
+pathlength=1009.19507
+time=0.176245400000000
+
+A*:
+Path found!
+numberofsteps=81374
+nodescreated=81879
+pathlength=1009.19507
+time=0.058527200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000005400000000
+
+A*:
+Path found!
+numberofsteps=81373
+nodescreated=81878
+pathlength=1009.19507
+time=0.064730000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=81372
+nodescreated=81877
+pathlength=1009.19507
+time=0.062343700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1009.19507
+time=0.000004800000000
+
+A*:
+Path found!
+numberofsteps=81404
+nodescreated=81909
+pathlength=1010.02350
+time=0.057304700000000
+LPA*:
+Path found!
+numberofsteps=53697
+nodescreated=53697
+pathlength=1010.02350
+time=0.132717700000000
+
+A*:
+Path found!
+numberofsteps=81499
+nodescreated=82006
+pathlength=1010.85193
+time=0.058043500000000
+LPA*:
+Path found!
+numberofsteps=9884
+nodescreated=9886
+pathlength=1010.85193
+time=0.024539700000000
+
+A*:
+Path found!
+numberofsteps=81497
+nodescreated=82004
+pathlength=1010.85193
+time=0.062485000000000
+LPA*:
+Path found!
+numberofsteps=132
+nodescreated=132
+pathlength=1010.85193
+time=0.000224600000000
+
+A*:
+Path found!
+numberofsteps=81496
+nodescreated=82003
+pathlength=1010.85193
+time=0.062646300000000
+LPA*:
+Path found!
+numberofsteps=144
+nodescreated=144
+pathlength=1010.85193
+time=0.000213800000000
+
+A*:
+Path found!
+numberofsteps=81495
+nodescreated=82002
+pathlength=1010.85193
+time=0.060973600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.85193
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=81494
+nodescreated=82001
+pathlength=1010.85193
+time=0.060094100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.85193
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=81493
+nodescreated=82000
+pathlength=1010.85193
+time=0.061644800000000
+LPA*:
+Path found!
+numberofsteps=124
+nodescreated=124
+pathlength=1010.85193
+time=0.000198400000000
+
+A*:
+Path found!
+numberofsteps=81492
+nodescreated=81999
+pathlength=1010.85193
+time=0.059466100000000
+LPA*:
+Path found!
+numberofsteps=8
+nodescreated=8
+pathlength=1010.85193
+time=0.000016500000000
+
+A*:
+Path found!
+numberofsteps=81491
+nodescreated=81998
+pathlength=1010.85193
+time=0.060129700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.85193
+time=0.000005900000000
+
+A*:
+Path found!
+numberofsteps=81490
+nodescreated=81997
+pathlength=1010.85193
+time=0.060621100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.85193
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=81489
+nodescreated=81996
+pathlength=1010.85193
+time=0.061411800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.85193
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=81488
+nodescreated=81995
+pathlength=1010.85193
+time=0.061192200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.85193
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=102564
+nodescreated=103737
+pathlength=1010.73926
+time=0.080505800000000
+LPA*:
+Path found!
+numberofsteps=102719
+nodescreated=300502
+pathlength=1010.73926
+time=0.226259600000000
+
+A*:
+Path found!
+numberofsteps=102563
+nodescreated=103736
+pathlength=1010.73926
+time=0.065751500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000003700000000
+
+A*:
+Path found!
+numberofsteps=102563
+nodescreated=103735
+pathlength=1010.73926
+time=0.066183700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000011600000000
+
+A*:
+Path found!
+numberofsteps=102562
+nodescreated=103734
+pathlength=1010.73926
+time=0.066321400000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=1010.73926
+time=0.000007800000000
+
+A*:
+Path found!
+numberofsteps=102561
+nodescreated=103733
+pathlength=1010.73926
+time=0.066016400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=102560
+nodescreated=103732
+pathlength=1010.73926
+time=0.068224800000000
+LPA*:
+Path found!
+numberofsteps=2
+nodescreated=2
+pathlength=1010.73926
+time=0.000009700000000
+
+A*:
+Path found!
+numberofsteps=102559
+nodescreated=103731
+pathlength=1010.73926
+time=0.068926100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=102557
+nodescreated=103729
+pathlength=1010.73926
+time=0.074120100000000
+LPA*:
+Path found!
+numberofsteps=30
+nodescreated=30
+pathlength=1010.73926
+time=0.000072600000000
+
+A*:
+Path found!
+numberofsteps=102556
+nodescreated=103728
+pathlength=1010.73926
+time=0.074090900000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000006300000000
+
+A*:
+Path found!
+numberofsteps=102555
+nodescreated=103727
+pathlength=1010.73926
+time=0.078212300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=102554
+nodescreated=103726
+pathlength=1010.73926
+time=0.068104800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000005300000000
+
+A*:
+Path found!
+numberofsteps=102553
+nodescreated=103725
+pathlength=1010.73926
+time=0.065555300000000
+LPA*:
+Path found!
+numberofsteps=612
+nodescreated=612
+pathlength=1010.73926
+time=0.001110900000000
+
+A*:
+Path found!
+numberofsteps=102552
+nodescreated=103724
+pathlength=1010.73926
+time=0.066045100000000
+LPA*:
+Path found!
+numberofsteps=132
+nodescreated=132
+pathlength=1010.73926
+time=0.000227900000000
+
+A*:
+Path found!
+numberofsteps=102551
+nodescreated=103723
+pathlength=1010.73926
+time=0.066489300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000004000000000
+
+A*:
+Path found!
+numberofsteps=102550
+nodescreated=103722
+pathlength=1010.73926
+time=0.066700400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1010.73926
+time=0.000004300000000
+
+A*:
+Path found!
+numberofsteps=102549
+nodescreated=103721
+pathlength=1010.73926
+time=0.068635600000000
+LPA*:
+Path found!
+numberofsteps=140
+nodescreated=140
+pathlength=1010.73926
+time=0.000229700000000
+
+A*:
+Path found!
+numberofsteps=193053
+nodescreated=194618
+pathlength=1206.89868
+time=0.188805900000000
+LPA*:
+Path found!
+numberofsteps=193147
+nodescreated=719002
+pathlength=1206.89868
+time=0.456932200000000
+
+A*:
+Path found!
+numberofsteps=193052
+nodescreated=194617
+pathlength=1206.89868
+time=0.183911700000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=193051
+nodescreated=194616
+pathlength=1206.89868
+time=0.172049300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004900000000
+
+A*:
+Path found!
+numberofsteps=193050
+nodescreated=194615
+pathlength=1206.89868
+time=0.178873100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000003500000000
+
+A*:
+Path found!
+numberofsteps=193049
+nodescreated=194614
+pathlength=1206.89868
+time=0.180488400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000005700000000
+
+A*:
+Path found!
+numberofsteps=193048
+nodescreated=194613
+pathlength=1206.89868
+time=0.256496500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000005000000000
+
+A*:
+Path found!
+numberofsteps=193047
+nodescreated=194612
+pathlength=1206.89868
+time=0.230336500000000
+LPA*:
+Path found!
+numberofsteps=20
+nodescreated=20
+pathlength=1206.89868
+time=0.000052200000000
+
+A*:
+Path found!
+numberofsteps=193046
+nodescreated=194611
+pathlength=1206.89868
+time=0.203544200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=193045
+nodescreated=194610
+pathlength=1206.89868
+time=0.173248800000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000006200000000
+
+A*:
+Path found!
+numberofsteps=193044
+nodescreated=194609
+pathlength=1206.89868
+time=0.182620300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000005700000000
+
+A*:
+Path found!
+numberofsteps=193043
+nodescreated=194608
+pathlength=1206.89868
+time=0.193904400000000
+LPA*:
+Path found!
+numberofsteps=44
+nodescreated=44
+pathlength=1206.89868
+time=0.000076500000000
+
+A*:
+Path found!
+numberofsteps=193041
+nodescreated=194607
+pathlength=1206.89868
+time=0.181640500000000
+LPA*:
+Path found!
+numberofsteps=165
+nodescreated=166
+pathlength=1206.89868
+time=0.000277200000000
+
+A*:
+Path found!
+numberofsteps=193040
+nodescreated=194606
+pathlength=1206.89868
+time=0.209524100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000006200000000
+
+A*:
+Path found!
+numberofsteps=193039
+nodescreated=194605
+pathlength=1206.89868
+time=0.287189300000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=193038
+nodescreated=194604
+pathlength=1206.89868
+time=0.189019600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004700000000
+
+A*:
+Path found!
+numberofsteps=193037
+nodescreated=194603
+pathlength=1206.89868
+time=0.214773200000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1206.89868
+time=0.000004500000000
+
+A*:
+Path found!
+numberofsteps=215583
+nodescreated=217061
+pathlength=1208.81531
+time=0.221015000000000
+LPA*:
+Path found!
+numberofsteps=215714
+nodescreated=741480
+pathlength=1208.81531
+time=0.549708000000000
+
+A*:
+Path found!
+numberofsteps=215582
+nodescreated=217060
+pathlength=1208.81531
+time=0.161169400000000
+LPA*:
+Path found!
+numberofsteps=36
+nodescreated=36
+pathlength=1208.81531
+time=0.000076100000000
+
+A*:
+Path found!
+numberofsteps=216192
+nodescreated=217665
+pathlength=1209.64380
+time=0.164516300000000
+LPA*:
+Path found!
+numberofsteps=22317
+nodescreated=22312
+pathlength=1209.64380
+time=0.065842800000000
+
+A*:
+Path found!
+numberofsteps=216191
+nodescreated=217664
+pathlength=1209.64380
+time=0.177904500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000005600000000
+
+A*:
+Path found!
+numberofsteps=216190
+nodescreated=217663
+pathlength=1209.64380
+time=0.173787100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000003200000000
+
+A*:
+Path found!
+numberofsteps=216189
+nodescreated=217662
+pathlength=1209.64380
+time=0.182836400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000005500000000
+
+A*:
+Path found!
+numberofsteps=216188
+nodescreated=217661
+pathlength=1209.64380
+time=0.186766400000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004600000000
+
+A*:
+Path found!
+numberofsteps=216187
+nodescreated=217660
+pathlength=1209.64380
+time=0.185566500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000003900000000
+
+A*:
+Path found!
+numberofsteps=216186
+nodescreated=217659
+pathlength=1209.64380
+time=0.179523500000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004100000000
+
+A*:
+Path found!
+numberofsteps=216185
+nodescreated=217658
+pathlength=1209.64380
+time=0.176952600000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004200000000
+
+A*:
+Path found!
+numberofsteps=216184
+nodescreated=217657
+pathlength=1209.64380
+time=0.176465100000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004400000000
+
+A*:
+Path found!
+numberofsteps=216183
+nodescreated=217656
+pathlength=1209.64380
+time=0.189616000000000
+LPA*:
+Path found!
+numberofsteps=300
+nodescreated=300
+pathlength=1209.64380
+time=0.000452100000000
+
+A*:
+Path found!
+numberofsteps=216182
+nodescreated=217655
+pathlength=1209.64380
+time=0.189569000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000003800000000
+
+A*:
+Path found!
+numberofsteps=216181
+nodescreated=217654
+pathlength=1209.64380
+time=0.165275800000000
+LPA*:
+Path found!
+numberofsteps=58
+nodescreated=58
+pathlength=1209.64380
+time=0.000138500000000
+
+A*:
+Path found!
+numberofsteps=216180
+nodescreated=217653
+pathlength=1209.64380
+time=0.178085000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000005800000000
+
+A*:
+Path found!
+numberofsteps=216179
+nodescreated=217652
+pathlength=1209.64380
+time=0.166819000000000
+LPA*:
+Path found!
+numberofsteps=0
+nodescreated=0
+pathlength=1209.64380
+time=0.000004400000000

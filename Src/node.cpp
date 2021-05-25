@@ -33,19 +33,30 @@ Node::Node(int i_, int j_, double g_, double h_, double HW_, Node* parent_, doub
     ++nodesCreated;
 }
 
-Node::Node(const Node& copied) {
-    i = copied.i;
-    j = copied.j;
-    g = copied.g;
-    F = copied.F;
-    H = copied.H;
-    rhs = copied.rhs;
-    parent = copied.parent;
-    ++nodesCreated;
+void Node::setKeysLPA() {
+    key1 = std::min(g, rhs) + H;
+    key2 = std::min(g, rhs);
 }
 
-std::pair<double, double> Node::calcKey() const {
+std::pair<double, double> Node::calcKeyLPA() const {
     return std::make_pair(std::min(g, rhs) + H, std::min(g, rhs));
+}
+
+std::pair<double, double> Node::getKeysLPA() const {
+    return std::make_pair(key1, key2);
+}
+
+void Node::setKeysDstar(double Km) {
+    key1 = std::min(g, rhs) + H + Km;
+    key2 = std::min(g, rhs);
+}
+
+std::pair<double, double> Node::calcKeyDstar(double Km) const {
+    return std::make_pair(std::min(g, rhs) + H + Km, std::min(g, rhs));
+}
+
+std::pair<double, double> Node::getKeysDstar() const {
+    return std::make_pair(key1, key2);
 }
 
 bool Node::operator==(const Node& other) const {

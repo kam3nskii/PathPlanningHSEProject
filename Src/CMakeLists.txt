@@ -1,7 +1,9 @@
 
 set(HEADERS     Astar.h
                 cell.h
+                commonfuncs.h
                 config.h
+                DstarLite.h
                 environmentoptions.h
                 gl_const.h
                 ilogger.h
@@ -15,7 +17,9 @@ set(HEADERS     Astar.h
 
 set(SOURCES     Astar.cpp
                 cell.cpp
+                commonfuncs.cpp
                 config.cpp
+                DstarLite.cpp
                 LPAstar.cpp
                 map.cpp
                 mission.cpp

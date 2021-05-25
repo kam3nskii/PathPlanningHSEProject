@@ -74,6 +74,7 @@
 #define CNS_SP_ST_JP_SEARCH "jp_search"
 #define CNS_SP_ST_TH "theta"
 #define CNS_SP_ST_LPASTAR "lpastar"
+#define CNS_SP_ST_DSTARLITE "dstarlite"
 
 #define CN_SP_ST_BFS 0
 #define CN_SP_ST_DIJK 1
@@ -81,6 +82,7 @@
 #define CN_SP_ST_JP_SEARCH 3
 #define CN_SP_ST_TH 4
 #define CN_SP_ST_LPASTAR 5
+#define CN_SP_ST_DSTARLITE 6
 
 #define CN_SP_AD 1   // AllowDiagonal
 

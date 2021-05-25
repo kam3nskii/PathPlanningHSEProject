@@ -525,13 +525,13 @@
         </grid>
     </map>
     <algorithm>
-        <metrictype>diagonal</metrictype>
         <searchtype>astar</searchtype>
-        <hweight>1</hweight>
+        <metrictype>euclidean</metrictype>
         <breakingties>g-max</breakingties>
-        <allowdiagonal>0</allowdiagonal>
-        <cutcorners>0</cutcorners>
-        <allowsqueeze>0</allowsqueeze>
+        <hweight>1</hweight>
+        <allowdiagonal>1</allowdiagonal>
+        <cutcorners>1</cutcorners>
+        <allowsqueeze>1</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>

@@ -5,6 +5,7 @@
 
 #include "Astar.h"
 #include "LPAstar.h"
+#include "DstarLite.h"
 #include "map.h"
 #include "node.h"
 
@@ -18,8 +19,10 @@ class ILogger {
     virtual void saveLog(std::string logName) = 0;
     virtual std::string getLogFilename() = 0;
     virtual void writeToLogMap(const Map& map, const std::list<Node>& path) = 0;
+    virtual void writeToLogMap(const Map& map, const std::list<Node>& path, Node* start, Node* goal) = 0;
     virtual void writeToLogOpen(const Map& map, const Astar& search) = 0;
     virtual void writeToLogOpen(const Map& map, const LPAstar& search) = 0;
+    virtual void writeToLogOpen(const Map& map, const DstarLite& search) = 0;
     virtual void writeToLogPath(const std::list<Node>& path) = 0;
     virtual void writeToLogHPpath(const std::list<Node>& path) = 0;
     virtual void writeToLogNotFound() = 0;

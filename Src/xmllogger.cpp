@@ -134,7 +134,57 @@ void XmlLogger::writeToLogMap(const Map& map, const std::list<Node>& path) {
             if (!inPath) {
                 str += std::to_string(map.getValue(i, j));
             } else {
-                str += CNS_OTHER_PATHSELECTION;
+                if (map.start_i == i && map.start_j == j) {
+                    str += "@";
+                } else if (map.goal_i == i && map.goal_j == j) {
+                    str += "#";
+                } else {
+                    str += CNS_OTHER_PATHSELECTION;
+                }
+            }
+            str += CNS_OTHER_MATRIXSEPARATOR;
+        }
+
+        element->InsertEndChild(doc.NewText(str.c_str()));
+        mapTag->InsertEndChild(element);
+        str.clear();
+        iterate++;
+    }
+}
+
+void XmlLogger::writeToLogMap(const Map& map, const std::list<Node>& path, Node* start, Node* goal) {
+    if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD) {
+        return;
+    }
+
+    XMLElement* mapTag = doc.FirstChildElement(CNS_TAG_ROOT);
+    mapTag = mapTag->FirstChildElement(CNS_TAG_LOG)->FirstChildElement(CNS_TAG_PATH);
+
+    int iterate = 0;
+    bool inPath;
+    std::string str;
+    for (int i = 0; i < map.getMapHeight(); ++i) {
+        XMLElement* element = doc.NewElement(CNS_TAG_ROW);
+        element->SetAttribute(CNS_TAG_ATTR_NUM, iterate);
+
+        for (int j = 0; j < map.getMapWidth(); ++j) {
+            inPath = false;
+            for (std::list<Node>::const_iterator it = path.begin(); it != path.end(); it++) {
+                if (it->i == i && it->j == j) {
+                    inPath = true;
+                    break;
+                }
+            }
+            if (!inPath) {
+                str += std::to_string(map.getValue(i, j));
+            } else {
+                if (start->i == i && start->j == j) {
+                    str += "@";
+                } else if (goal->i == i && goal->j == j) {
+                    str += "#";
+                } else {
+                    str += CNS_OTHER_PATHSELECTION;
+                }
             }
             str += CNS_OTHER_MATRIXSEPARATOR;
         }
@@ -176,12 +226,69 @@ void XmlLogger::writeToLogOpen(const Map& map, const LPAstar& search) {
                     str += std::to_string(map.getValue(i, j));
                 } else if (search.nodesMap[i][j].debug) {
                     str += std::to_string(search.nodesMap[i][j].debug);
-                }
-                else {
+                } else {
                     str += std::to_string(map.getValue(i, j));
                 }
             } else {
-                str += CNS_OTHER_PATHSELECTION;
+                if (map.start_i == i && map.start_j == j) {
+                    str += "@";
+                } else if (map.goal_i == i && map.goal_j == j) {
+                    str += "#";
+                } else {
+                    str += CNS_OTHER_PATHSELECTION;
+                }
+            }
+            str += CNS_OTHER_MATRIXSEPARATOR;
+        }
+
+        element->InsertEndChild(doc.NewText(str.c_str()));
+        mapTag->InsertEndChild(element);
+        str.clear();
+        iterate++;
+    }
+}
+
+void XmlLogger::writeToLogOpen(const Map& map, const DstarLite& search) {
+    if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD) {
+        return;
+    }
+
+    XMLElement* mapTag = doc.FirstChildElement(CNS_TAG_ROOT);
+    mapTag = mapTag->FirstChildElement(CNS_TAG_LOG)->FirstChildElement(CNS_TAG_PATH);
+
+    int iterate = 0;
+    bool inPath;
+    std::string str;
+    for (int i = 0; i < map.getMapHeight(); ++i) {
+        XMLElement* element = doc.NewElement(CNS_TAG_ROW);
+        element->SetAttribute(CNS_TAG_ATTR_NUM, iterate);
+
+        for (int j = 0; j < map.getMapWidth(); ++j) {
+            inPath = false;
+            for (std::list<Node>::const_iterator it = search.lppath.begin();
+                 it != search.lppath.end();
+                 it++) {
+                if (it->i == i && it->j == j) {
+                    inPath = true;
+                    break;
+                }
+            }
+            if (!inPath) {
+                if (map.getValue(i, j) == 1) {
+                    str += std::to_string(map.getValue(i, j));
+                } else if (search.nodesMap[i][j].debug) {
+                    str += std::to_string(search.nodesMap[i][j].debug);
+                } else {
+                    str += std::to_string(map.getValue(i, j));
+                }
+            } else {
+                if (search.start->i == i && search.start->j == j) {
+                    str += "@";
+                } else if (map.goal_i == i && map.goal_j == j) {
+                    str += "#";
+                } else {
+                    str += CNS_OTHER_PATHSELECTION;
+                }
             }
             str += CNS_OTHER_MATRIXSEPARATOR;
         }
@@ -226,7 +333,13 @@ void XmlLogger::writeToLogOpen(const Map& map, const Astar& search) {
                     str += std::to_string(map.getValue(i, j));
                 }
             } else {
-                str += CNS_OTHER_PATHSELECTION;
+                if (map.start_i == i && map.start_j == j) {
+                    str += "@";
+                } else if (map.goal_i == i && map.goal_j == j) {
+                    str += "#";
+                } else {
+                    str += CNS_OTHER_PATHSELECTION;
+                }
             }
             str += CNS_OTHER_MATRIXSEPARATOR;
         }

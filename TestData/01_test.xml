@@ -38,12 +38,12 @@
     </map>
     <algorithm>
         <searchtype>astar</searchtype>
-        <metrictype>diagonal</metrictype>
+        <metrictype>euclidean</metrictype>
         <breakingties>g-max</breakingties>
         <hweight>1</hweight>
-        <allowdiagonal>0</allowdiagonal>
-        <cutcorners>0</cutcorners>
-        <allowsqueeze>0</allowsqueeze>
+        <allowdiagonal>1</allowdiagonal>
+        <cutcorners>1</cutcorners>
+        <allowsqueeze>1</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>

@@ -1,4 +1,4 @@
-#include "LPAstar.h"
+#include "DstarLite.h"
 
 #include <algorithm>
 #include <chrono>
@@ -6,13 +6,15 @@
 #include <queue>
 #include <utility>
 
-LPAstar::LPAstar() {
+DstarLite::DstarLite() {
 }
 
-LPAstar::~LPAstar() {
+DstarLite::~DstarLite() {
 }
 
-void LPAstar::cleanup() {
+double DstarLite::Km = 0;
+
+void DstarLite::cleanup() {
     Open.clear();
     OpenIterators.clear();
     nodesMap.clear();
@@ -22,18 +24,27 @@ void LPAstar::cleanup() {
     lppath.clear();
     hppath.clear();
     nodesCntInPath = 0;
+    Km = 0;
 }
 
-void LPAstar::computePath(const Map& map, const EnvironmentOptions& options, int debug) {
+void DstarLite::computePath(const Map& map, const EnvironmentOptions& options, int debug) {
     while (!Open.empty()) {
         auto node = Open.begin();
         Node* curr = *node;
-        if (isLess(curr->getKeysLPA(), goal->calcKeyLPA()) || !is_equal(goal->rhs, goal->g)) {
+        if (isLess(curr->getKeysDstar(), start->calcKeyDstar(Km)) ||
+            !is_equal(start->rhs, start->g)) {
             sresult.numberofsteps++;
             OpenIterators.erase(getNodeInd(*curr, map));
             Open.erase(node);
             curr->debug = debug;
-            if (!is_equal(curr->g, curr->rhs) && curr->g > curr->rhs) {
+            auto Kold = curr->getKeysDstar();
+
+            if (isLess(Kold, curr->calcKeyDstar(Km))) {
+                curr->setKeysDstar(Km);
+                auto iterator = Open.emplace(curr).first;
+                OpenIterators.emplace(getNodeInd(*(*iterator), map), iterator);
+                ++sresult.nodescreated;
+            } else if (!is_equal(curr->g, curr->rhs) && curr->g > curr->rhs) {
                 curr->g = curr->rhs;
                 for (Cell& next : map.getNeighbors(*curr, options)) {
                     updateVertex(map, &nodesMap[next.i][next.j], options);
@@ -51,7 +62,7 @@ void LPAstar::computePath(const Map& map, const EnvironmentOptions& options, int
     }
 }
 
-SearchResult LPAstar::startSearch(const Map& map, const EnvironmentOptions& options) {
+SearchResult DstarLite::startSearch(const Map& map, const EnvironmentOptions& options) {
     cleanup();
     nodesMap.resize(map.getMapHeight(), std::vector<Node>(map.getMapWidth()));
     for (int i = 0; i < map.getMapHeight(); ++i) {
@@ -59,7 +70,7 @@ SearchResult LPAstar::startSearch(const Map& map, const EnvironmentOptions& opti
             Node tmp(i,
                      j,
                      std::numeric_limits<double>::infinity(),
-                     heuristic(options, i, j, map.getGoal_i(), map.getGoal_j()),
+                     heuristic(options, map.getStart_i(), map.getStart_j(), i, j),
                      options.hweight,
                      nullptr,
                      std::numeric_limits<double>::infinity());
@@ -68,20 +79,21 @@ SearchResult LPAstar::startSearch(const Map& map, const EnvironmentOptions& opti
     }
     sresult.nodescreated = map.getMapHeight() * map.getMapWidth();
     start = &nodesMap[map.getStart_i()][map.getStart_j()];
+    last = &nodesMap[map.getStart_i()][map.getStart_j()];
     goal = &nodesMap[map.getGoal_i()][map.getGoal_j()];
-    start->rhs = 0;
-    start->setKeysLPA();
-    auto iterator = Open.emplace(start).first;
+    goal->rhs = 0;
+    goal->setKeysDstar(Km);
+    auto iterator = Open.emplace(goal).first;
     OpenIterators.emplace(getNodeInd(**iterator, map), iterator);
     auto startTime = std::chrono::high_resolution_clock::now();
     computePath(map, options, 3);
     auto endTime = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = endTime - startTime;
     sresult.time = duration.count();
-    if (goal->g != std::numeric_limits<double>::infinity()) {
+    if (start->g != std::numeric_limits<double>::infinity()) {
         sresult.pathfound = true;
-        sresult.pathlength = goal->g;
-        makePrimaryPath(goal);
+        sresult.pathlength = start->g;
+        makePrimaryPath(start);
         makeSecondaryPath();
         sresult.hppath = &hppath;
         sresult.lppath = &lppath;
@@ -89,8 +101,8 @@ SearchResult LPAstar::startSearch(const Map& map, const EnvironmentOptions& opti
     return sresult;
 }
 
-SearchResult LPAstar::repeat(const Map& map, const EnvironmentOptions& options,
-                             const Cell& changed) {
+SearchResult DstarLite::repeat(const Map& map, const EnvironmentOptions& options,
+                               const Cell& changed) {
     sresult = SearchResult();
     lppath.clear();
     hppath.clear();
@@ -109,10 +121,10 @@ SearchResult LPAstar::repeat(const Map& map, const EnvironmentOptions& options,
     auto endTime = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = endTime - startTime;
     sresult.time = duration.count();
-    if (goal->g != std::numeric_limits<double>::infinity()) {
+    if (start->g != std::numeric_limits<double>::infinity()) {
         sresult.pathfound = true;
-        sresult.pathlength = goal->g;
-        makePrimaryPath(goal);
+        sresult.pathlength = start->g;
+        makePrimaryPath(start);
         makeSecondaryPath();
         sresult.hppath = &hppath;
         sresult.lppath = &lppath;
@@ -120,8 +132,64 @@ SearchResult LPAstar::repeat(const Map& map, const EnvironmentOptions& options,
     return sresult;
 }
 
-void LPAstar::updateVertex(const Map& map, Node* node, const EnvironmentOptions& options) {
-    if (!(node->i == map.getStart_i() && node->j == map.getStart_j())) {
+void DstarLite::printSearchResult(const SearchResult& sr) {
+    std::cout << "Path ";
+    if (!sr.pathfound) {
+        std::cout << "NOT ";
+    }
+    std::cout << "found!" << std::endl;
+    std::cout << "numberofsteps=" << sr.numberofsteps << std::endl;
+    std::cout << "nodescreated=" << sr.nodescreated << std::endl;
+    if (sr.pathfound) {
+        std::cout.setf(std::ios::fixed);
+        std::cout.precision(5);
+        std::cout << "pathlength=" << sr.pathlength << std::endl;
+        // std::cout << "pathlength_scaled=" << sr.pathlength * map.getCellSize() << std::endl;
+    }
+    std::cout.precision(15);
+    std::cout << "time=" << sr.time << std::endl;
+}
+
+SearchResult DstarLite::replan(const Map& map, const EnvironmentOptions& options, Node* found) {
+    Km = Km + heuristic(options, last->i, last->j, start->i, start->j);
+    last = start;
+    sresult = SearchResult();
+    lppath.clear();
+    hppath.clear();
+
+    for (int i = 0; i < map.getMapHeight(); ++i) {
+        for (int j = 0; j < map.getMapWidth(); ++j) {
+            nodesMap[i][j].H = options.hweight * heuristic(options, start->i, start->j, i, j);
+        }
+    }
+
+    Node::breakingties = options.breakingties;
+    auto startTime = std::chrono::high_resolution_clock::now();
+
+    for (Cell& next : map.getNeighbors(*found, options)) {
+        updateVertex(map, &nodesMap[next.i][next.j], options);
+    }
+    computePath(map, options, 4);
+
+    auto endTime = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = endTime - startTime;
+    sresult.time = duration.count();
+    if (start->g != std::numeric_limits<double>::infinity()) {
+        sresult.pathfound = true;
+        sresult.pathlength = start->g;
+        makePrimaryPath(start);
+        makeSecondaryPath();
+        sresult.hppath = &hppath;
+        sresult.lppath = &lppath;
+    } else {
+        sresult.pathfound = false;
+    }
+
+    return sresult;
+}
+
+void DstarLite::updateVertex(const Map& map, Node* node, const EnvironmentOptions& options) {
+    if (!(node->i == map.getGoal_i() && node->j == map.getGoal_j())) {
         node->rhs = std::numeric_limits<double>::infinity();
         node->parent = nullptr;
         for (Cell& next : map.getNeighbors(*node, options)) {
@@ -132,23 +200,23 @@ void LPAstar::updateVertex(const Map& map, Node* node, const EnvironmentOptions&
                 node->parent = tmp;
             }
         }
-    }
-    auto it = OpenIterators.find(getNodeInd(*node, map));
-    if (it != OpenIterators.end()) {
-        auto tmp = it->second;
-        OpenIterators.erase(getNodeInd(**tmp, map));
-        Open.erase(tmp);
-        --sresult.nodescreated;
-    }
-    if (!is_equal(node->g, node->rhs)) {
-        node->setKeysLPA();
-        auto iterator = Open.emplace(node).first;
-        OpenIterators.emplace(getNodeInd(*(*iterator), map), iterator);
-        ++sresult.nodescreated;
+        auto it = OpenIterators.find(getNodeInd(*node, map));
+        if (it != OpenIterators.end()) {
+            auto tmp = it->second;
+            OpenIterators.erase(getNodeInd(**tmp, map));
+            Open.erase(tmp);
+            --sresult.nodescreated;
+        }
+        if (!is_equal(node->g, node->rhs)) {
+            node->setKeysDstar(Km);
+            auto iterator = Open.emplace(node).first;
+            OpenIterators.emplace(getNodeInd(*(*iterator), map), iterator);
+            ++sresult.nodescreated;
+        }
     }
 }
 
-void LPAstar::makePrimaryPath(Node* currNode) {
+void DstarLite::makePrimaryPath(Node* currNode) {
     nodesCntInPath = 0;
     while (currNode->parent) {
         lppath.push_front(*currNode);
@@ -159,7 +227,7 @@ void LPAstar::makePrimaryPath(Node* currNode) {
     ++nodesCntInPath;
 }
 
-void LPAstar::makeSecondaryPath() {
+void DstarLite::makeSecondaryPath() {
     int iPrev, jPrev;
     int iDiff = 0, jDiff = 0;
     Node* prevNode = &lppath.front();
@@ -178,7 +246,7 @@ void LPAstar::makeSecondaryPath() {
     hppath.push_back(lppath.back());
 }
 
-double LPAstar::heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2) {
+double DstarLite::heuristic(const EnvironmentOptions& options, int i1, int j1, int i2, int j2) {
     if (options.searchtype == CN_SP_ST_DIJK) {
         return 0;
     }
@@ -205,10 +273,10 @@ double LPAstar::heuristic(const EnvironmentOptions& options, int i1, int j1, int
     return ans;
 }
 
-int LPAstar::getNodeInd(const Node& node, const Map& map) {
+int DstarLite::getNodeInd(const Node& node, const Map& map) {
     return node.i * map.getMapWidth() + node.j;
 }
 
-int LPAstar::getNodeInd(const Cell& cell, const Map& map) const {
+int DstarLite::getNodeInd(const Cell& cell, const Map& map) const {
     return cell.i * map.getMapWidth() + cell.j;
 }

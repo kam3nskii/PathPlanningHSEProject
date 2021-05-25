@@ -8,31 +8,31 @@
         <finishx>12</finishx>
         <finishy>10</finishy>
         <grid>
-            <row>0 0 0 0 1 0 0 1 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 1 0 0 1 0 0 0 0 1 0 0</row>
-            <row>0 0 0 0 1 0 0 1 0 0 0 1 0 0 0</row>
-            <row>1 1 1 0 1 0 0 0 0 0 1 0 0 0 0</row>
-            <row>0 0 0 0 1 0 0 0 0 1 0 0 0 0 0</row>
-            <row>0 0 0 0 1 0 0 0 1 0 0 0 0 0 0</row>
-            <row>0 0 1 1 1 0 0 1 1 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 1</row>
+            <row>0 0 0 0 0 0 0 1 1 1 1 1 1 1 0</row>
+            <row>0 0 0 0 0 0 0 0 1 0 0 0 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 1 0 0 0 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 1 0 0 0 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 1 1 1 1 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 1 0 1 0</row>
+            <row>0 0 0 0 1 1 1 1 1 1 1 1 1 1 0</row>
+            <row>0 0 0 0 1 1 0 0 0 0 0 1 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 1 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 1 0 0 1 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 1 1 1 1 0 1 0</row>
+            <row>0 0 0 0 1 1 1 1 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
             <row>0 0 0 0 0 0 1 0 1 1 0 0 0 0 0</row>
-            <row>0 0 0 0 0 1 0 0 1 0 1 0 0 0 0</row>
-            <row>0 0 0 0 1 0 0 0 1 0 1 1 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 1 0 1 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 1 0 1 0 0 0 0</row>
-            <row>1 1 1 1 1 0 0 0 1 0 1 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 1 0 0 0 0</row>
         </grid>
     </map>
     <algorithm>
-        <metrictype>diagonal</metrictype>
-        <searchtype>astar</searchtype>
+        <metrictype>euclidean</metrictype>
+        <searchtype>dstarlite</searchtype>
         <hweight>1</hweight>
-        <breakingties>g-max</breakingties>
-        <allowdiagonal>0</allowdiagonal>
-        <cutcorners>0</cutcorners>
-        <allowsqueeze>0</allowsqueeze>
+        <breakingties>g-min</breakingties>
+        <allowdiagonal>1</allowdiagonal>
+        <cutcorners>1</cutcorners>
+        <allowsqueeze>1</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>1</loglevel>

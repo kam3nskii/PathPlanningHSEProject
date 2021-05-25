@@ -17,9 +17,6 @@ grid = []
 for i in range(height):
     grid.append(XMLroot.find("log").find("path")[i].text.split())
 
-grid[starty][startx] = '@'
-grid[finishy][finishx] = '#'
-
 cell_size = 24
 
 def printGrid():
@@ -64,8 +61,6 @@ def btn3(event):
     for i in range(height):
         grid[i] = XMLrootTMP.find("log").find("path")[i].text.split()
 
-    grid[starty][startx] = '@'
-    grid[finishy][finishx] = '#'
     printGrid()
 
 def btn2(event):

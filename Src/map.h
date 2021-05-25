@@ -37,7 +37,7 @@ class Map {
     double getTransitionCost(int i1, int j1, int i2, int j2) const;
     std::vector<Cell> getNeighbors(const Node& node, const EnvironmentOptions& options) const;
 
-   private:
+   public:
     int height, width;
     int start_i, start_j;
     int goal_i, goal_j;

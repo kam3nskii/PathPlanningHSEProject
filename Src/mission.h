@@ -20,6 +20,7 @@
 
 #include "Astar.h"
 #include "LPAstar.h"
+#include "DstarLite.h"
 #include "config.h"
 #include "environmentoptions.h"
 #include "ilogger.h"
@@ -38,28 +39,39 @@ class Mission {
     bool createLog();
     void createSearch();
     void createEnvironmentOptions();
-    void startSearch();
+    void startSearchAstar();
+    void startSearchLPAstar();
+    void startSearchDstarLite();
     void changeMap();
+    Cell scanMap(const Map& map, int i, int j);
     void changeMapAutomatically();
-    void run(int cnt);
-    bool test(int cnt);
+    void mainDstarLite();
+    void changeMapAutomaticallyDstarLite();
+    void runLPAstar(int cnt);
+    bool testLPAstar(int cnt);
+    bool testDstarLite(int cnt);
+    void runDstarLite(int cnt);
     int checkResult(const SearchResult& sr, float realLen);
     void saveLog(const SearchResult& sr, const char* nameSuffix, int searchType);
     void printSearchResult(const SearchResult& sr);
     SearchResult getLPAstarSearchResult();
     SearchResult getAstarSearchResult();
+    SearchResult getDstarLiteSearchResult();
 
     Map map;
     Config config;
     EnvironmentOptions options;
     Astar search_Astar;
     LPAstar search_LPAstar;
+    DstarLite search_DstarLite;
     ILogger* logger;
     const char* fileName;
     SearchResult sr_Astar;
     SearchResult sr_LPAstar;
+    SearchResult sr_DstarLite;
     Cell changed;
-    bool firstsearch;
+    bool firstsearchLPA;
+    bool firstsearchDstar;
 };
 
 #endif
