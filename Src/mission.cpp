@@ -161,7 +161,7 @@ void Mission::mainDstarLite() {
 
     changeMap();
     map.Grid[changed.i][changed.j] = 9;
-    std::cout << "Changed: " << changed.i << " " << changed.j << "\n";
+    std::cout << "Added new obstacle: (" << changed.i << ", " << changed.j << ")\n";
 
     auto curr = search_DstarLite.lppath.rbegin();
     while (search_DstarLite.start != search_DstarLite.goal) {
@@ -170,13 +170,13 @@ void Mission::mainDstarLite() {
         saveLog(sr_DstarLite, "_DStarLite", 3);
         auto i = search_DstarLite.start->i;
         auto j = search_DstarLite.start->j;
-        std::cout << "Moved to:" << i << " " << j << "\n";
+        std::cout << "Moved to: (" << i << ", " << j << ")\n";
         getchar();
         ++curr;
 
         Cell found = scanMap(map, i, j);
         if (found.i != -1 && found.j != -1) {
-            std::cout << "Found: " << found.i << " " << found.j << "\n";
+            std::cout << "Found new obstacle: (" << found.i << ", " << found.j << ")\n";
             map.Grid[found.i][found.j] = 1;
             Node* tmp = &search_DstarLite.nodesMap[found.i][found.j];
             search_DstarLite.nodesMap[tmp->i][tmp->j].g = std::numeric_limits<double>::infinity();

@@ -27,8 +27,16 @@ int main(int argc, char* argv[]) {
                 std::cout << "Log chanel has been created!\n" << std::endl;
                 mission.createEnvironmentOptions();
 
-                if (mission.options.searchtype == CN_SP_ST_ASTAR) {
-                    mission.startSearchAstar();
+                if (mission.options.searchtype == CN_SP_ST_DIJK) {
+                    mission.sr_Astar = mission.search_Astar.startSearch(mission.map, mission.options);
+                    std::cout << "\nDijkstra:\n";
+                    mission.printSearchResult(mission.sr_Astar);
+                    mission.saveLog(mission.sr_Astar, "_Dijkstra", 2);
+                } else if (mission.options.searchtype == CN_SP_ST_ASTAR) {
+                    mission.sr_Astar = mission.search_Astar.startSearch(mission.map, mission.options);
+                    std::cout << "\nA*:\n";
+                    mission.printSearchResult(mission.sr_Astar);
+                    mission.saveLog(mission.sr_Astar, "_AStar", 2);
                 } else if (mission.options.searchtype == CN_SP_ST_LPASTAR) {
                     mission.runLPAstar(5);
                 } else if (mission.options.searchtype == CN_SP_ST_DSTARLITE) {
