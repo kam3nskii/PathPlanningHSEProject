@@ -4,25 +4,25 @@
         <height>15</height>
         <cellsize>24</cellsize>
         <startx>2</startx>
-        <starty>1</starty>
+        <starty>2</starty>
         <finishx>12</finishx>
-        <finishy>10</finishy>
+        <finishy>12</finishy>
         <grid>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 1</row>
-            <row>0 0 0 0 0 0 0 1 1 1 1 1 1 1 0</row>
-            <row>0 0 0 0 0 0 0 0 1 0 0 0 0 1 0</row>
-            <row>0 0 0 0 0 0 0 0 1 0 0 0 0 1 0</row>
-            <row>0 0 0 0 0 0 0 0 1 0 0 0 0 1 0</row>
-            <row>0 0 0 0 0 0 0 0 1 1 1 1 0 1 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 1 0 1 0</row>
-            <row>0 0 0 0 1 1 1 1 1 1 1 1 1 1 0</row>
-            <row>0 0 0 0 1 1 0 0 0 0 0 1 0 1 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 1 0 1 0</row>
-            <row>0 0 0 0 0 0 0 0 1 0 0 1 0 1 0</row>
-            <row>0 0 0 0 0 0 0 0 1 1 1 1 0 1 0</row>
-            <row>0 0 0 0 1 1 1 1 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
-            <row>0 0 0 0 0 0 1 0 1 1 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 1 0 0 1 0 0 0 0 0</row>
+            <row>0 1 1 1 1 1 0 0 0 1 0 0 0 1 1</row>
+            <row>0 1 0 1 1 0 0 1 0 1 0 1 0 0 0</row>
+            <row>1 0 0 0 0 0 0 1 0 1 0 1 0 0 0</row>
+            <row>0 0 0 0 0 0 0 1 1 1 0 1 0 0 0</row>
+            <row>0 0 0 0 0 0 1 0 0 0 0 1 0 0 0</row>
+            <row>0 1 1 1 1 1 0 0 0 0 0 1 1 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 1 1</row>
+            <row>1 1 0 0 0 0 0 0 0 0 0 0 0 1 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 1 1</row>
+            <row>0 0 1 1 1 1 1 1 1 1 1 1 1 0 1</row>
+            <row>0 0 1 0 0 0 0 0 0 0 0 1 0 1 1</row>
+            <row>0 0 1 0 0 0 0 1 1 0 0 0 0 1 1</row>
+            <row>1 0 0 0 0 0 0 1 1 0 0 0 1 0 1</row>
+            <row>1 0 0 0 0 0 0 0 0 0 0 1 1 0 0</row>
         </grid>
     </map>
     <algorithm>
@@ -32,7 +32,7 @@
         <breakingties>g-min</breakingties>
         <allowdiagonal>1</allowdiagonal>
         <cutcorners>1</cutcorners>
-        <allowsqueeze>1</allowsqueeze>
+        <allowsqueeze>0</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>1</loglevel>

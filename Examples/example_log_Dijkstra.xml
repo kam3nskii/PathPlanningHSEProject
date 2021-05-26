@@ -1,0 +1,79 @@
+<root>
+    <map>
+        <width>15</width>
+        <height>15</height>
+        <cellsize>24</cellsize>
+        <startx>2</startx>
+        <starty>2</starty>
+        <finishx>12</finishx>
+        <finishy>12</finishy>
+        <grid>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+            <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
+        </grid>
+    </map>
+    <algorithm>
+        <metrictype>chebyshev</metrictype>
+        <searchtype>dijkstra</searchtype>
+        <hweight>1</hweight>
+        <breakingties>g-min</breakingties>
+        <allowdiagonal>1</allowdiagonal>
+        <cutcorners>1</cutcorners>
+        <allowsqueeze>1</allowsqueeze>
+    </algorithm>
+    <options>
+        <loglevel>1</loglevel>
+        <logpath/>
+        <logfilename/>
+    </options>
+    <log>
+        <mapfilename>../../Examples/example.xml</mapfilename>
+        <summary numberofsteps="205" nodescreated="217" length="14.142136" length_scaled="339.4112548828125" time="0.000268"/>
+        <path>
+            <row number="0">2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 </row>
+            <row number="1">2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 </row>
+            <row number="2">2 2 @ 2 2 2 2 2 2 2 2 2 2 2 2 </row>
+            <row number="3">2 2 2 * 2 2 2 2 2 2 2 2 2 2 2 </row>
+            <row number="4">2 2 2 2 * 2 2 2 2 2 2 2 2 2 2 </row>
+            <row number="5">2 2 2 2 2 * 2 2 2 2 2 2 2 2 2 </row>
+            <row number="6">2 2 2 2 2 2 * 2 2 2 2 2 2 2 2 </row>
+            <row number="7">2 2 2 2 2 2 2 * 2 2 2 2 2 2 2 </row>
+            <row number="8">2 2 2 2 2 2 2 2 * 2 2 2 2 2 0 </row>
+            <row number="9">2 2 2 2 2 2 2 2 2 * 2 2 2 2 0 </row>
+            <row number="10">2 2 2 2 2 2 2 2 2 2 * 2 2 0 0 </row>
+            <row number="11">2 2 2 2 2 2 2 2 2 2 2 * 2 0 0 </row>
+            <row number="12">2 2 2 2 2 2 2 2 2 2 2 2 # 0 0 </row>
+            <row number="13">2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 </row>
+            <row number="14">2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 </row>
+        </path>
+        <lplevel>
+            <node x="2" y="2" number="0"/>
+            <node x="3" y="3" number="1"/>
+            <node x="4" y="4" number="2"/>
+            <node x="5" y="5" number="3"/>
+            <node x="6" y="6" number="4"/>
+            <node x="7" y="7" number="5"/>
+            <node x="8" y="8" number="6"/>
+            <node x="9" y="9" number="7"/>
+            <node x="10" y="10" number="8"/>
+            <node x="11" y="11" number="9"/>
+            <node x="12" y="12" number="10"/>
+        </lplevel>
+        <hplevel>
+            <section number="0" start.x="2" start.y="2" finish.x="12" finish.y="12" length="14.142135623699998"/>
+        </hplevel>
+    </log>
+</root>
