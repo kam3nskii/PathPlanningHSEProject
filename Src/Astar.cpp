@@ -144,7 +144,7 @@ double Astar::heuristic(const EnvironmentOptions& options, int i1, int j1, int i
         case 0:   // "diagonal"
             ans = std::abs(dx - dy) + CN_SQRT_TWO * std::min(dx, dy);
             break;
-        case 1:   // "manhattan" only when diagonal moves are allowed
+        case 1:   // "manhattan" only when diagonal moves are NOT allowed
             ans = dx + dy;
             break;
         case 2:   // "euclidean"

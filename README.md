@@ -248,7 +248,7 @@ python3 gridEdit.py ./Examples/example.xml
   
   > dx, dy &mdash; расстояние между двумя точками по осям x и y соответственно
   * `euclidean`: sqrt(dx * dx + dy * dy)
-  * `manhattan`: dx + dy  (применима только для A*, и только если `allowdiagonal` = true)
+  * `manhattan`: dx + dy  (применима только для A*, и только если `allowdiagonal` = false)
   * `chebyshev`: max(dx, dy)
   * `diagonal`: abs(dx - dy) + sqrt(2) * min(dx, dy)
 * `breakingties` &mdash; определяет порядок раскрытия вершин при равенстве f-значения: 
